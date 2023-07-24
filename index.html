@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Python</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Index Principal</title>
+  <link rel="stylesheet" type="text/css" href="CSS/estilosPrincipal.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="icon" href="images/python-icon.ico" type="image/x-icon">
 </head>
 
 <body>
   <div class="sidebar">
-    <h2>Lecciones</h2>
     <ul>
-      <li><a href="#leccion1">Lección 1</a></li>
-      <li><a href="#leccion2">Lección 2</a></li>
-      <li><a href="#leccion3">Lección 3</a></li>
+      <li><a href="Leccion1-Introduccion/index.html" class="leccion-link">Lección 1 - Introduccion </a></li>
+      <li><a href="Leccion2-FundamentosDeProgramacion/index.html" class="leccion-link">Lección 2 - Fundamentos De
+          Programacion</a></li>
+      <li><a href="Leccion3-FuncionesYMódulos/index.html" class="leccion-link">Lección 3 - Funciones Y Módulos</a></li>
+      <li><a href="Leccion4-ListasTuplasyDiccionarios/index.html" class="leccion-link">Lección 4 - Variables, Tipos De
+          Datos Y Operadores</a></li>
+      <li><a href="Leccion5-ProgramacionOrientadaaObjetos(POO)/index.html" class="leccion-link">Lección 5 - Estructuras
+          De Control</a></li>
+      <li><a href="Leccion6-ManejoDeArchivos/index.html" class="leccion-link">Lección 6 - Listas, Tuplas Y
+          Diccionarios</a></li>
+      <li><a href="Leccion7-ExcepcionesyManejoDeErrores/index.html" class="leccion-link">Lección 7 - Programación
+          Orientada A Objetos</a></li>
+      <li><a href="Leccion8-AplicacionesPracticas/index.html" class="leccion-link">Lección 8 - Manejo De Archivos</a>
+      </li>
+      <li><a href="Leccion9-IntroduccionABibliotecasPopulares/index.html" class="leccion-link">Lección 9 - Excepciones Y
+          Manejo De Errores</a></li>
+      <li><a href="Leccion10-ConsejosDeBuenasPracticas/index.html" class="leccion-link">Lección 10 - Buenas Prácticas Y
+          Depuración</a></li>
+      <li><a href="LeccionFinal-DesarrolloDeUnProyectoFinal/index.html" class="leccion-link">LeccionFinal - Desarrollo
+          De Un Proyecto Final</a></li>
     </ul>
   </div>
 
-  <div class="content">
-    <h1>Curso de Python</h1>
+  <div class="content" id="contenido-leccion">
+    <h1>¡Bienvenido al Curso de Python: Aprende Programación desde Cero!</h1>
 
-    <div id="leccion1">
-      <h2>Lección 1: Introducción a Python</h2>
-      <p>
-        Contenido de la Lección 1. Aquí puedes introducir el material de la lección de forma detallada.
-      </p>
-    </div>
+    <p>¿Estás listo para embarcarte en un emocionante viaje hacia el mundo de la programación con Python? Este curso te proporcionará los fundamentos esenciales y las herramientas necesarias para convertirte en un desarrollador Python competente.</p>
 
-    <div id="leccion2">
-      <h2>Lección 2: Estructuras de Control</h2>
-      <p>
-        Contenido de la Lección 2. Aquí puedes introducir el material de la lección de forma detallada.
-      </p>
-    </div>
+    <h2>Introducción a Python</h2>
+    <p>En la primera parte del curso, te introduciremos en el maravilloso mundo de Python. Descubrirás qué es Python y por qué es uno de los lenguajes de programación más populares en la actualidad. Aprenderás cómo instalar y configurar tu entorno de desarrollo, lo que te permitirá comenzar a escribir y ejecutar tus primeros programas en Python.</p>
 
-    <div id="leccion3">
-      <h2>Lección 3: Funciones</h2>
-      <p>
-        Contenido de la Lección 3. Aquí puedes introducir el material de la lección de forma detallada.
-      </p>
-    </div>
+    <h2>Fundamentos de Programación</h2>
+    <p>A medida que avanzamos, exploraremos los fundamentos de la programación, desde la manipulación de variables y tipos de datos hasta el uso de estructuras de control como condicionales y bucles. Te sorprenderá lo fácil que es crear programas funcionales y resolver problemas con Python.</p>
+
+    <h2>Programación Orientada a Objetos (POO)</h2>
+    <p>Luego, nos adentraremos en el fascinante mundo de la programación orientada a objetos (POO). Aprenderás cómo utilizar clases y objetos para representar entidades del mundo real y cómo aprovechar la herencia y el polimorfismo para crear código más eficiente y reutilizable.</p>
+
+    <h2>Manejo de Archivos</h2>
+    <p>Pero eso no es todo. También te enseñaremos cómo trabajar con archivos, leer y escribir datos en formatos como CSV y JSON, lo que es fundamental para interactuar con el mundo exterior y manejar grandes volúmenes de información.</p>
+
+    <h2>Aplicaciones Prácticas</h2>
+    <p>En el camino, te familiarizarás con algunas bibliotecas populares de Python, como Numpy para manipulación numérica, Pandas para análisis de datos y Matplotlib para visualización. Estas herramientas te permitirán abordar proyectos más complejos y enfrentar desafíos de datos en el futuro.</p>
+
+    <h2>Consejos de Buenas Prácticas y Depuración</h2>
+    <p>Además, aprenderemos sobre el manejo de excepciones y las buenas prácticas de programación para mantener un código limpio y bien estructurado. La depuración y las pruebas también serán parte esencial de tu arsenal de habilidades para asegurar que tu código funcione sin problemas.</p>
+
+    <h2>Trabajo Final y Cierre del Curso</h2>
+    <p>Finalmente, llegará el momento culminante de desarrollar tu proyecto final. Tendrás la oportunidad de aplicar todo lo que has aprendido para crear una aplicación web utilizando Flask o Django. ¡El límite está en tu imaginación!</p>
+
+    <p>Este curso te brindará las bases sólidas para seguir explorando y desarrollándote como programador en Python. Estamos seguros de que disfrutarás cada paso del camino y te sentirás motivado para descubrir las infinitas posibilidades que ofrece este lenguaje de programación.</p>
+
+    <p>Así que no esperes más. ¡Únete a nosotros y sumérgete en el apasionante mundo de Python!</p>
+
+    <h3>¡Comencemos este emocionante viaje juntos!</h3>
   </div>
 </body>
 
