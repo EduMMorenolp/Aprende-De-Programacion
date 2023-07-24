@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listas, Tuplas y Diccionarios</title>
+</head>
+<body>
+    <h2>Trabajando con listas:</h2>
+    <p>Las listas en Python son colecciones ordenadas y mutables de elementos. Pueden contener elementos de diferentes tipos de datos y se definen usando corchetes <code>[]</code>.</p>
+    <pre><code>
+# Ejemplo de lista
+frutas = ["manzana", "naranja", "plátano", "pera"]
+print(frutas)  # Output: ['manzana', 'naranja', 'plátano', 'pera']
+
+# Acceso a elementos de la lista
+print(frutas[0])  # Output: manzana
+print(frutas[2])  # Output: plátano
+
+# Modificar elementos de la lista
+frutas[1] = "limón"
+print(frutas)  # Output: ['manzana', 'limón', 'plátano', 'pera']
+
+# Longitud de la lista
+print(len(frutas))  # Output: 4
+    </code></pre>
+
+    <h2>Tuplas y sus características:</h2>
+    <p>Las tuplas son colecciones ordenadas e inmutables de elementos. A diferencia de las listas, no pueden ser modificadas después de su creación y se definen usando paréntesis <code>()</code>.</p>
+    <pre><code>
+# Ejemplo de tupla
+coordenadas = (3, 5)
+print(coordenadas)  # Output: (3, 5)
+
+# Acceso a elementos de la tupla
+print(coordenadas[0])  # Output: 3
+
+# Las tuplas son inmutables
+# coordenadas[0] = 1  # Generará un error, las tuplas no se pueden modificar
+    </code></pre>
+    <p>Las tuplas son útiles cuando se necesita un conjunto de valores que no cambien a lo largo del programa, como en el caso de las coordenadas geográficas.</p>
+
+    <h2>Diccionarios y operaciones básicas:</h2>
+    <p>Los diccionarios en Python son colecciones de pares clave-valor, donde cada clave debe ser única y se utiliza para acceder a su valor correspondiente. Se definen usando llaves <code>{}</code>.</p>
+    <pre><code>
+# Ejemplo de diccionario
+persona = {
+    "nombre": "Juan",
+    "edad": 30,
+    "profesion": "Ingeniero"
+}
+print(persona)  # Output: {'nombre': 'Juan', 'edad': 30, 'profesion': 'Ingeniero'}
+
+# Acceso a elementos del diccionario por clave
+print(persona["nombre"])  # Output: Juan
+
+# Agregar elementos al diccionario
+persona["ciudad"] = "Madrid"
+print(persona)  # Output: {'nombre': 'Juan', 'edad': 30, 'profesion': 'Ingeniero', 'ciudad': 'Madrid'}
+
+# Eliminar elementos del diccionario
+del persona["edad"]
+print(persona)  # Output: {'nombre': 'Juan', 'profesion': 'Ingeniero', 'ciudad': 'Madrid'}
+
+# Longitud del diccionario
+print(len(persona))  # Output: 3
+    </code></pre>
+    <p>Los diccionarios son útiles para almacenar y acceder a datos asociados a través de claves descriptivas. Son especialmente útiles cuando necesitas representar entidades con múltiples atributos.</p>
+</body>
+</html>

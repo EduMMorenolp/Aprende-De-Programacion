@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programación Orientada a Objetos (POO)</title>
+</head>
+<body>
+    <h2>Conceptos básicos de POO:</h2>
+    <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la representación de entidades del mundo real como objetos. Un objeto es una instancia de una clase, y cada objeto tiene atributos (variables) y métodos (funciones) que representan sus características y comportamientos respectivamente. Los principales conceptos de POO son:</p>
+    <ul>
+        <li>Clase: Es un modelo o plantilla para crear objetos. Define los atributos y métodos que tendrán los objetos creados a partir de ella.</li>
+        <li>Objeto: Es una instancia de una clase, es decir, una entidad concreta creada a partir de la plantilla de la clase.</li>
+        <li>Atributos: Son variables que representan las características de un objeto.</li>
+        <li>Métodos: Son funciones que definen el comportamiento de un objeto y permiten interactuar con él.</li>
+    </ul>
+
+    <h2>Clases y objetos en Python:</h2>
+    <p>En Python, se define una clase usando la palabra clave <code>class</code>, seguida del nombre de la clase y dos puntos. Los atributos y métodos de la clase se definen en el cuerpo de la clase mediante funciones.</p>
+    <pre><code>
+# Ejemplo de clase en Python
+class Persona:
+    # Atributos de la clase
+    nombre = ""
+    edad = 0
+
+    # Método de la clase
+    def saludar(self):
+        print("Hola, mi nombre es", self.nombre, "y tengo", self.edad, "años.")
+    </code></pre>
+
+    <p>Para crear un objeto a partir de una clase, simplemente llamamos al nombre de la clase seguido de paréntesis.</p>
+    <pre><code>
+# Crear un objeto de la clase Persona
+persona1 = Persona()
+
+# Asignar valores a los atributos del objeto
+persona1.nombre = "Juan"
+persona1.edad = 30
+
+# Llamar al método del objeto
+persona1.saludar()  # Output: Hola, mi nombre es Juan y tengo 30 años.
+    </code></pre>
+
+    <h2>Herencia y polimorfismo:</h2>
+    <p>La herencia es un concepto clave en POO que permite crear una nueva clase basada en una clase existente. La clase nueva (llamada clase derivada o subclase) hereda los atributos y métodos de la clase existente (llamada clase base o superclase) y puede tener atributos y métodos adicionales.</p>
+    <pre><code>
+# Ejemplo de herencia en Python
+class Estudiante(Persona):  # La clase Estudiante hereda de la clase Persona
+    carrera = ""
+
+    def estudiar(self):
+        print(self.nombre, "está estudiando", self.carrera)
+
+estudiante1 = Estudiante()
+estudiante1.nombre = "Ana"
+estudiante1.edad = 25
+estudiante1.carrera = "Ingeniería"
+estudiante1.saludar()  # Output: Hola, mi nombre es Ana y tengo 25 años.
+estudiante1.estudiar()  # Output: Ana está estudiando Ingeniería.
+    </code></pre>
+
+    <p>El polimorfismo permite que un objeto pueda tomar diferentes formas y comportarse de manera diferente según el contexto. En Python, esto se logra gracias a la capacidad de las clases derivadas de sobrescribir métodos heredados de la clase base.</p>
+
+    <p>El uso de POO permite una organización más estructurada y modular del código, facilitando su mantenimiento y reutilización en proyectos más grandes y complejos.</p>
+</body>
+</html>

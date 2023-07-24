@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funciones y Módulos</title>
+</head>
+<body>
+    <h2>Definición de funciones:</h2>
+    <p>En Python, una función es un bloque de código que realiza una tarea específica y puede ser reutilizado en diferentes partes del programa. Para definir una función, se utiliza la palabra clave <code>def</code>, seguida del nombre de la función y paréntesis que pueden contener parámetros. La función puede tener un valor de retorno usando la palabra clave <code>return</code>.</p>
+    <pre><code>
+# Ejemplo de definición de función
+def saludar(nombre):
+    return "¡Hola, " + nombre + "!"
+    </code></pre>
+
+    <h2>Parámetros y argumentos:</h2>
+    <p>Los parámetros son variables que se utilizan en la definición de una función y actúan como marcadores de posición para los valores que serán pasados a la función cuando se llame. Los argumentos son los valores reales que se pasan a la función cuando se la llama.</p>
+    <pre><code>
+# Ejemplo de función con parámetros y argumentos
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(3, 5)
+print(resultado)  # Output: 8
+    </code></pre>
+    <p>En este ejemplo, <code>a</code> y <code>b</code> son los parámetros de la función <code>sumar</code>, y cuando llamamos a la función con <code>sumar(3, 5)</code>, los valores 3 y 5 son los argumentos que se asignan a <code>a</code> y <code>b</code>, respectivamente.</p>
+
+    <h2>Importación de módulos y bibliotecas:</h2>
+    <p>Python tiene una amplia variedad de módulos y bibliotecas que contienen funciones y utilidades predefinidas para realizar diversas tareas. Para utilizar estas funciones, es necesario importar los módulos en nuestro código. Se puede importar un módulo completo o solo una función específica de ese módulo.</p>
+    <pre><code>
+# Ejemplo de importación de módulo completo
+import math
+
+print(math.sqrt(16))  # Output: 4.0
+
+# Ejemplo de importación de función específica
+from random import randint
+
+num_aleatorio = randint(1, 100)
+print(num_aleatorio)  # Output: número aleatorio entre 1 y 100
+    </code></pre>
+    <p>En el primer ejemplo, importamos el módulo <code>math</code> para utilizar la función <code>sqrt</code> que calcula la raíz cuadrada de un número. En el segundo ejemplo, importamos solo la función <code>randint</code> del módulo <code>random</code> para generar un número aleatorio entre 1 y 100.</p>
+
+    <p>Utilizar funciones y módulos permite organizar y reutilizar código de manera eficiente, lo que hace que nuestros programas sean más legibles y mantenibles.</p>
+</body>
+</html>

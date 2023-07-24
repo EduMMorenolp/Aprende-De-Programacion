@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introducción a Bibliotecas Populares</title>
+</head>
+<body>
+    <h2>Numpy para manipulación numérica:</h2>
+    <p>Numpy es una biblioteca fundamental para la manipulación numérica en Python. Proporciona una estructura de datos llamada "arreglo" (array) que permite realizar operaciones numéricas de manera eficiente. Numpy es ampliamente utilizado en el ámbito científico y de la ingeniería para realizar cálculos matemáticos complejos.</p>
+    <pre><code>
+import numpy as np
+
+# Crear un arreglo de Numpy
+arr = np.array([1, 2, 3, 4, 5])
+
+# Operaciones con arreglos
+suma = arr + 5
+promedio = np.mean(arr)
+producto_punto = np.dot(arr, arr)
+
+print("Arreglo original:", arr)
+print("Arreglo con suma:", suma)
+print("Promedio:", promedio)
+print("Producto punto:", producto_punto)
+    </code></pre>
+
+    <h2>Pandas para análisis de datos:</h2>
+    <p>Pandas es una biblioteca que proporciona estructuras de datos y herramientas para el análisis de datos. Es especialmente útil para trabajar con datos tabulares y series temporales. Pandas ofrece las estructuras "DataFrame" y "Series", que permiten realizar operaciones y manipulaciones de datos de manera eficiente.</p>
+    <pre><code>
+import pandas as pd
+
+# Crear un DataFrame de Pandas
+data = {
+    'Nombre': ['Juan', 'Ana', 'Pedro'],
+    'Edad': [30, 25, 28],
+    'Profesión': ['Ingeniero', 'Estudiante', 'Contador']
+}
+
+df = pd.DataFrame(data)
+
+# Operaciones con DataFrame
+promedio_edad = df['Edad'].mean()
+mayor_edad = df['Edad'].max()
+
+print(df)
+print("Promedio de edad:", promedio_edad)
+print("Mayor edad:", mayor_edad)
+    </code></pre>
+
+    <h2>Matplotlib para visualización de datos:</h2>
+    <p>Matplotlib es una biblioteca para la generación de gráficos y visualización de datos en Python. Proporciona diversas funciones para crear gráficos de líneas, barras, dispersión, histogramas y más. Es ampliamente utilizado para crear visualizaciones en el ámbito de la ciencia de datos y el análisis de datos.</p>
+    <pre><code>
+import matplotlib.pyplot as plt
+
+# Datos para el gráfico
+meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo']
+ventas = [100, 150, 120, 180, 200]
+
+# Crear un gráfico de barras
+plt.bar(meses, ventas)
+plt.xlabel('Meses')
+plt.ylabel('Ventas')
+plt.title('Ventas por Mes')
+plt.show()
+    </code></pre>
+
+    <p>Estas son solo introducciones breves a estas bibliotecas populares en Python. Cada una de ellas tiene una amplia gama de funcionalidades y opciones para explorar. Numpy, Pandas y Matplotlib se complementan entre sí y son poderosas herramientas para el procesamiento y análisis de datos, y la visualización de resultados en Python.</p>
+</body>
+</html>

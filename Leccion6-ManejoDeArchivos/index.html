@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manejo de Archivos</title>
+</head>
+<body>
+    <h2>Lectura y escritura de archivos:</h2>
+    <p>Python proporciona funciones integradas para leer y escribir archivos en el sistema de archivos de la computadora. Para leer un archivo, usamos la función <code>open()</code> con el modo de lectura ('r') y para escribir un archivo, usamos el modo de escritura ('w'). Es importante cerrar el archivo después de su uso usando el método <code>close()</code>.</p>
+    <pre><code>
+# Ejemplo de lectura de archivo
+archivo_lectura = open('datos.txt', 'r')
+contenido = archivo_lectura.read()
+print(contenido)
+archivo_lectura.close()
+
+# Ejemplo de escritura de archivo
+archivo_escritura = open('nuevo_archivo.txt', 'w')
+archivo_escritura.write("Este es un nuevo archivo de texto.")
+archivo_escritura.close()
+    </code></pre>
+
+    <h2>Archivos CSV y JSON:</h2>
+    <p>Los archivos CSV (Comma Separated Values) y JSON (JavaScript Object Notation) son formatos populares para el intercambio de datos estructurados.</p>
+
+    <h3>Archivos CSV:</h3>
+    <p>Son archivos de texto que contienen datos separados por comas u otro delimitador. Python proporciona el módulo <code>csv</code> para leer y escribir archivos CSV de manera más fácil.</p>
+    <pre><code>
+import csv
+
+# Ejemplo de lectura de archivo CSV
+with open('datos.csv', 'r') as archivo_csv:
+    lector_csv = csv.reader(archivo_csv)
+    for fila in lector_csv:
+        print(fila)
+
+# Ejemplo de escritura de archivo CSV
+datos = [
+    ['Nombre', 'Edad', 'Profesión'],
+    ['Juan', '30', 'Ingeniero'],
+    ['Ana', '25', 'Estudiante']
+]
+
+with open('nuevo_archivo.csv', 'w', newline='') as archivo_csv:
+    escritor_csv = csv.writer(archivo_csv)
+    escritor_csv.writerows(datos)
+    </code></pre>
+
+    <h3>Archivos JSON:</h3>
+    <p>Son archivos de texto que almacenan datos en un formato similar a un diccionario en Python. Python proporciona el módulo <code>json</code> para trabajar con archivos JSON.</p>
+    <pre><code>
+import json
+
+# Ejemplo de lectura de archivo JSON
+with open('datos.json', 'r') as archivo_json:
+    datos_json = json.load(archivo_json)
+    print(datos_json)
+
+# Ejemplo de escritura de archivo JSON
+datos = {
+    "nombre": "Juan",
+    "edad": 30,
+    "profesion": "Ingeniero"
+}
+
+with open('nuevo_archivo.json', 'w') as archivo_json:
+    json.dump(datos, archivo_json)
+    </code></pre>
+
+    <p>Al utilizar estos formatos, podemos almacenar datos de manera estructurada y compartirlos fácilmente con otras aplicaciones y sistemas.</p>
+</body>
+</html>
