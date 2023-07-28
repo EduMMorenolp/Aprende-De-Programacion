@@ -81,3 +81,10 @@ h2 {
   font-weight: bold;
   color: #007bff;
 }
+
+.sidebar {
+  position: sticky;
+  left: 0;
+  top: auto;
+  bottom: auto;
+}

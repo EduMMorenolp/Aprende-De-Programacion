@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: #000b;
+}
+
+body {
+    background: repeating-linear-gradient(90deg, #777, #aaa);
+}
+.caja {
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 3px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 2.4rem;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+p {
+    padding-left: 25px;
+    font-size: 1.2rem;
+}
+
+ul, ol {
+    padding-left: 25px;
+    list-style: inside;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+pre {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 1.25rem;
+    background-color: #fffa;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+code {
+    font-weight: 700;
+}
