@@ -13,10 +13,6 @@ footer {
 .sidebar {
   background-color: #f0f0f0;
   width: 250px;
-  position: relative;
-  top: 30;
-  left: 0;
-  height: 100%;
   padding: 20px;
   overflow-y: auto;
 }
@@ -66,10 +62,12 @@ footer {
 .content {
   position: absolute;
   right: 0;
-  top: 30;
+  top: 0;
+  float: right;
   display: block;
   margin-left: 280px;
   padding: 20px;
+  padding-bottom: 40px;
 }
 
 .content div {
@@ -91,9 +89,29 @@ h2 {
   color: #007bff;
 }
 
-.sidebar {
-  position: sticky;
-  left: 0;
-  top: auto;
-  bottom: auto;
+.izquierda {
+  top: 40px;
+  position: relative;
+  height: 100vh;
+}
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  padding: 5px;
+  background-color: #b32;
+  z-index: 1;
+  height: 40px;
+}
+
+.nav__ul {
+  display: inline;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.abajo {
+  bottom: 0px;
 }
