@@ -13,6 +13,7 @@ body {
   left: 0;
   height: 100%;
   padding: 20px;
+  overflow-y: auto;
 }
 
 /* Estilos para los botones */
