@@ -29,36 +29,38 @@
     <section>
       <div class="sidebar">
         <ul>
-          <li><a href="Leccion1-Introduccion/Leccion1.html" class="leccion-link"  >Lección 1 - Introduccion </a></li>
-          <li><a href="Leccion2-FundamentosDeProgramacion/index.html" class="leccion-link"   >Lección 2 - Fundamentos De
+          <li><a href="Leccion1-Introduccion/Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)" >Lección 1 -
+              Introduccion </a></li>
+          <li><a href="Leccion2-FundamentosDeProgramacion/index.html" class="leccion-link" onclick="cargarLeccion(event)" >Lección 2 - Fundamentos De
               Programacion</a></li>
-          <li><a href="Leccion3-FuncionesYModulos/index.html" class="leccion-link"   >Lección 3 - Funciones Y Módulos</a>
+          <li><a href="Leccion3-FuncionesYModulos/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3
+              - Funciones Y Módulos</a>
           </li>
-          <li><a href="Leccion4-ListasTuplasyDiccionarios/index.html" class="leccion-link">Lección 4 - Listas, Tuplas Y
+          <li><a href="Leccion4-ListasTuplasyDiccionarios/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4 - Listas, Tuplas Y
               Variables</a></li>
-          <li><a href="Leccion5-ProgramacionOrientadaaObjetos(POO)/index.html" class="leccion-link">Lección 5 -
+          <li><a href="Leccion5-ProgramacionOrientadaaObjetos(POO)/index.html" class="leccion-link" onclick="cargarLeccion(event)"> Lección 5 -
               Programación
               Orientada A Obejtos (POO)</a></li>
-          <li><a href="Leccion6-ManejoDeArchivos/index.html" class="leccion-link">Lección 6 - Manejo De Archivos</a>
+          <li><a href="Leccion6-ManejoDeArchivos/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6 - Manejo De Archivos</a>
           </li>
-          <li><a href="Leccion7-ExcepcionesyManejoDeErrores/index.html" class="leccion-link">Lección 7 - Excepciones y
+          <li><a href="Leccion7-ExcepcionesyManejoDeErrores/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7 - Excepciones y
               Manejo De Errores</a></li>
-          <li><a href="Leccion8-AplicacionesPracticas/index.html" class="leccion-link">Lección 8 - Aplicaciones
+          <li><a href="Leccion8-AplicacionesPracticas/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8 - Aplicaciones
               Prácticas</a></li>
-          <li><a href="Leccion9-IntroduccionABibliotecasPopulares/index.html" class="leccion-link">Lección 9 -
+          <li><a href="Leccion9-IntroduccionABibliotecasPopulares/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 9 -
               Introducción
               A Bibliotecas Populares</a></li>
-          <li><a href="Leccion10-ConsejosDeBuenasPracticas/index.html" class="leccion-link">Lección 10 - Buenas
+          <li><a href="Leccion10-ConsejosDeBuenasPracticas/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 10 - Buenas
               Prácticas
               Y
               Depuración</a></li>
-          <li><a href="LeccionFinal-DesarrolloDeUnProyectoFinal/index.html" class="leccion-link">LeccionFinal -
+          <li><a href="LeccionFinal-DesarrolloDeUnProyectoFinal/index.html" class="leccion-link" onclick="cargarLeccion(event)">LeccionFinal -
               Desarrollo
               De Un Proyecto Final</a></li>
         </ul>
       </div>
     </section>
-    <section id="central">
+    <section>
       <div class="content" id="contenido-leccion">
         <h1>¡Bienvenido al Curso de Python: Aprende Programación desde Cero!</h1>
 
@@ -118,8 +120,8 @@
         <h3>¡Comencemos este emocionante viaje juntos!</h3>
       </div>
     </section>
-  </article> 
-  <footer >
+  </article>
+  <footer>
     <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link active" href="#">Active link</a>
@@ -134,6 +136,24 @@
   </footer>
 
   <script>
+    function cargarLeccion(event) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace (no abrirá en una nueva pestaña)
+
+      const enlace = event.target.getAttribute("href"); // Obtiene la ruta del enlace
+      const contenidoLeccion = document.getElementById("contenido-leccion"); // Obtén el div donde se cargará el contenido
+
+      fetch(enlace) // Obtiene el contenido de "Leccion1.html"
+        .then((response) => response.text())
+        .then((html) => {
+          contenidoLeccion.innerHTML = html; // Coloca el contenido en el div
+        })
+        .catch((error) => {
+          console.error("Error al cargar la lección:", error);
+        });
+    }
+  </script>
+
+  <!-- <script>
     $(document).ready(function () {
       $(".leccion-link").click(function (event) {
         event.preventDefault();
@@ -155,7 +175,7 @@
         }
       });
     }
-  </script>
+  </script> -->
 </body>
 
 </html>

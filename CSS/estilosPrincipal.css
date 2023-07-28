@@ -79,14 +79,3 @@ footer {
 h2 {
   border-bottom: 1px solid #ddd;
 }
-
-/* Efecto al hacer clic en los enlaces */
-.sidebar a:hover {
-  color: #007bff;
-}
-
-/* Estilo para el enlace activo */
-.sidebar a.active {
-  font-weight: bold;
-  color: #007bff;
-}
