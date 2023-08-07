@@ -7,7 +7,7 @@
 }
 
 body {
-    background: repeating-linear-gradient(90deg, #777, #aaa);
+    background: repeating-linear-gradient(90deg, #fffa, #aaa);
 }
 .caja {
     border: 1px solid #000;
@@ -44,7 +44,7 @@ pre {
     border: 1px solid black;
     padding: 10px;
     border-radius: 1.25rem;
-    background-color: #fffa;
+    background-color: #777;
     margin-left: 20px;
     margin-bottom: 10px;
 }
