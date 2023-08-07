@@ -1,0 +1,44 @@
+/* Reset de estilos para listas y enlaces */
+.sidebar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0366d6; /* Color de enlaces en GitHub */
+}
+
+/* Estilo para la barra lateral */
+.sidebar {
+  background-color: #f6f8fa; /* Color de fondo de la barra lateral en GitHub */
+  width: 250px;
+  height: 100%;
+  top: 60px; /* Ajustar según el alto de tu barra de navegación */
+}
+
+/* Estilo para los elementos de la lista */
+.sidebar ul {
+  padding: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para enlaces activos */
+.sidebar a.active {
+  font-weight: bold;
+}
+
+/* Cambio de estilo al pasar el mouse sobre los enlaces */
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el contenido principal */
+.container {
+  margin-left: 260px; /* Ancho de la barra lateral + margen */
+  padding: 20px;
+}
