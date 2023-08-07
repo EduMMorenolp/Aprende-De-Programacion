@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitAndGithub</title>
+
+    <link rel="stylesheet" type="text/css" href="estilosGithub.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Barra Navegacion -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aprende Programacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""> HTML </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> CSS </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Java </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> JavaScript </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../python/python.html"> Python </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Git / GitHub </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Sobre Nosotros </a>
+          </li>
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid lateral">
+    <div class="sidebar">
+      <ul>
+        <li><a href="Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 1: Introducción a Git y Control de Versiones</a></li>
+        <li><a href="Leccion2.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2: Fundamentos de Git</a></li>
+        <li><a href="Leccion3.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3: Trabajo Colaborativo con Git</a>
+        </li>
+        <li><a href="Leccion4.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4: Introducción a GitHub</a></li>
+        <li><a href="Leccion5.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5: Uso Avanzado de Git</a></li>
+        <li><a href="Leccion6.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6: Flujo de Trabajo con Ramas</a>
+        </li>
+        <li><a href="Leccion7.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7: Automatización con Acciones de GitHub</a></li>
+        <li><a href="Leccion8.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8: Gestión de Proyectos con GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="container">
+    <div class="temario">
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 1: Introducción a Git y Control de Versiones</div>
+            <div class="contenido-leccion">
+                En esta lección, aprenderás los conceptos básicos de control de versiones y cómo Git puede ayudarte a administrar tus proyectos.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>¿Qué es el control de versiones y por qué es importante?</li>
+                    <li>Introducción a Git y sus características.</li>
+                    <li>Instalación y configuración inicial de Git.</li>
+                    <li>Crear y clonar repositorios.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 2: Fundamentos de Git</div>
+            <div class="contenido-leccion">
+                En esta lección, explorarás los comandos esenciales de Git y cómo trabajar con el historial de versiones.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Ciclo de vida de los archivos en Git: Working Directory, Staging Area y Repository.</li>
+                    <li>Comandos básicos: git add, git commit, git status, git log, etc.</li>
+                    <li>Ramas (branches) y cómo crear nuevas ramas.</li>
+                    <li>Fusionar cambios con git merge.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 3: Trabajo Colaborativo con Git</div>
+            <div class="contenido-leccion">
+                En esta lección, aprenderás a colaborar con otros desarrolladores utilizando Git y a resolver conflictos.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Clonar repositorios remotos.</li>
+                    <li>Sincronización con git pull y git push.</li>
+                    <li>Resolución de conflictos en fusiones y actualizaciones.</li>
+                    <li>Ramas remotas y seguimiento de ramas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 4: Introducción a GitHub</div>
+            <div class="contenido-leccion">
+                En esta lección, explorarás la plataforma GitHub y cómo utilizarla para alojar y gestionar tus proyectos.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>¿Qué es GitHub y cómo se diferencia de Git?</li>
+                    <li>Creación de un repositorio en GitHub.</li>
+                    <li>Colaboración en GitHub: invitaciones, permisos y roles.</li>
+                    <li>Uso de problemas (issues) y solicitudes de extracción (pull requests).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 5: Uso Avanzado de Git</div>
+            <div class="contenido-leccion">
+                En esta lección, profundizarás en el uso de Git, explorando características avanzadas y buenas prácticas.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Etiquetas (tags) y versiones.</li>
+                    <li>Revertir cambios con git revert y git reset.</li>
+                    <li>Rebase y cómo modificar la historia de un proyecto.</li>
+                    <li>Archivos .gitignore y su importancia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 6: Flujo de Trabajo con Ramas</div>
+            <div class="contenido-leccion">
+                En esta lección, te sumergirás en estrategias de flujo de trabajo con ramas para mantener un desarrollo organizado y eficiente.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Modelos de flujo de trabajo: Git Flow y GitHub Flow.</li>
+                    <li>Ramas de características, desarrollo y liberación.</li>
+                    <li>Uso de ramas temporales y ramas de soporte.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 7: Automatización con Acciones de GitHub</div>
+            <div class="contenido-leccion">
+                En esta lección, descubrirás cómo utilizar las Acciones de GitHub para automatizar tareas en tu flujo de trabajo.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Introducción a las Acciones de GitHub.</li>
+                    <li>Creación de flujos de trabajo con YAML.</li>
+                    <li>Ejemplos de automatización: pruebas, construcción y despliegue.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leccion">
+            <div class="titulo-leccion">Lección 8: Gestión de Proyectos con GitHub</div>
+            <div class="contenido-leccion">
+                En esta lección final, aprenderás a utilizar GitHub para gestionar proyectos de principio a fin, desde la planificación hasta la implementación.
+                <br><br>
+                Contenido:
+                <ul>
+                    <li>Proyectos y tableros en GitHub.</li>
+                    <li>Integración de problemas (issues) y solicitudes de extracción (pull requests) en la gestión de proyectos.</li>
+                    <li>Organización y etiquetas para mantener el orden.</li>
+                    <li>Documentación y colaboración en la wiki del repositorio.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+ 
+</div>
+  
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+crossorigin="anonymous"></script>
+</body>
+</html>

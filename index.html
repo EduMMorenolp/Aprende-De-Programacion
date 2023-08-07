@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index Principal</title>
-  <link rel="stylesheet" type="text/css" href="CSS/estilosPrincipal.css" />
-  <script src="js/scripts.js"></script>
-  <link rel="icon" href="images/python-icon.ico" type="image/x-icon" />
-  <!--Fuentes-->
+
+  <link rel="stylesheet" type="text/css" href="indexEstilos.css" />
+  <script src="scripts.js"></script>
+
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
@@ -18,133 +19,170 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <ul class="nav nav-underline">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Python</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">HTMLyCSS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">JavaScrip</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Git/GitHub</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Contacto</a>
-      </li>
-    </ul>
+  <!-- Barra Navegacion -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aprende Programacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""> HTML y CSS </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Java </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> JavaScript </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="python/python.html"> Python </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="github/github.html"> Git / GitHub </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobreNosotros.html"> Sobre Nosotros </a>
+          </li>
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
   </nav>
-  <article>
-    <section class="lateral" >
-      <div class="sidebar">
-        <ul>
-          <li><a href="Leccion1-Introduccion/Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección
-              1 - Introduccion </a></li>
-          <li><a href="Leccion2-FundamentosDeProgramacion/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 2 - Fundamentos De
-              Programacion</a></li>
-          <li><a href="Leccion3-FuncionesYModulos/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 3 - Funciones Y Módulos</a>
-          </li>
-          <li><a href="Leccion4-ListasTuplasyDiccionarios/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 4 - Listas, Tuplas Y
-              Variables</a></li>
-          <li><a href="Leccion5-ProgramacionOrientadaaObjetos(POO)/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 5 -
-              Programación
-              Orientada A Obejtos (POO)</a></li>
-          <li><a href="Leccion6-ManejoDeArchivos/index.html" class="leccion-link" onclick="cargarLeccion(event)">Lección
-              6 - Manejo De Archivos</a>
-          </li>
-          <li><a href="Leccion7-ExcepcionesyManejoDeErrores/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 7 - Excepciones y
-              Manejo De Errores</a></li>
-          <li><a href="Leccion8-AplicacionesPracticas/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 8 - Aplicaciones
-              Prácticas</a></li>
-          <li><a href="Leccion9-IntroduccionABibliotecasPopulares/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 9 -
-              Introducción
-              A Bibliotecas Populares</a></li>
-          <li><a href="Leccion10-ConsejosDeBuenasPracticas/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">Lección 10 - Buenas
-              Prácticas
-              Y
-              Depuración</a></li>
-          <li><a href="LeccionFinal-DesarrolloDeUnProyectoFinal/index.html" class="leccion-link"
-              onclick="cargarLeccion(event)">LeccionFinal -
-              Desarrollo
-              De Un Proyecto Final</a></li>
-        </ul>
-      </div>
-    </section>
-    <section id="central">
-      <div class="content" id="contenido-leccion">
-        <h1>¡Bienvenido al Curso de Python: Aprende Programación desde Cero!</h1>
 
-        <p>¿Estás listo para embarcarte en un emocionante viaje hacia el mundo de la programación con Python? Este curso
-          te
-          proporcionará los fundamentos esenciales y las herramientas necesarias para convertirte en un desarrollador
-          Python
-          competente.</p>
+  <!-- Index Principal -->
+  <section class="features">
+    <div class="feature">
+      <h1>Cursos de Programación</h1>
+      <p>Bienvenido a nuestra plataforma de educación en línea dedicada a ofrecer cursos de programación de alta calidad
+        para todos los niveles. Ya sea que estés dando tus primeros pasos en el mundo de la codificación o busques
+        perfeccionar tus habilidades, nuestros cursos están diseñados para ayudarte a alcanzar tus metas en el
+        desarrollo de software.
 
-        <h2>Introducción a Python</h2>
-        <p>En la primera parte del curso, te introduciremos en el maravilloso mundo de Python. Descubrirás qué es Python
-          y
-          por qué es uno de los lenguajes de programación más populares en la actualidad. Aprenderás cómo instalar y
-          configurar tu entorno de desarrollo, lo que te permitirá comenzar a escribir y ejecutar tus primeros programas
-          en
-          Python.</p>
+        ¿Qué Ofrecemos?</p>
+    </div>
 
-        <h2>Fundamentos de Programación</h2>
-        <p>A medida que avanzamos, exploraremos los fundamentos de la programación, desde la manipulación de variables y
-          tipos de datos hasta el uso de estructuras de control como condicionales y bucles. Te sorprenderá lo fácil que
-          es
-          crear programas funcionales y resolver problemas con Python.</p>
+    <div class="feature">
+      <h2>Curso de HTML y CSS</h2>
+      <p>Nuestro curso de HTML y CSS te proporcionará una base sólida en diseño web. Aprende a:</p>
+      <ul>
+        <li>Crear estructuras de páginas web utilizando HTML para marcar el contenido.</li>
+        <li>Aplicar estilos y diseños atractivos con CSS para mejorar la presentación visual.</li>
+        <li>Utilizar etiquetas semánticas de HTML para mejorar la accesibilidad y la optimización de motores de
+          búsqueda.</li>
+        <li>Crear diseños responsivos y amigables para dispositivos móviles.</li>
+        <li>Trabajar con multimedia, formularios y elementos interactivos.</li>
+        <li>Entender las mejores prácticas de diseño web y desarrollo frontend.</li>
+      </ul>
+      <p>Con nuestros enfoque práctico y ejercicios hands-on, estarás listo para crear sitios web modernos y atractivos
+        desde cero.</p>
+    </div>
 
-        <h2>Programación Orientada a Objetos (POO)</h2>
-        <p>Luego, nos adentraremos en el fascinante mundo de la programación orientada a objetos (POO). Aprenderás cómo
-          utilizar clases y objetos para representar entidades del mundo real y cómo aprovechar la herencia y el
-          polimorfismo para crear código más eficiente y reutilizable.</p>
 
-        <h2>Manejo de Archivos</h2>
-        <p>Pero eso no es todo. También te enseñaremos cómo trabajar con archivos, leer y escribir datos en formatos
-          como
-          CSV y JSON, lo que es fundamental para interactuar con el mundo exterior y manejar grandes volúmenes de
-          información.</p>
+    <div class="feature">
+      <h2>Curso de JavaScript</h2>
+      <p>Nuestro completo curso de JavaScript te guiará a través del mundo de la programación del lado del cliente.
+        Aprende a:</p>
+      <ul>
+        <li>Comprender los fundamentos de JavaScript, incluyendo variables, tipos de datos y estructuras de control.
+        </li>
+        <li>Manipular el DOM (Modelo de Objetos del Documento) para crear interacciones dinámicas en sitios web.</li>
+        <li>Trabajar con funciones y eventos para agregar comportamientos interactivos a tus proyectos.</li>
+        <li>Utilizar AJAX para cargar y enviar datos de manera asíncrona.</li>
+        <li>Explorar conceptos avanzados como closures, promesas y asincronía.</li>
+        <li>Crear aplicaciones interactivas y juegos utilizando JavaScript.</li>
+      </ul>
+      <p>Nuestro enfoque práctico te permitirá aplicar tus conocimientos en proyectos reales, lo que te preparará para
+        crear experiencias web atractivas y dinámicas.</p>
+    </div>
 
-        <h2>Aplicaciones Prácticas</h2>
-        <p>En el camino, te familiarizarás con algunas bibliotecas populares de Python, como Numpy para manipulación
-          numérica, Pandas para análisis de datos y Matplotlib para visualización. Estas herramientas te permitirán
-          abordar
-          proyectos más complejos y enfrentar desafíos de datos en el futuro.</p>
 
-        <h2>Consejos de Buenas Prácticas y Depuración</h2>
-        <p>Además, aprenderemos sobre el manejo de excepciones y las buenas prácticas de programación para mantener un
-          código limpio y bien estructurado. La depuración y las pruebas también serán parte esencial de tu arsenal de
-          habilidades para asegurar que tu código funcione sin problemas.</p>
+    <div class="feature">
+      <h2>Curso de Python</h2>
+      <p>Nuestro completo curso de Python te llevará desde los fundamentos hasta niveles avanzados de programación.
+        Aprende a:</p>
+      <ul>
+        <li>Comprender los conceptos básicos de la sintaxis de Python y la lógica de programación.</li>
+        <li>Manipular datos y trabajar con tipos de datos como listas, tuplas, conjuntos y diccionarios.</li>
+        <li>Crear estructuras de control como bucles y condicionales para resolver problemas.</li>
+        <li>Definir funciones y módulos para organizar y reutilizar tu código de manera eficiente.</li>
+        <li>Explorar la programación orientada a objetos y crear clases y objetos en Python.</li>
+        <li>Utilizar bibliotecas y módulos populares para tareas como análisis de datos, visualización y desarrollo web.
+        </li>
+        <li>Aplicar tus habilidades en proyectos prácticos que aborden desafíos del mundo real.</li>
+      </ul>
+      <p>Nuestro enfoque práctico y proyectos interactivos te ayudarán a desarrollar habilidades sólidas en programación
+        con Python, preparándote para una variedad de roles en desarrollo de software y ciencia de datos.</p>
+    </div>
 
-        <h2>Trabajo Final y Cierre del Curso</h2>
-        <p>Finalmente, llegará el momento culminante de desarrollar tu proyecto final. Tendrás la oportunidad de aplicar
-          todo lo que has aprendido para crear una aplicación web utilizando Flask o Django. ¡El límite está en tu
-          imaginación!</p>
 
-        <p>Este curso te brindará las bases sólidas para seguir explorando y desarrollándote como programador en Python.
-          Estamos seguros de que disfrutarás cada paso del camino y te sentirás motivado para descubrir las infinitas
-          posibilidades que ofrece este lenguaje de programación.</p>
+    <div class="feature">
+      <h2>Curso de Git y GitHub</h2>
+      <p>Nuestro curso de Git y GitHub te proporcionará las habilidades esenciales para el control de versiones y la
+        colaboración en proyectos de desarrollo de software. Aprende a:</p>
+      <ul>
+        <li>Gestionar tus proyectos utilizando Git, el sistema de control de versiones más popular.</li>
+        <li>Crear repositorios, realizar confirmaciones y trabajar con ramas para mantener un historial claro de
+          cambios.</li>
+        <li>Colaborar de manera efectiva en equipos utilizando GitHub, la plataforma líder de alojamiento y colaboración
+          de código.</li>
+        <li>Realizar solicitudes de extracción, resolver conflictos y mantener un flujo de trabajo colaborativo sin
+          problemas.</li>
+        <li>Utilizar herramientas avanzadas como rebase y etiquetas para administrar tus proyectos de manera eficiente.
+        </li>
+        <li>Automatizar tareas con GitHub Actions para mejorar tu flujo de trabajo de desarrollo.</li>
+      </ul>
+      <p>Nuestro enfoque práctico te permitirá aplicar tus conocimientos en proyectos reales, lo que te preparará para
+        trabajar en equipos de desarrollo y contribuir a proyectos de código abierto.</p>
+    </div>
 
-        <p>Así que no esperes más. ¡Únete a nosotros y sumérgete en el apasionante mundo de Python!</p>
+    <div class="feature">
+      <h2> ¿Por Qué Elegirnos?</h2>
+      <p>
+        En Cursos de Programación, no solo te proporcionamos conocimientos técnicos sólidos, sino que también te
+        ofrecemos una experiencia de aprendizaje interactiva. Nuestros instructores altamente calificados están
+        comprometidos a brindarte el apoyo que necesitas en cada paso del camino. Ya sea que estés buscando cambiar de
+        carrera, mejorar tus habilidades o simplemente explorar el emocionante mundo de la programación, estamos aquí
+        para ayudarte a alcanzar tu máximo potencial.
 
-        <h3>¡Comencemos este emocionante viaje juntos!</h3>
-      </div>
-    </section>
-  </article>
+        Únete a nuestra comunidad de estudiantes apasionados por la tecnología y descubre cómo la programación puede
+        abrirte nuevas oportunidades en el mundo digital.
+
+        ¡Comienza tu viaje hacia el dominio de la programación hoy mismo!
+      </p>
+    </div>
+  </section>
+
+  <section class="about" style="text-align: center;">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una programadores dedicadis a proporcionar cursos de programación de calidad para principiantes y
+      profesionales. Nuestro objetivo es ayudarte a desarrollar habilidades valiosas en el mundo de la tecnología.</p>
+  </section>
+
+  <!-- FOOTER FINAL -->
   <footer>
-    
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
