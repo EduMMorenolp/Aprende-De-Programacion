@@ -12,9 +12,9 @@
 
 /* Estilo para la barra lateral */
 .sidebar {
+  position: absolute;
   background-color: #f6f8fa; /* Color de fondo de la barra lateral en GitHub */
   width: 250px;
-  height: 100%;
   top: 60px; /* Ajustar según el alto de tu barra de navegación */
 }
 
@@ -39,6 +39,13 @@
 
 /* Estilo para el contenido principal */
 .container {
-  margin-left: 260px; /* Ancho de la barra lateral + margen */
-  padding: 20px;
+  position: relative;
+}
+
+.temario {
+  right: 0;
+  top: 0;
+  float: right;
+  display: block;
+  padding-left: 50px;
 }
