@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>Excepciones y Manejo de Errores</title>
-    <link rel="stylesheet" href="../CSS/estilosLecciones.css">
+    <link rel="stylesheet" href="CSS/estilosLecciones.css">
 </head>
 <body>
-    <h2>Tratamiento de excepciones:</h2>
+    <div class="body">
+    <h1>Tratamiento de excepciones:</h1>
     <p>En Python, una excepción es un evento que ocurre durante la ejecución de un programa y que interrumpe el flujo normal de ejecución. Las excepciones pueden ser errores como divisiones por cero, acceso a índices inexistentes en una lista, entre otros. Para evitar que el programa se detenga abruptamente por una excepción, podemos manejarlas mediante el uso de bloques <code>try-except</code>.</p>
 
     <h2>Uso de bloques try-except:</h2>
     <p>El bloque <code>try</code> se utiliza para encerrar el código que puede generar una excepción. Si una excepción ocurre dentro del bloque <code>try</code>, se busca el bloque <code>except</code> correspondiente para manejarla.</p>
-    <pre><code>
-# Ejemplo de manejo de excepciones
+    <pre><code># Ejemplo de manejo de excepciones
 try:
     numero1 = int(input("Ingrese un número: "))
     numero2 = int(input("Ingrese otro número: "))
@@ -28,5 +28,6 @@ except Exception as e:
     <p>En este ejemplo, utilizamos el bloque <code>try</code> para intentar realizar una división entre dos números ingresados por el usuario. Si ocurre una excepción de división por cero (<code>ZeroDivisionError</code>), se ejecuta el bloque <code>except ZeroDivisionError</code>. Si el usuario ingresa caracteres no numéricos (<code>ValueError</code>), se ejecuta el bloque <code>except ValueError</code>. El bloque <code>except Exception as e</code> captura cualquier otra excepción no manejada por los bloques anteriores y muestra el mensaje de error correspondiente.</p>
 
     <p>El uso adecuado de bloques <code>try-except</code> permite que nuestro programa siga funcionando incluso cuando ocurren situaciones inesperadas o errores en tiempo de ejecución.</p>
+    </div>
 </body>
 </html>

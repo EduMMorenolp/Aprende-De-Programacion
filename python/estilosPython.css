@@ -5,9 +5,10 @@ body {
   padding: 0;
 }
 
-footer {
-  position: sticky;
-  bottom: auto;
+/*Estilos para el menu de Lecciones*/
+
+.lateral, .central {
+  position: absolute;
 }
 
 .sidebar {
@@ -45,19 +46,12 @@ footer {
 }
 
 /* Estilo para el botón activo */
-.sidebar a.active {
+.sidebar a:active {
   background-color: #0056b3;
   font-weight: bold;
 }
 
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-}
+/*Estilos para el contenido de las lecciones*/
 
 .content {
   right: 0;
@@ -65,33 +59,11 @@ footer {
   float: right;
   display: block;
   margin-left: 280px;
-  padding: 20px;
-  padding-bottom: 40px;
 }
 
-.content div {
-  margin-bottom: 40px;
-}
+/*Estilos para el pie de página*/
 
-h2 {
-  border-bottom: 1px solid #ddd;
-}
-
-/* Efecto al hacer clic en los enlaces */
-.sidebar a:hover {
-  color: #007bff;
-}
-
-/* Estilo para el enlace activo */
-.sidebar a.active {
-  font-weight: bold;
-  color: #007bff;
-}
-
-.lateral {
-  position: absolute;
-}
-
-.central {
-  position: absolute;
+footer {
+  position: sticky;
+  bottom: auto;
 }

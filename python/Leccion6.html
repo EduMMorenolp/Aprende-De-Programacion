@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Manejo de Archivos</title>
-    <link rel="stylesheet" href="../CSS/estilosLecciones.css">
+    <link rel="stylesheet" href="CSS/estilosLecciones.css">
 </head>
 <body>
-    <h2>Lectura y escritura de archivos:</h2>
+    <div class="body">
+    <h1>Lectura y escritura de archivos:</h1>
     <p>Python proporciona funciones integradas para leer y escribir archivos en el sistema de archivos de la computadora. Para leer un archivo, usamos la función <code>open()</code> con el modo de lectura ('r') y para escribir un archivo, usamos el modo de escritura ('w'). Es importante cerrar el archivo después de su uso usando el método <code>close()</code>.</p>
-    <pre><code>
-# Ejemplo de lectura de archivo
+    <pre><code># Ejemplo de lectura de archivo
 archivo_lectura = open('datos.txt', 'r')
 contenido = archivo_lectura.read()
 print(contenido)
@@ -25,8 +25,7 @@ archivo_escritura.close()
 
     <h3>Archivos CSV:</h3>
     <p>Son archivos de texto que contienen datos separados por comas u otro delimitador. Python proporciona el módulo <code>csv</code> para leer y escribir archivos CSV de manera más fácil.</p>
-    <pre><code>
-import csv
+    <pre><code>import csv
 
 # Ejemplo de lectura de archivo CSV
 with open('datos.csv', 'r') as archivo_csv:
@@ -48,8 +47,7 @@ with open('nuevo_archivo.csv', 'w', newline='') as archivo_csv:
 
     <h3>Archivos JSON:</h3>
     <p>Son archivos de texto que almacenan datos en un formato similar a un diccionario en Python. Python proporciona el módulo <code>json</code> para trabajar con archivos JSON.</p>
-    <pre><code>
-import json
+    <pre><code>import json
 
 # Ejemplo de lectura de archivo JSON
 with open('datos.json', 'r') as archivo_json:
@@ -68,5 +66,6 @@ with open('nuevo_archivo.json', 'w') as archivo_json:
     </code></pre>
 
     <p>Al utilizar estos formatos, podemos almacenar datos de manera estructurada y compartirlos fácilmente con otras aplicaciones y sistemas.</p>
+    </div>
 </body>
 </html>
