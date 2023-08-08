@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python</title>
-    <link rel="stylesheet" type="text/css" href="estilosPython.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python</title>
+
+  <link rel="stylesheet" type="text/css" href="estilosPython.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
     rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 </head>
+
 <body>
   <!-- Barra Navegacion -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -22,7 +25,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+            <a class="nav-link active" aria-current="page" href="../index.html">
+              Inicio
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../html/htmlycss.html"> HTML y CSS </a>
@@ -31,133 +36,185 @@
             <a class="nav-link" href="../java/java.html"> Java </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../javascript/javascript.html"> JavaScript </a>
+            <a class="nav-link" href="../javascript/javascript.html">
+              JavaScript
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="python.html"> Python </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../github/github.html"> Git / GitHub </a>
+            <a class="nav-link" href="../github/github.html">
+              Git / GitHub
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="../sobreNosotros.html"> Sobre Nosotros </a>
+            <a class="nav-link active" href="../sobreNosotros.html">
+              Sobre Nosotros
+            </a>
           </li>
           <li class="nav-item dropdown">
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
-                <hr class="dropdown-divider">
+                <hr class="dropdown-divider" />
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
             </ul>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
         </form>
       </div>
     </div>
   </nav>
-  
-<article>
+  <!--Menu de lecciones-->
+  <article>
     <section class="lateral">
       <div class="sidebar">
         <ul>
-          <li><a href="Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección
-              1 - Introduccion </a></li>
-          <li><a href="Leccion2.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2 - Fundamentos
-              De
-              Programacion</a></li>
-          <li><a href="Leccion3.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3 - Funciones Y
+          <li>
+            <a href="Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 1 - Introduccion
+            </a>
+          </li>
+          <li>
+            <a href="Leccion2.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2 - Fundamentos De
+              Programacion</a>
+          </li>
+          <li>
+            <a href="Leccion3.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3 - Funciones Y
               Módulos</a>
           </li>
-          <li><a href="Leccion4.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4 - Listas,
-              Tuplas Y
-              Variables</a></li>
-          <li><a href="Leccion5.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5 -
-              Programación
-              Orientada A Obejtos (POO)</a></li>
-          <li><a href="Leccion6.html" class="leccion-link" onclick="cargarLeccion(event)">Lección
-              6 - Manejo De Archivos</a>
+          <li>
+            <a href="Leccion4.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4 - Listas, Tuplas Y
+              Variables</a>
           </li>
-          <li><a href="Leccion7.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7 - Excepciones
-              y
-              Manejo De Errores</a></li>
-          <li><a href="Leccion8.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8 -
-              Aplicaciones
-              Prácticas</a></li>
-          <li><a href="Leccion9.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 9 -
-              Introducción
-              A Bibliotecas Populares</a></li>
-          <li><a href="Leccion10.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 10 - Buenas
-              Prácticas
-              Y
-              Depuración</a></li>
-          <li><a href="LeccionFinal.html" class="leccion-link" onclick="cargarLeccion(event)">LeccionFinal -
-              Desarrollo
-              De Un Proyecto Final</a></li>
+          <li>
+            <a href="Leccion5.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5 - Programación
+              Orientada A Obejtos (POO)</a>
+          </li>
+          <li>
+            <a href="Leccion6.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6 - Manejo De
+              Archivos</a>
+          </li>
+          <li>
+            <a href="Leccion7.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7 - Excepciones y Manejo
+              De Errores</a>
+          </li>
+          <li>
+            <a href="Leccion8.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8 - Aplicaciones
+              Prácticas</a>
+          </li>
+          <li>
+            <a href="Leccion9.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 9 - Introducción A
+              Bibliotecas Populares</a>
+          </li>
+          <li>
+            <a href="Leccion10.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 10 - Buenas Prácticas Y
+              Depuración</a>
+          </li>
+          <li>
+            <a href="LeccionFinal.html" class="leccion-link" onclick="cargarLeccion(event)">LeccionFinal - Desarrollo De
+              Un Proyecto Final</a>
+          </li>
         </ul>
       </div>
     </section>
-    
+
     <section id="central">
       <div class="content" id="contenido-leccion">
-        <h1>¡Bienvenido al Curso de Python: Aprende Programación desde Cero!</h1>
+        <h1>
+          ¡Bienvenido al Curso de Python: Aprende Programación desde Cero!
+        </h1>
 
-        <p>¿Estás listo para embarcarte en un emocionante viaje hacia el mundo de la programación con Python? Este curso
-          te
-          proporcionará los fundamentos esenciales y las herramientas necesarias para convertirte en un desarrollador
-          Python
-          competente.</p>
+        <p>
+          ¿Estás listo para embarcarte en un emocionante viaje hacia el mundo
+          de la programación con Python? Este curso te proporcionará los
+          fundamentos esenciales y las herramientas necesarias para
+          convertirte en un desarrollador Python competente.
+        </p>
 
         <h2>Introducción a Python</h2>
-        <p>En la primera parte del curso, te introduciremos en el maravilloso mundo de Python. Descubrirás qué es Python
-          y
-          por qué es uno de los lenguajes de programación más populares en la actualidad. Aprenderás cómo instalar y
-          configurar tu entorno de desarrollo, lo que te permitirá comenzar a escribir y ejecutar tus primeros programas
-          en
-          Python.</p>
+        <p>
+          En la primera parte del curso, te introduciremos en el maravilloso
+          mundo de Python. Descubrirás qué es Python y por qué es uno de los
+          lenguajes de programación más populares en la actualidad. Aprenderás
+          cómo instalar y configurar tu entorno de desarrollo, lo que te
+          permitirá comenzar a escribir y ejecutar tus primeros programas en
+          Python.
+        </p>
 
         <h2>Fundamentos de Programación</h2>
-        <p>A medida que avanzamos, exploraremos los fundamentos de la programación, desde la manipulación de variables y
-          tipos de datos hasta el uso de estructuras de control como condicionales y bucles. Te sorprenderá lo fácil que
-          es
-          crear programas funcionales y resolver problemas con Python.</p>
+        <p>
+          A medida que avanzamos, exploraremos los fundamentos de la
+          programación, desde la manipulación de variables y tipos de datos
+          hasta el uso de estructuras de control como condicionales y bucles.
+          Te sorprenderá lo fácil que es crear programas funcionales y
+          resolver problemas con Python.
+        </p>
 
         <h2>Programación Orientada a Objetos (POO)</h2>
-        <p>Luego, nos adentraremos en el fascinante mundo de la programación orientada a objetos (POO). Aprenderás cómo
-          utilizar clases y objetos para representar entidades del mundo real y cómo aprovechar la herencia y el
-          polimorfismo para crear código más eficiente y reutilizable.</p>
+        <p>
+          Luego, nos adentraremos en el fascinante mundo de la programación
+          orientada a objetos (POO). Aprenderás cómo utilizar clases y objetos
+          para representar entidades del mundo real y cómo aprovechar la
+          herencia y el polimorfismo para crear código más eficiente y
+          reutilizable.
+        </p>
 
         <h2>Manejo de Archivos</h2>
-        <p>Pero eso no es todo. También te enseñaremos cómo trabajar con archivos, leer y escribir datos en formatos
-          como
-          CSV y JSON, lo que es fundamental para interactuar con el mundo exterior y manejar grandes volúmenes de
-          información.</p>
+        <p>
+          Pero eso no es todo. También te enseñaremos cómo trabajar con
+          archivos, leer y escribir datos en formatos como CSV y JSON, lo que
+          es fundamental para interactuar con el mundo exterior y manejar
+          grandes volúmenes de información.
+        </p>
 
         <h2>Aplicaciones Prácticas</h2>
-        <p>En el camino, te familiarizarás con algunas bibliotecas populares de Python, como Numpy para manipulación
-          numérica, Pandas para análisis de datos y Matplotlib para visualización. Estas herramientas te permitirán
-          abordar
-          proyectos más complejos y enfrentar desafíos de datos en el futuro.</p>
+        <p>
+          En el camino, te familiarizarás con algunas bibliotecas populares de
+          Python, como Numpy para manipulación numérica, Pandas para análisis
+          de datos y Matplotlib para visualización. Estas herramientas te
+          permitirán abordar proyectos más complejos y enfrentar desafíos de
+          datos en el futuro.
+        </p>
 
         <h2>Consejos de Buenas Prácticas y Depuración</h2>
-        <p>Además, aprenderemos sobre el manejo de excepciones y las buenas prácticas de programación para mantener un
-          código limpio y bien estructurado. La depuración y las pruebas también serán parte esencial de tu arsenal de
-          habilidades para asegurar que tu código funcione sin problemas.</p>
+        <p>
+          Además, aprenderemos sobre el manejo de excepciones y las buenas
+          prácticas de programación para mantener un código limpio y bien
+          estructurado. La depuración y las pruebas también serán parte
+          esencial de tu arsenal de habilidades para asegurar que tu código
+          funcione sin problemas.
+        </p>
 
         <h2>Trabajo Final y Cierre del Curso</h2>
-        <p>Finalmente, llegará el momento culminante de desarrollar tu proyecto final. Tendrás la oportunidad de aplicar
-          todo lo que has aprendido para crear una aplicación web utilizando Flask o Django. ¡El límite está en tu
-          imaginación!</p>
+        <p>
+          Finalmente, llegará el momento culminante de desarrollar tu proyecto
+          final. Tendrás la oportunidad de aplicar todo lo que has aprendido
+          para crear una aplicación web utilizando Flask o Django. ¡El límite
+          está en tu imaginación!
+        </p>
 
-        <p>Este curso te brindará las bases sólidas para seguir explorando y desarrollándote como programador en Python.
-          Estamos seguros de que disfrutarás cada paso del camino y te sentirás motivado para descubrir las infinitas
-          posibilidades que ofrece este lenguaje de programación.</p>
+        <p>
+          Este curso te brindará las bases sólidas para seguir explorando y
+          desarrollándote como programador en Python. Estamos seguros de que
+          disfrutarás cada paso del camino y te sentirás motivado para
+          descubrir las infinitas posibilidades que ofrece este lenguaje de
+          programación.
+        </p>
 
-        <p>Así que no esperes más. ¡Únete a nosotros y sumérgete en el apasionante mundo de Python!</p>
+        <p>
+          Así que no esperes más. ¡Únete a nosotros y sumérgete en el
+          apasionante mundo de Python!
+        </p>
 
         <h3>¡Comencemos este emocionante viaje juntos!</h3>
       </div>
@@ -165,14 +222,13 @@
   </article>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-  crossorigin="anonymous"></script>
-  
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
   <script src="scripts.js"></script>
 </body>
+
 </html>
-
-
