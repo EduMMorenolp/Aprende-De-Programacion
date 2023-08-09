@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <title>HTML y CSS</title>
+</head>
+
+<body>
+  <!-- Barra Navegacion -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="../imag/code-square.svg" alt="LogoProgramacion"><a class="navbar-brand" href="#">Aprende
+        Programacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="htmlycss.html"> HTML y CSS </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../java/java.html"> <span class="java">Java</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../javascript/javascript.html"> JavaScript </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../python/python.html"> Python </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../github/github.html"> Git / GitHub </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobreNosotros.html"> Sobre Nosotros </a>
+          </li>
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Menu de lecciones-->
+  <article>
+    <section class="lateral">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 1: Introducción a HTML
+            </a>
+          </li>
+          <li>
+            <a href="Leccion2.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2: Etiquetas y Elementos Básicos</a>
+          </li>
+          <li>
+            <a href="Leccion3.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3: Listas y Enlaces</a>
+          </li>
+          <li>
+            <a href="Leccion4.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4: Imágenes y Multimedia</a>
+          </li>
+          <li>
+            <a href="Leccion5.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5: Formularios y Entradas</a>
+          </li>
+          <li>
+            <a href="Leccion6.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6: Tablas</a>
+          </li>
+          <li>
+            <a href="Leccion7.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7: Estructura Semántica</a>
+          </li>
+          <li>
+            <a href="Leccion8.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8: CSS Básico</a>
+          </li>
+          <li>
+            <a href="Leccion9.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 9: Diseño Responsivo y Flexbox</a>
+          </li>
+          <li>
+            <a href="Leccion10.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 10: Publicación en la Web</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="central">
+      <div class="content" id="contenido-leccion">
+        <h1>Lección 1: Introducción a HTML</h1>
+        <p>¿Qué es HTML y su importancia?</p>
+        <p>Estructura básica de un documento HTML.</p>
+        <p>Etiquetas, elementos y atributos.</p>
+
+        <h2>Lección 2: Etiquetas y Elementos Básicos</h2>
+        <p>Etiquetas de encabezado: &lt;h1&gt; a &lt;h6&gt;.</p>
+        <p>Párrafos: &lt;p&gt; y &lt;br&gt;.</p>
+        <p>Etiquetas de formato: &lt;strong&gt;, &lt;em&gt;, &lt;u&gt;, &lt;del&gt;, &lt;sup&gt;, &lt;sub&gt;.</p>
+        <p>Comentarios en HTML.</p>
+
+        <h2>Lección 3: Listas y Enlaces</h2>
+        <p>Listas ordenadas (&lt;ol&gt;) y no ordenadas (&lt;ul&gt;).</p>
+        <p>Elementos de lista (&lt;li&gt;).</p>
+        <p>Enlaces (&lt;a&gt;) y atributos href.</p>
+        <p>Abrir enlaces en una nueva ventana (target="_blank").</p>
+
+        <h2>Lección 4: Imágenes y Multimedia</h2>
+        <p>Inserción de imágenes (&lt;img&gt;).</p>
+        <p>Atributos src, alt y width.</p>
+        <p>Incorporación de audio y video (&lt;audio&gt;, &lt;video&gt;).</p>
+
+        <h2>Lección 5: Formularios y Entradas</h2>
+        <p>Creación de formularios (&lt;form&gt;).</p>
+        <p>Campos de entrada de texto (&lt;input type="text"&gt;).</p>
+        <p>Campos de selección (&lt;select&gt;, &lt;option&gt;).</p>
+        <p>Botones (&lt;button&gt;).</p>
+        <p>Validación de formularios básica.</p>
+
+        <h2>Lección 6: Tablas</h2>
+        <p>Creación de tablas (&lt;table&gt;).</p>
+        <p>Filas (&lt;tr&gt;), encabezados de columna (&lt;th&gt;) y celdas (&lt;td&gt;).</p>
+        <p>Combinación de celdas (colspan y rowspan).</p>
+
+        <h2>Lección 7: Estructura Semántica</h2>
+        <p>Etiquetas semánticas: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;,
+          &lt;footer&gt;.</p>
+        <p>Roles en la estructura de una página web.</p>
+
+        <h2>Lección 8: CSS Básico</h2>
+        <p>Introducción a CSS y su importancia.</p>
+        <p>Selectores y propiedades CSS.</p>
+        <p>Estilos en línea (style) y hojas de estilo externas (&lt;link&gt;).</p>
+
+        <h2>Lección 9: Diseño Responsivo y Flexbox</h2>
+        <p>Diseño responsivo y la metaetiqueta viewport.</p>
+        <p>Uso de unidades de medida relativas (em, %).</p>
+        <p>Introducción a Flexbox para diseño flexible.</p>
+
+        <h2>Lección 10: Publicación en la Web</h2>
+        <p>Hospedaje y dominios.</p>
+        <p>Transferencia de archivos a un servidor web.</p>
+        <p>Aspectos básicos de SEO (Optimización para Motores de Búsqueda).</p>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

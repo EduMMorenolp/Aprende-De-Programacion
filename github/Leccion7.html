@@ -8,21 +8,66 @@
 <body>
     <header>
         <h1>Lección 7: Automatización con Acciones de GitHub</h1>
-    </header>
-    <main>
+      </header>
+      <main>
         <section>
-            <h2>Introducción a las Acciones de GitHub</h2>
-            <p>Las Acciones de GitHub son flujos de trabajo automatizados que se activan por eventos, como cambios en el repositorio. Permiten ejecutar tareas específicas automáticamente, como pruebas, construcción y despliegue.</p>
+          <h2>Introducción a las Acciones de GitHub</h2>
+          <p>Las Acciones de GitHub son flujos de trabajo automatizados que se activan por eventos, como cambios en el repositorio. Permiten ejecutar tareas específicas automáticamente, como pruebas, construcción y despliegue.</p>
+          <p>Beneficios de las Acciones de GitHub:</p>
+          <ul>
+            <li>Automatización de procesos repetitivos.</li>
+            <li>Mejora de la calidad del código a través de pruebas automatizadas.</li>
+            <li>Despliegue continuo para entregar actualizaciones rápidamente.</li>
+            <li>Notificaciones y alertas para mantener al equipo informado.</li>
+          </ul>
         </section>
+    
         <section>
-            <h2>Creación de Flujos de Trabajo con YAML</h2>
-            <p>Los flujos de trabajo se definen en archivos YAML en el repositorio. Puedes configurar pasos, acciones y desencadenadores para personalizar la automatización.</p>
+          <h2>Creación de Flujos de Trabajo con YAML</h2>
+          <p>Los flujos de trabajo se definen en archivos YAML en el repositorio. Puedes configurar pasos, acciones y desencadenadores para personalizar la automatización.</p>
+          <p>Ejemplo de definición de flujo de trabajo en un archivo ".github/workflows/main.yml":</p>
+          <pre><code>
+            name: Flujo de Trabajo de Pruebas
+            on:
+              push:
+                branches:
+                  - main
+            jobs:
+              pruebas:
+                runs-on: ubuntu-latest
+                steps:
+                - name: Checkout del Código
+                  uses: actions/checkout@v2
+                - name: Ejecutar Pruebas
+                  run: npm test
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Ejemplos de Automatización</h2>
-            <p>Las Acciones de GitHub pueden automatizar diversas tareas, como ejecutar pruebas automáticamente después de cada confirmación, construir una aplicación y desplegarla en un servidor de pruebas, o notificar a los colaboradores sobre eventos importantes.</p>
+          <h2>Ejemplos de Automatización</h2>
+          <p>Las Acciones de GitHub pueden automatizar diversas tareas, como ejecutar pruebas automáticamente después de cada confirmación, construir una aplicación y desplegarla en un servidor de pruebas, o notificar a los colaboradores sobre eventos importantes.</p>
+          <p>Ejemplo de automatización para construir y desplegar una aplicación:</p>
+          <pre><code>
+            name: Construcción y Despliegue
+            on:
+              push:
+                branches:
+                  - main
+            jobs:
+              construir-desplegar:
+                runs-on: ubuntu-latest
+                steps:
+                - name: Checkout del Código
+                  uses: actions/checkout@v2
+                - name: Instalar Dependencias
+                  run: npm install
+                - name: Construir Aplicación
+                  run: npm run build
+                - name: Desplegar en Servidor de Pruebas
+                  run: ./scripts/desplegar.sh
+          </code></pre>
         </section>
-    </main>
+      </main>
     <footer>
         <p>© 2023 Aprende Programación - Git y GitHub</p>
     </footer>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <!-- Barra Navegacion -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="../imag/code-square.svg" alt="LogoProgramacion"><a class="navbar-brand" href="#">Aprende
+        Programacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/htmlycss.html"> HTML y CSS </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../java/java.html"> <span class="java">Java</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript.html"> JavaScript </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../python/python.html"> Python </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../github/github.html"> Git / GitHub </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobreNosotros.html"> Sobre Nosotros </a>
+          </li>
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Menu de lecciones-->
+  <article>
+    <section class="lateral">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="Leccion01.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 1: Introducción a JavaScript
+            </a>
+          </li>
+          <li>
+            <a href="Leccion02.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2: Variables y Tipos de Datos</a>
+          </li>
+          <li>
+            <a href="Leccion03.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3: Estructuras de Control</a>
+          </li>
+          <li>
+            <a href="Leccion04.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4: Funciones</a>
+          </li>
+          <li>
+            <a href="Leccion05.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5: Arreglos</a>
+          </li>
+          <li>
+            <a href="Leccion06.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6: Objetos y JSON</a>
+          </li>
+          <li>
+            <a href="Leccion07.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7: Eventos y DOM (Document Object Model)</a>
+          </li>
+          <li>
+            <a href="Leccion08.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8: Manipulación de Cadenas y Expresiones Regulares</a>
+          </li>
+          <li>
+            <a href="Leccion09.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 9: AJAX y Fetch API</a>
+          </li>
+          <li>
+            <a href="Leccion10.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 10: Introducción a ES6 y Proyectos Futuros</a>
+          </li>
+          <li>
+            <a href="Leccion11.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 11: Ejercicios Prácticos y Proyecto Final</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="content" id="contenido-leccion">
+      <section>
+        <h2>Lección 1: Introducción a JavaScript</h2>
+        <ul>
+          <li>¿Qué es JavaScript y por qué es importante?</li>
+          <li>Configuración del entorno de desarrollo (navegador, editor de texto).</li>
+          <li>Primer programa en JavaScript: Hola Mundo.</li>
+          <li>Comentarios y sintaxis básica.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 2: Variables y Tipos de Datos</h2>
+        <ul>
+          <li>Declaración de variables y asignación.</li>
+          <li>Tipos de datos: números, cadenas, booleanos, undefined y null.</li>
+          <li>Conversión entre tipos de datos.</li>
+          <li>Operadores básicos: +, -, *, /, %.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 3: Estructuras de Control</h2>
+        <ul>
+          <li>Condiciones: if, else if, else.</li>
+          <li>Operadores de comparación: ==, ===, !=, !==, >, <,>=, <=.< /li>
+          <li>Bucles: for, while, do while.</li>
+          <li>Instrucciones break y continue.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 4: Funciones</h2>
+        <ul>
+          <li>Declaración y llamada de funciones.</li>
+          <li>Parámetros y argumentos.</li>
+          <li>Retorno de valores.</li>
+          <li>Alcance de variables: ámbito global y local.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 5: Arreglos</h2>
+        <ul>
+          <li>Creación y manipulación de arreglos.</li>
+          <li>Acceso a elementos por índice.</li>
+          <li>Métodos de arreglo: push, pop, shift, unshift, slice.</li>
+          <li>Iteración en arreglos con loops y forEach.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 6: Objetos y JSON</h2>
+        <ul>
+          <li>Introducción a objetos y propiedades.</li>
+          <li>Creación y manipulación de objetos.</li>
+          <li>Notación de puntos y corchetes.</li>
+          <li>JSON: formato y uso básico.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 7: Eventos y DOM (Document Object Model)</h2>
+        <ul>
+          <li>Introducción al DOM.</li>
+          <li>Selección de elementos del DOM.</li>
+          <li>Manejo de eventos: click, submit, input.</li>
+          <li>Modificación del contenido y estilo del DOM.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 8: Manipulación de Cadenas y Expresiones Regulares</h2>
+        <ul>
+          <li>Métodos de cadenas: concat, length, indexOf, substring.</li>
+          <li>Expresiones regulares: patrones y búsqueda.</li>
+          <li>Reemplazo y coincidencia de patrones.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 9: AJAX y Fetch API</h2>
+        <ul>
+          <li>Introducción a AJAX y su importancia.</li>
+          <li>Uso de la Fetch API para realizar peticiones HTTP.</li>
+          <li>Trabajo con datos JSON.</li>
+          <li>Control de asincronía con callbacks y promesas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 10: Introducción a ES6 y Proyectos Futuros</h2>
+        <ul>
+          <li>Let y const: alcance de bloque.</li>
+          <li>Arrow functions.</li>
+          <li>Plantillas de cadenas (template literals).</li>
+          <li>Breve introducción a módulos.</li>
+          <li>Ideas para proyectos futuros y recursos de aprendizaje adicionales.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lección 11: Ejercicios Prácticos y Proyecto Final</h2>
+        <h3>Ejercicios de Tarea:</h3>
+        <ol>
+          <li>Crear una función que calcule el área de un triángulo dada su base y altura.</li>
+          <li>Escribir un programa que recorra un arreglo de números y devuelva la suma de los números pares.</li>
+          <li>Crear un formulario HTML con campos de nombre y correo electrónico. Validar que ambos campos estén
+            completos antes de enviar el formulario.</li>
+          <li>Implementar una función que tome un arreglo de palabras y devuelva un nuevo arreglo con las palabras
+            ordenadas alfabéticamente.</li>
+          <li>Construir una calculadora sencilla que realice operaciones de suma, resta, multiplicación y división.</li>
+        </ol>
+        <h3>Proyecto Final: Calculadora Interactiva</h3>
+        <p>Para el proyecto final, te propongo crear una calculadora interactiva en JavaScript. La calculadora debe
+          permitir realizar operaciones básicas como suma, resta, multiplicación y división. Además, puedes agregar
+          funcionalidades avanzadas como cálculos de porcentaje o raíz cuadrada.</p>
+        <p>Organiza la interfaz de usuario utilizando HTML y CSS, y utiliza JavaScript para implementar la lógica de
+          cálculo y la interacción con los botones. Puedes emplear eventos de clic y manipulación del DOM para lograr
+          una experiencia de usuario fluida.</p>
+        <p>Recuerda aplicar los conceptos aprendidos en las lecciones anteriores, como funciones, eventos, manipulación
+          del DOM y programación asíncrona si es necesario.</p>
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 9: Imágenes y Multimedia en HTML</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 9: Imágenes y Multimedia en HTML</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Etiqueta de imagen (&lt;img&gt;)</h2>
+      <p>La etiqueta &lt;img&gt; se utiliza para insertar imágenes en una página web. Se debe proporcionar la ubicación de la imagen en el atributo src y un texto alternativo en el atributo alt:</p>
+      <pre><code>
+        &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Etiqueta de video (&lt;video&gt;)</h2>
+      <p>La etiqueta &lt;video&gt; se utiliza para insertar videos en una página web. Se puede especificar varios formatos de video para garantizar la compatibilidad en diferentes navegadores:</p>
+      <pre><code>
+        &lt;video controls width="640" height="360"&gt;
+          &lt;source src="video.mp4" type="video/mp4"&gt;
+          &lt;source src="video.webm" type="video/webm"&gt;
+          Tu navegador no admite el elemento &lt;video&gt;.
+        &lt;/video&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Etiqueta de audio (&lt;audio&gt;)</h2>
+      <p>La etiqueta &lt;audio&gt; se utiliza para insertar archivos de audio en una página web. Al igual que con los videos, se pueden especificar varios formatos para mejorar la compatibilidad:</p>
+      <pre><code>
+        &lt;audio controls&gt;
+          &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+          &lt;source src="audio.ogg" type="audio/ogg"&gt;
+          Tu navegador no admite el elemento &lt;audio&gt;.
+        &lt;/audio&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

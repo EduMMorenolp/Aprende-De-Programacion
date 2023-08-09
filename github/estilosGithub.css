@@ -1,44 +1,111 @@
-/* Reset de estilos para listas y enlaces */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilos para el menu de Lecciones*/
+
+.lateral, .central {
+  position: absolute;
+}
+
 .sidebar {
+  background-color: #f0f0f0;
+  width: 250px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Estilos para los botones */
+.sidebar ul {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #0366d6; /* Color de enlaces en GitHub */
-}
-
-/* Estilo para la barra lateral */
-.sidebar {
-  background-color: #f6f8fa; /* Color de fondo de la barra lateral en GitHub */
-  width: 250px;
-  height: 100%;
-  top: 60px; /* Ajustar según el alto de tu barra de navegación */
-}
-
-/* Estilo para los elementos de la lista */
-.sidebar ul {
-  padding: 20px;
 }
 
 .sidebar li {
   margin-bottom: 10px;
 }
 
-/* Estilo para enlaces activos */
-.sidebar a.active {
+/* Estilos para el enlace convertido en botón */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.sidebar a:hover {
+  background-color: #9baabb;
+}
+
+/* Estilo para el botón activo */
+.sidebar a:active {
+  background-color: #0056b3;
   font-weight: bold;
 }
 
-/* Cambio de estilo al pasar el mouse sobre los enlaces */
-.sidebar a:hover {
-  text-decoration: underline;
+/*Estilos para el contenido de las lecciones*/
+
+.content {
+  right: 0;
+  top: 0;
+  float: right;
+  display: block;
+  margin-left: 280px;
 }
 
-/* Estilo para el contenido principal */
-.container {
-  margin-left: 260px; /* Ancho de la barra lateral + margen */
-  padding: 20px;
+/*Estilos para el pie de página*/
+
+footer {
+  position: sticky;
+  bottom: auto;
+}
+
+/*Colores para el nav-bar*/
+
+/*HTML y CSS*/
+.nav-item:nth-child(2) .nav-link:hover {
+  background: linear-gradient(90deg, #E34F26 50%, #1572B6 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Java*/
+.nav-item:nth-child(3) .nav-link:hover {
+  background: linear-gradient(90deg, #F00 50%, #00F 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*JavaScript*/
+.nav-item:nth-child(4) .nav-link:hover {
+  background: linear-gradient(90deg, #F7DF1E 50%, #F7DF1E 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Python*/
+.nav-item:nth-child(5) .nav-link:hover {
+  background: linear-gradient(90deg, #306998 50%, #306998 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Git y GitHub*/
+.nav-item:nth-child(6) .nav-link:hover {
+  background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

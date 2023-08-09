@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 4: Funciones</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 4: Funciones</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Declaración y llamada de funciones</h2>
+      <p>Las funciones son bloques de código que realizan tareas específicas. Se pueden declarar y luego llamar en cualquier parte del programa.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Declaración de función
+          function saludar() {
+            console.log("¡Hola! Bienvenido.");
+          }
+
+          // Llamada de función
+          saludar();
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Parámetros y argumentos</h2>
+      <p>Las funciones pueden aceptar parámetros (valores de entrada) que se utilizan dentro del bloque de código.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Función con parámetro
+          function saludar(nombre) {
+            console.log("¡Hola, " + nombre + "! Bienvenido.");
+          }
+
+          // Llamada de función con argumento
+          saludar("Juan");
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Retorno de valores</h2>
+      <p>Las funciones pueden devolver un valor utilizando la palabra clave <code>return</code>.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Función que devuelve la suma de dos números
+          function sumar(a, b) {
+            return a + b;
+          }
+
+          var resultado = sumar(5, 3);
+          console.log("La suma es: " + resultado);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Alcance de variables: ámbito global y local</h2>
+      <p>Las variables pueden tener ámbito global (accesibles en todo el programa) o ámbito local (accesibles solo dentro de la función en la que se definen).</p>
+      <pre><code>
+        &lt;script&gt;
+          var global = "Variable global";
+
+          function miFuncion() {
+            var local = "Variable local";
+            console.log(global); // Acceso a variable global
+          }
+
+          miFuncion();
+          console.log(local); // Error: local no definida fuera de la función
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

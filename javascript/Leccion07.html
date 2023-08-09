@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 7: Eventos y DOM</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 7: Eventos y DOM</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introducción al DOM (Document Object Model)</h2>
+      <p>El DOM es una representación en memoria de la estructura de un documento HTML. Permite acceder y manipular elementos en una página web.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Acceso a un elemento por su id
+          var titulo = document.getElementById("titulo");
+
+          // Modificar el contenido
+          titulo.textContent = "Bienvenido a la Lección 7";
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Selección de elementos del DOM</h2>
+      <p>Es posible seleccionar elementos del DOM utilizando diferentes métodos, como <code>getElementById</code>, <code>querySelector</code> y <code>querySelectorAll</code>.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Selección por id
+          var encabezado = document.getElementById("encabezado");
+
+          // Selección por etiqueta
+          var parrafos = document.querySelectorAll("p");
+
+          // Selección por clase
+          var elementosClase = document.getElementsByClassName("mi-clase");
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Manejo de eventos: click, submit, input</h2>
+      <p>Los eventos son acciones que ocurren en la página web, como hacer clic en un botón o enviar un formulario. Se pueden manejar utilizando JavaScript.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Manejo de evento click
+          var boton = document.getElementById("mi-boton");
+          boton.addEventListener("click", function() {
+            console.log("Se hizo clic en el botón");
+          });
+
+          // Manejo de evento submit
+          var formulario = document.getElementById("mi-formulario");
+          formulario.addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            console.log("Formulario enviado");
+          });
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Modificación del contenido y estilo del DOM</h2>
+      <p>JavaScript permite modificar el contenido y estilo de los elementos del DOM.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Modificar contenido
+          var parrafo = document.getElementById("mi-parrafo");
+          parrafo.textContent = "Nuevo contenido del párrafo";
+
+          // Modificar estilo
+          var elemento = document.getElementById("mi-elemento");
+          elemento.style.color = "blue";
+          elemento.style.fontSize = "16px";
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

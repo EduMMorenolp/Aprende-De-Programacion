@@ -1,39 +1,80 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para los bloques de características */
-  .feature {
-    text-align: center;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature h2 {
-    color: #333;
-  }
-  
-  .feature p {
-    color: #555;
-  }
-  
-  .feature ul {
-    text-align: left;
-    list-style: disc;
-    margin-left: 20px;
-    color: #555;
-  }
-  
-  /* Estilos para el pie de página */
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #777;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para los bloques de características */
+.feature {
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+  color: #333;
+}
+
+.feature p {
+  color: #555;
+}
+
+.feature ul {
+  text-align: left;
+  list-style: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+/*Colores para el nav-bar*/
+
+/*HTML y CSS*/
+.nav-item:nth-child(2) .nav-link:hover {
+  background: linear-gradient(90deg, #E34F26 50%, #1572B6 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Java*/
+.nav-item:nth-child(3) .nav-link:hover {
+  background: linear-gradient(90deg, #F00 50%, #00F 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*JavaScript*/
+.nav-item:nth-child(4) .nav-link:hover {
+  background: linear-gradient(90deg, #F7DF1E 50%, #F7DF1E 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Python*/
+.nav-item:nth-child(5) .nav-link:hover {
+  background: linear-gradient(90deg, #306998 50%, #306998 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Git y GitHub*/
+.nav-item:nth-child(6) .nav-link:hover {
+  background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

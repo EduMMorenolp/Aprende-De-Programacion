@@ -7,31 +7,70 @@
 </head>
 <body>
     <header>
-        <h1>Lección 2: Fundamentos de Git</h1>
-    </header>
-    <main>
+        <h1>Lección 2: Fundamentos de Git y GitHub</h1>
+      </header>
+      <main>
         <section>
-            <h2>Ciclo de Vida de los Archivos en Git</h2>
-            <p>En Git, los archivos pasan por tres etapas: Working Directory, Staging Area y Repository. Esto permite controlar con precisión qué cambios se registrarán en la historia del proyecto.</p>
+          <h2>Ciclo de Vida de los Archivos en Git</h2>
+          <p>En Git, los archivos pasan por tres etapas: Working Directory, Staging Area y Repository. Esto permite controlar con precisión qué cambios se registrarán en la historia del proyecto.</p>
+          <pre><code>
+            git add archivo.js       # Agregar cambios al Staging Area
+            git commit -m "Mensaje"  # Guardar cambios en el Repositorio con un mensaje descriptivo
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Comandos Básicos de Git</h2>
-            <ul>
-                <li><code>git add</code>: Agrega cambios al Staging Area.</li>
-                <li><code>git commit</code>: Guarda los cambios en el Repositorio con un mensaje descriptivo.</li>
-                <li><code>git status</code>: Muestra el estado actual de los archivos en el Working Directory y Staging Area.</li>
-                <li><code>git log</code>: Muestra el historial de commits en el Repositorio.</li>
-            </ul>
+          <h2>Comandos Básicos de Git</h2>
+          <ul>
+            <li><code>git add</code>: Agrega cambios al Staging Area.</li>
+            <li><code>git commit</code>: Guarda los cambios en el Repositorio con un mensaje descriptivo.</li>
+            <li><code>git status</code>: Muestra el estado actual de los archivos en el Working Directory y Staging Area.</li>
+            <li><code>git log</code>: Muestra el historial de commits en el Repositorio.</li>
+          </ul>
+          <p>Ejemplo de uso:</p>
+          <pre><code>
+            git add archivo.js
+            git commit -m "Agrega nueva función"
+            git status
+            git log
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Uso de Ramas (Branches)</h2>
-            <p>Las ramas permiten trabajar en diferentes características o correcciones de errores sin afectar la rama principal (por lo general, "main" o "master"). Esto mejora la organización y facilita la colaboración.</p>
+          <h2>Uso de Ramas (Branches)</h2>
+          <p>Las ramas permiten trabajar en diferentes características o correcciones de errores sin afectar la rama principal (por lo general, "main" o "master"). Esto mejora la organización y facilita la colaboración.</p>
+          <pre><code>
+            git branch nueva-caracteristica  # Crear una nueva rama
+            git checkout nueva-caracteristica  # Cambiar a la nueva rama
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Fusionar Cambios con git merge</h2>
-            <p>El comando <code>git merge</code> se utiliza para combinar cambios de una rama a otra. Esto es útil para incorporar nuevas características o correcciones de errores en la rama principal.</p>
+          <h2>Fusionar Cambios con git merge</h2>
+          <p>El comando <code>git merge</code> se utiliza para combinar cambios de una rama a otra. Esto es útil para incorporar nuevas características o correcciones de errores en la rama principal.</p>
+          <pre><code>
+            git checkout main  # Cambiar a la rama principal
+            git merge nueva-caracteristica  # Fusionar los cambios de la nueva rama a la principal
+          </code></pre>
         </section>
-    </main>
+    
+        <section>
+          <h2>Colaboración con GitHub</h2>
+          <p>GitHub es una plataforma en línea que permite alojar y colaborar en proyectos Git. Facilita la colaboración remota, el seguimiento de problemas y la revisión de código.</p>
+          <ul>
+            <li>Crear un repositorio en GitHub.</li>
+            <li>Conectar el repositorio local con el remoto: <code>git remote add origin URL</code>.</li>
+            <li>Subir cambios al repositorio remoto: <code>git push origin main</code>.</li>
+            <li>Clonar un repositorio remoto: <code>git clone URL</code>.</li>
+          </ul>
+          <p>Ejemplo:</p>
+          <pre><code>
+            git remote add origin https://github.com/tu-usuario/mi-repositorio.git
+            git push origin main
+            git clone https://github.com/tu-usuario/mi-repositorio.git
+          </code></pre>
+        </section>
+      </main>
     <footer>
         <p>© 2023 Aprende Programación - Git y GitHub</p>
     </footer>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 2: Variables y Tipos de Datos</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 2: Variables y Tipos de Datos</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Declaración de variables y asignación</h2>
+      <p>En JavaScript, las variables se utilizan para almacenar y manipular datos. Se declaran con las palabras clave <code>var</code>, <code>let</code> o <code>const</code>.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Declaración de variables
+          var edad;
+          let nombre;
+
+          // Asignación de valores
+          edad = 25;
+          nombre = "Juan";
+
+          console.log(nombre + " tiene " + edad + " años.");
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Tipos de datos</h2>
+      <p>En JavaScript, existen varios tipos de datos, incluyendo números, cadenas, booleanos, undefined y null.</p>
+      <pre><code>
+        &lt;script&gt;
+          var numero = 42; // número entero
+          var decimal = 3.14; // número decimal
+          var nombre = "María"; // cadena de texto
+          var esMayor = true; // valor booleano
+          var noDefinido = undefined; // valor no definido
+          var nulo = null; // valor nulo
+
+          console.log(typeof numero);
+          console.log(typeof nombre);
+          console.log(typeof esMayor);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Conversión entre tipos de datos</h2>
+      <p>Es posible convertir entre diferentes tipos de datos utilizando funciones como <code>parseInt</code> y <code>parseFloat</code>.</p>
+      <pre><code>
+        &lt;script&gt;
+          var cadenaNumero = "25";
+          var numero = parseInt(cadenaNumero);
+          
+          console.log(numero + 5); // 30
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Operadores básicos</h2>
+      <p>Los operadores se utilizan para realizar operaciones matemáticas y de comparación.</p>
+      <pre><code>
+        &lt;script&gt;
+          var suma = 10 + 5;
+          var resta = 20 - 8;
+          var multiplicacion = 3 * 4;
+          var division = 15 / 3;
+          var modulo = 7 % 2; // resto de la división
+
+          console.log(suma, resta, multiplicacion, division, modulo);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>
