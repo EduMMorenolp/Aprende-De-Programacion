@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 7: Manipulación de Archivos y Excepciones Avanzadas</h1>
+
+    <h2>Manipulación de Archivos</h2>
+    <p>En Java, puedes trabajar con archivos para leer y escribir datos. Aquí hay ejemplos de cómo leer y escribir en
+        archivos:</p>
+    <pre>
+        <code>
+import java.io.*;
+
+public class Archivos {
+    public static void main(String[] args) {
+        try {
+            // Escribir en un archivo
+            FileWriter archivo = new FileWriter("miarchivo.txt");
+            archivo.write("Hola, mundo!");
+            archivo.close();
+            
+            // Leer de un archivo
+            FileReader lector = new FileReader("miarchivo.txt");
+            int caracter;
+            while ((caracter = lector.read()) != -1) {
+                System.out.print((char) caracter);
+            }
+            lector.close();
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Excepciones Personalizadas</h2>
+    <p>Puedes crear tus propias excepciones personalizadas para manejar situaciones específicas en tus programas:</p>
+    <pre>
+        <code>
+class MiExcepcion extends Exception {
+    public MiExcepcion(String mensaje) {
+        super(mensaje);
+    }
+}
+
+public class ExcepcionesPersonalizadas {
+    public static void main(String[] args) {
+        try {
+            int resultado = dividir(10, 0);
+            System.out.println("Resultado: " + resultado);
+        } catch (MiExcepcion e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+    
+    static int dividir(int a, int b) throws MiExcepcion {
+        if (b == 0) {
+            throw new MiExcepcion("División por cero no permitida");
+        }
+        return a / b;
+    }
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 7 y tienes una comprensión sólida de cómo manipular archivos en Java y cómo
+        manejar excepciones avanzadas, incluyendo la creación de excepciones personalizadas.</p>
+
+</body>
+
+</html>
