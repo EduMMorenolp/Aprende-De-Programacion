@@ -5,6 +5,13 @@ body {
   padding: 0;
 }
 
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #aaa;
+  border-radius: 0 0 .8rem .8rem;
+}
+
 /* Estilos para los bloques de características */
 .feature {
   text-align: center;

@@ -1,21 +1,35 @@
 body {
+  background: linear-gradient(90deg, #F00, #00F);
+  color: #FFF;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #aaa;
+  border-radius: 0 0 .8rem .8rem;
+}
+
 /*Estilos para el menu de Lecciones*/
 
-.lateral, .central {
+.lateral{
   position: absolute;
 }
 
+#central {
+  color: #EEE;
+}
+
 .sidebar {
-  background: linear-gradient(90deg, #F00, #00F);
+  background: linear-gradient(90deg, #00F, #F00);
   width: 250px;
   padding: 20px;
   overflow-y: auto;
+  border-radius: 0 .8rem .8rem 0;
 }
 
 /* Estilos para los botones */
@@ -33,7 +47,6 @@ body {
 .sidebar a {
   display: block;
   text-decoration: none;
-  color: #333;
   padding: 10px;
   background-color: #007bff;
   color: #fff;

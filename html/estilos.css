@@ -1,3 +1,10 @@
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #aaa;
+  border-radius: 0 0 .8rem .8rem;
+}
+
 /*Colores para el nav-bar*/
 
 /*HTML y CSS*/
