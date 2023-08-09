@@ -12,7 +12,7 @@ body {
 }
 
 .sidebar {
-  background-color: #f0f0f0;
+  background: linear-gradient(90deg, #F00, #00F);
   width: 250px;
   padding: 20px;
   overflow-y: auto;
@@ -42,7 +42,7 @@ body {
 
 /* Efecto al pasar el mouse sobre el botón */
 .sidebar a:hover {
-  background-color: #9baabb;
+  background: transparent;
 }
 
 /* Estilo para el botón activo */
