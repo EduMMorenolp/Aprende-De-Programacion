@@ -8,25 +8,48 @@
 <body>
     <header>
         <h1>Lección 3: Trabajo Colaborativo con Git</h1>
-    </header>
-    <main>
+      </header>
+      <main>
         <section>
-            <h2>Clonar Repositorios Remotos</h2>
-            <p>Puedes clonar un repositorio existente desde un servidor remoto (por ejemplo, GitHub) para trabajar en una copia local. Esto es útil para colaborar con otros desarrolladores.</p>
+          <h2>Clonar Repositorios Remotos</h2>
+          <p>Puedes clonar un repositorio existente desde un servidor remoto (por ejemplo, GitHub) para trabajar en una copia local. Esto es útil para colaborar con otros desarrolladores.</p>
+          <pre><code>
+            git clone URL_del_repositorio  # Clonar un repositorio remoto
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Sincronización con git pull y git push</h2>
-            <p>Los comandos <code>git pull</code> y <code>git push</code> permiten sincronizar los cambios entre tu repositorio local y el repositorio remoto. <code>git pull</code> trae los cambios del repositorio remoto y los fusiona en tu rama local, mientras que <code>git push</code> envía tus cambios locales al repositorio remoto.</p>
+          <h2>Sincronización con git pull y git push</h2>
+          <p>Los comandos <code>git pull</code> y <code>git push</code> permiten sincronizar los cambios entre tu repositorio local y el repositorio remoto. <code>git pull</code> trae los cambios del repositorio remoto y los fusiona en tu rama local, mientras que <code>git push</code> envía tus cambios locales al repositorio remoto.</p>
+          <pre><code>
+            git pull origin main  # Traer y fusionar cambios del repositorio remoto
+            git push origin main  # Enviar cambios locales al repositorio remoto
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Resolución de Conflictos en Fusiones y Actualizaciones</h2>
-            <p>En situaciones en las que dos o más personas han realizado cambios en el mismo archivo, pueden surgir conflictos. Git te ayudará a resolver estos conflictos manualmente para garantizar una fusión exitosa.</p>
+          <h2>Resolución de Conflictos en Fusiones y Actualizaciones</h2>
+          <p>En situaciones en las que dos o más personas han realizado cambios en el mismo archivo, pueden surgir conflictos. Git te ayudará a resolver estos conflictos manualmente para garantizar una fusión exitosa.</p>
+          <p>Ejemplo de resolución de conflictos:</p>
+          <pre><code>
+            <<<<<<< HEAD
+            // Cambios hechos en tu rama local
+            =======
+            // Cambios hechos en otra rama remota
+            >>>>>>> branch-remoto
+            // Resolver los conflictos y eliminar las marcas <<<<<<<, ======, >>>>>>>
+          </code></pre>
         </section>
+    
         <section>
-            <h2>Ramas Remotas y Seguimiento de Ramas</h2>
-            <p>Puedes hacer un seguimiento de las ramas remotas y trabajar en ellas directamente. El comando <code>git checkout</code> con la opción <code>-b</code> te permite crear y cambiar a una rama nueva en un solo paso.</p>
+          <h2>Ramas Remotas y Seguimiento de Ramas</h2>
+          <p>Puedes hacer un seguimiento de las ramas remotas y trabajar en ellas directamente. El comando <code>git checkout</code> con la opción <code>-b</code> te permite crear y cambiar a una rama nueva en un solo paso.</p>
+          <pre><code>
+            git branch -r  # Mostrar ramas remotas
+            git checkout -b nueva-rama origin/nueva-rama  # Crear y cambiar a una nueva rama remota
+          </code></pre>
         </section>
-    </main>
+      </main>
     <footer>
         <p>© 2023 Aprende Programación - Git y GitHub</p>
     </footer>

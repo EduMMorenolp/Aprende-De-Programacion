@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 6: Objetos y JSON</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 6: Objetos y JSON</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introducción a objetos y propiedades</h2>
+      <p>Los objetos son estructuras de datos que agrupan propiedades relacionadas. Las propiedades se definen con pares clave-valor.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Creación de un objeto
+          var persona = {
+            nombre: "Juan",
+            edad: 30,
+            ocupacion: "Desarrollador"
+          };
+
+          // Acceso a propiedades
+          console.log(persona.nombre); // Juan
+          console.log(persona.edad);   // 30
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Creación y manipulación de objetos</h2>
+      <p>Es posible agregar, modificar y eliminar propiedades en un objeto.</p>
+      <pre><code>
+        &lt;script&gt;
+          var libro = {
+            titulo: "El Gran Gatsby",
+            autor: "F. Scott Fitzgerald",
+            publicado: 1925
+          };
+
+          // Agregar una propiedad
+          libro.genero = "Novela";
+
+          // Modificar una propiedad
+          libro.publicado = 1922;
+
+          // Eliminar una propiedad
+          delete libro.autor;
+
+          console.log(libro);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Notación de puntos y corchetes</h2>
+      <p>Las propiedades de un objeto se pueden acceder utilizando notación de puntos o corchetes.</p>
+      <pre><code>
+        &lt;script&gt;
+          var persona = {
+            nombre: "María",
+            edad: 25
+          };
+
+          console.log(persona.nombre);     // Notación de puntos
+          console.log(persona["edad"]);    // Notación de corchetes
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>JSON: formato y uso básico</h2>
+      <p>JSON (JavaScript Object Notation) es un formato de intercambio de datos muy utilizado. Se parece mucho a la sintaxis de los objetos en JavaScript.</p>
+      <pre><code>
+        &lt;script&gt;
+          var producto = {
+            nombre: "Camiseta",
+            precio: 25.99,
+            disponible: true
+          };
+
+          // Convertir objeto a JSON
+          var productoJSON = JSON.stringify(producto);
+
+          console.log(productoJSON);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>
