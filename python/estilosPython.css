@@ -54,8 +54,6 @@ body {
 /*Estilos para el contenido de las lecciones*/
 
 .content {
-  right: 0;
-  top: 0;
   float: left;
   display: block;
   margin-left: 280px;
