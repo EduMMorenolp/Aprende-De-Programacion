@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 3: Estructuras de Control</h1>
+
+    <h2>Condiciones y Sentencias if</h2>
+    <p>Las estructuras de control te permiten tomar decisiones en tu programa. La sentencia <code>if</code> se utiliza
+        para ejecutar un bloque de código si una condición es verdadera:</p>
+    <pre>
+        <code>
+int edad = 20;
+if (edad >= 18) {
+    System.out.println("Eres mayor de edad");
+} else {
+    System.out.println("Eres menor de edad");
+}
+        </code>
+    </pre>
+
+    <h2>Bucles: for, while y do-while</h2>
+    <p>Los bucles permiten repetir un bloque de código varias veces. Aquí hay ejemplos de bucles <code>for</code>,
+        <code>while</code> y <code>do-while</code>:</p>
+    <pre>
+        <code>
+// Bucle for
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteración " + i);
+}
+
+// Bucle while
+int contador = 0;
+while (contador < 3) {
+    System.out.println("Contador: " + contador);
+    contador++;
+}
+
+// Bucle do-while
+int num = 1;
+do {
+    System.out.println("Número: " + num);
+    num++;
+} while (num <= 5);
+        </code>
+    </pre>
+
+    <h2>Switch y Case</h2>
+    <p>La sentencia <code>switch</code> te permite manejar múltiples casos de una variable:</p>
+    <pre>
+        <code>
+int diaSemana = 4;
+switch (diaSemana) {
+    case 1:
+        System.out.println("Lunes");
+        break;
+    case 2:
+        System.out.println("Martes");
+        break;
+    // ... otros casos ...
+    default:
+        System.out.println("Día desconocido");
+}
+        </code>
+    </pre>
+
+    <h2>Manejo de Excepciones</h2>
+    <p>Las excepciones son errores que pueden ocurrir durante la ejecución de un programa. Aquí hay un ejemplo de cómo
+        manejar excepciones:</p>
+    <pre>
+        <code>
+try {
+    int resultado = 10 / 0; // División por cero
+} catch (ArithmeticException e) {
+    System.out.println("Error: " + e.getMessage());
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 3 y tienes una comprensión sólida de las estructuras de control en Java,
+        incluyendo condiciones, bucles y manejo de excepciones.</p>
+
+</body>
+
+</html>

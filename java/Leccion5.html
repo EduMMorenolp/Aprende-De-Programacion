@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 5: Programación Orientada a Objetos (POO) - Parte 1</h1>
+
+    <h2>Clases y Objetos</h2>
+    <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en el concepto de
+        "objetos". Un objeto es una instancia de una clase, que define sus propiedades y comportamientos. Aquí hay un
+        ejemplo de cómo definir una clase y crear objetos:</p>
+    <pre>
+        <code>
+public class Persona {
+    String nombre;
+    int edad;
+    
+    void saludar() {
+        System.out.println("Hola, mi nombre es " + nombre);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto Persona
+        Persona persona1 = new Persona();
+        persona1.nombre = "Juan";
+        persona1.edad = 25;
+        
+        // Llamar al método saludar()
+        persona1.saludar();
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Atributos y Métodos</h2>
+    <p>Las clases pueden tener atributos (variables) y métodos (funciones) que definen su comportamiento. Aquí hay un
+        ejemplo:</p>
+    <pre>
+        <code>
+public class Coche {
+    String marca;
+    String modelo;
+    
+    void arrancar() {
+        System.out.println("El coche está arrancando");
+    }
+    
+    void frenar() {
+        System.out.println("El coche está frenando");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.marca = "Toyota";
+        miCoche.modelo = "Corolla";
+        
+        miCoche.arrancar();
+        miCoche.frenar();
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Encapsulación y Visibilidad</h2>
+    <p>La encapsulación es un concepto clave en POO que implica ocultar los detalles internos de una clase y exponer
+        solo lo necesario. Puedes utilizar modificadores de acceso como <code>public</code>, <code>private</code> y
+        <code>protected</code> para controlar la visibilidad de atributos y métodos:</p>
+    <pre>
+        <code>
+public class CuentaBancaria {
+    private double saldo;
+    
+    public void depositar(double cantidad) {
+        saldo += cantidad;
+    }
+    
+    public double obtenerSaldo() {
+        return saldo;
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Constructores</h2>
+    <p>Los constructores son métodos especiales que se utilizan para inicializar objetos al crearlos. Puedes definir
+        constructores personalizados en una clase:</p>
+    <pre>
+        <code>
+public class Libro {
+    String titulo;
+    String autor;
+    
+    // Constructor
+    public Libro(String t, String a) {
+        titulo = t;
+        autor = a;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Libro miLibro = new Libro("El Principito", "Antoine de Saint-Exupéry");
+        System.out.println("Libro: " + miLibro.titulo + " - Autor: " + miLibro.autor);
+    }
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 5 y tienes una comprensión sólida de los conceptos básicos de la Programación
+        Orientada a Objetos (POO) en Java, incluyendo clases, objetos, atributos, métodos, encapsulación y
+        constructores.</p>
+</body>
+</html>

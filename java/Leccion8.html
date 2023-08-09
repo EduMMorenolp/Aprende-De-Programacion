@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 8: Introducción a Java Avanzado y Bibliotecas</h1>
+
+    <h2>Programación Funcional en Java</h2>
+    <p>Java ofrece características de programación funcional, como expresiones lambda y streams. Aquí hay un ejemplo de
+        cómo utilizar expresiones lambda para procesar una lista de números:</p>
+    <pre>
+        <code>
+import java.util.Arrays;
+import java.util.List;
+
+public class ProgramacionFuncional {
+    public static void main(String[] args) {
+        List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5);
+        
+        numeros.forEach(numero -> System.out.println(numero * 2));
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Bibliotecas y Frameworks</h2>
+    <p>Java tiene una amplia variedad de bibliotecas y frameworks que te permiten acelerar el desarrollo de
+        aplicaciones. Algunos ejemplos populares son:</p>
+    <ul>
+        <li><a href="https://spring.io/" target="_blank">Spring Framework</a> para desarrollo de aplicaciones
+            empresariales.</li>
+        <li><a href="https://hibernate.org/" target="_blank">Hibernate</a> para mapeo objeto-relacional.</li>
+        <li><a href="https://maven.apache.org/" target="_blank">Apache Maven</a> para la gestión de dependencias y
+            construcción de proyectos.</li>
+    </ul>
+
+    <h2>Programación Multihilo</h2>
+    <p>Java soporta la programación multihilo para ejecutar tareas en paralelo. Aquí hay un ejemplo de cómo crear y
+        ejecutar hilos:</p>
+    <pre>
+        <code>
+public class ProgramacionMultihilo {
+    public static void main(String[] args) {
+        Runnable tarea = () -> {
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Tarea en ejecución: " + i);
+            }
+        };
+        
+        Thread hilo1 = new Thread(tarea);
+        Thread hilo2 = new Thread(tarea);
+        
+        hilo1.start();
+        hilo2.start();
+    }
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 8 y tienes una comprensión sólida de conceptos avanzados en Java, incluyendo
+        programación funcional, uso de bibliotecas y frameworks, así como programación multihilo.</p>
+
+</body>
+
+</html>

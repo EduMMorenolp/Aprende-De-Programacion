@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css">
 
-    <title>Java</title>
-  </head>
-  <body>
-    <!-- Barra Navegacion -->
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <title>Java</title>
+</head>
+
+<body>
+  <!-- Barra Navegacion -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <img src="../imag/code-square.svg" alt="LogoProgramacion"><a class="navbar-brand" href="#">Aprende Programacion</a>
@@ -71,13 +67,206 @@
       </div>
     </div>
   </nav>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  <!--Menu de lecciones-->
+  <article>
+    <section class="lateral">
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="Leccion1.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 1 - Introduccion
+            </a>
+          </li>
+          <li>
+            <a href="Leccion2.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 2 - Sintaxis y
+              Variables</a>
+          </li>
+          <li>
+            <a href="Leccion3.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 3 - Estructuras de
+              Control</a>
+          </li>
+          <li>
+            <a href="Leccion4.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 4 - Funciones y
+              Métodos</a>
+          </li>
+          <li>
+            <a href="Leccion5.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 5 - Programación
+              Orientada a Objetos (POO) - Parte 1</a>
+          </li>
+          <li>
+            <a href="Leccion6.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 6 - Programación
+              Orientada a Objetos (POO) - Parte 2</a>
+          </li>
+          <li>
+            <a href="Leccion7.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 7 - Manipulación de
+              Archivos y Excepciones Avanzadas</a>
+          </li>
+          <li>
+            <a href="Leccion8.html" class="leccion-link" onclick="cargarLeccion(event)">Lección 8 - Introducción a Java
+              Avanzado y Bibliotecas</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="central">
+      <div class="content" id="contenido-leccion">
+        <h1>
+          ¡Bienvenido al Curso de Java: Aprende Programación desde Cero!
+        </h1>
+
+        <p>
+          ¿Estás preparado para adentrarte en un emocionante viaje al mundo de la programación con Java? Este curso te
+          brindará los fundamentos esenciales y las herramientas necesarias para convertirte en un competente
+          desarrollador Java.
+        </p>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 1: Introducción a Java</h2>
+          </div>
+          <div class="contenido-leccion">
+            En esta lección, te introducirás en el mundo de Java. Aprenderás sobre la historia y el propósito de Java, cómo configurar tu entorno de desarrollo y escribir tu primer programa "Hola, Mundo!" en Java.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Historia y propósito de Java</li>
+              <li>Instalación del entorno de desarrollo</li>
+              <li>Configuración del entorno</li>
+              <li>Primer programa en Java: "Hola, Mundo!"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 2: Sintaxis y Variables</h2>
+          </div>
+          <div class="contenido-leccion">
+            En esta lección, explorarás la sintaxis básica de Java y cómo trabajar con variables. Aprenderás a declarar variables, realizar operaciones y manejar la entrada y salida de datos en programas Java.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Sintaxis básica de Java</li>
+              <li>Declaración y tipos de variables</li>
+              <li>Operadores y expresiones</li>
+              <li>Entrada y salida de datos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 3: Estructuras de Control</h2>
+          </div>
+          <div class="contenido-leccion">
+            Aquí te sumergirás en las estructuras de control de Java. Aprenderás a tomar decisiones utilizando sentencias if, crear bucles con for, while y do-while, y manejar situaciones específicas con la sentencia switch. También te adentrarás en el manejo de excepciones para lidiar con errores en tus programas.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Condiciones y sentencias if</li>
+              <li>Bucles: for, while, do-while</li>
+              <li>Switch y case</li>
+              <li>Manejo de excepciones</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 4: Funciones y Métodos</h2>
+          </div>
+          <div class="contenido-leccion">
+            En esta lección, explorarás las funciones y métodos en Java. Aprenderás a definir, llamar y pasar argumentos a funciones. Además, descubrirás cómo los métodos pueden retornar valores y cómo las variables se comportan en diferentes ámbitos.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Definición y llamada de funciones</li>
+              <li>Parámetros y argumentos</li>
+              <li>Retorno de valores</li>
+              <li>Ámbito de variables</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 5: Programación Orientada a Objetos (POO) - Parte 1</h2>
+          </div>
+          <div class="contenido-leccion">
+            Aquí ingresarás al mundo de la Programación Orientada a Objetos (POO). Aprenderás sobre la creación de clases y objetos, cómo definir atributos y métodos, y cómo encapsular la funcionalidad. También explorarás el concepto de constructores.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Clases y objetos</li>
+              <li>Atributos y métodos</li>
+              <li>Encapsulación y visibilidad</li>
+              <li>Constructores</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 6: Programación Orientada a Objetos (POO) - Parte 2</h2>
+          </div>
+          <div class="contenido-leccion">
+            En esta lección, profundizarás en la POO. Explorarás cómo crear jerarquías de clases utilizando la herencia, cómo lograr polimorfismo mediante interfaces y métodos abstractos, y cómo organizar tu código en paquetes.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Herencia y superclase</li>
+              <li>Polimorfismo y interfaces</li>
+              <li>Métodos abstractos</li>
+              <li>Paquetes y organización del código</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 7: Manipulación de Archivos y Excepciones Avanzadas</h2>
+          </div>
+          <div class="contenido-leccion">
+            Aquí te sumergirás en la manipulación de archivos en Java, aprendiendo a leer y escribir datos en archivos. También explorarás cómo manejar excepciones de manera más avanzada, incluyendo la creación de excepciones personalizadas.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Lectura y escritura de archivos</li>
+              <li>Streams y buffers</li>
+              <li>Excepciones personalizadas</li>
+              <li>Manejo de excepciones múltiples</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="leccion">
+          <div class="titulo-leccion">
+            <h2>Lección 8: Introducción a Java Avanzado y Bibliotecas</h2>
+          </div>
+          <div class="contenido-leccion">
+            En la última lección, explorarás conceptos avanzados de Java. Aprenderás sobre enumeraciones y tipos genéricos, y cómo trabajar con colecciones como listas, conjuntos y mapas. También se te introducirá a los hilos (Threads) para manejar la concurrencia y cómo utilizar bibliotecas externas en tus proyectos.
+            <br /><br />
+            Contenido:
+            <ul>
+              <li>Enumeraciones y tipos genéricos</li>
+              <li>Colecciones: Listas, Conjuntos, Mapas</li>
+              <li>Introducción a hilos (Threads)</li>
+              <li>Uso de bibliotecas externas</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-  </body>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
