@@ -1,3 +1,10 @@
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #aaa;
+  border-radius: 0 0 .8rem .8rem;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
