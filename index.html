@@ -50,13 +50,80 @@
             <a class="nav-link active" href="sobreNosotros.html"> Sobre Nosotros </a>
           </li>
           <li class="nav-item dropdown">
-             <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Busqueda</button>
-        </form> 
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Busqueda</button>
+            </form>
+          </li>
       </div>
     </div>
   </nav>
+
+  <!-- FORMULARIO Cuenta -->
+
+  <div class="container feature cuenta">
+    <h2>Crear una cuenta</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal">
+      Registrarse
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Iniciar Sesión
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registroModalLabel">Registro de Cuenta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form action="procesar_registro.php" method="POST">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal de Inicio de Sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form action="procesar_inicio_sesion.php" method="POST">
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="contrasena" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <!-- Index Principal -->
   <section class="features">
