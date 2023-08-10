@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosLecciones.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 2: Sintaxis y Variables</h1>
+
+    <h2>Sintaxis Básica de Java</h2>
+    <p>La sintaxis en Java se refiere a la estructura y reglas que debes seguir al escribir código. Aquí hay un ejemplo
+        de una declaración de clase en Java:</p>
+    <pre>
+        <code>
+public class MiClase {
+    // Código de la clase
+}
+        </code>
+    </pre>
+
+    <h2>Declaración y Tipos de Variables</h2>
+    <p>Las variables son contenedores que almacenan datos en programas Java. Puedes declarar variables de diferentes
+        tipos, como:</p>
+    <pre>
+        <code>
+int edad = 25;
+double altura = 1.75;
+char inicial = 'J';
+String nombre = "Juan";
+        </code>
+    </pre>
+
+    <h2>Operadores y Expresiones</h2>
+    <p>Los operadores se utilizan para realizar operaciones en variables y valores. Algunos ejemplos de operadores son:
+    </p>
+    <pre>
+        <code>
+int suma = 10 + 5;
+double division = 20.0 / 4;
+boolean esMayor = edad > 18;
+        </code>
+    </pre>
+
+    <h2>Entrada y Salida de Datos</h2>
+    <p>Java te permite interactuar con el usuario utilizando la entrada y salida de datos. Aquí hay un ejemplo de cómo
+        solicitar y mostrar datos:</p>
+    <pre>
+        <code>
+import java.util.Scanner;
+
+public class EntradaSalida {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingresa tu nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.println("Hola, " + nombre + "!");
+    }
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 2 y tienes una comprensión sólida de la sintaxis de Java, cómo trabajar con
+        variables, utilizar operadores y realizar entrada y salida de datos.</p>
+
+</body>
+
+</html>

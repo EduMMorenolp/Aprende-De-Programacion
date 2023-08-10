@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosLecciones.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 6: Programación Orientada a Objetos (POO) - Parte 2</h1>
+
+    <h2>Herencia y Clases Derivadas</h2>
+    <p>La herencia es un concepto importante en POO que te permite crear una nueva clase basada en una clase existente.
+        La nueva clase se llama "clase derivada" o "subclase", y hereda atributos y métodos de la clase base o
+        "superclase". Aquí hay un ejemplo:</p>
+    <pre>
+        <code>
+public class Animal {
+    void emitirSonido() {
+        System.out.println("Animal emitiendo sonido");
+    }
+}
+
+public class Perro extends Animal {
+    @Override
+    void emitirSonido() {
+        System.out.println("El perro ladra");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Perro miPerro = new Perro();
+        miPerro.emitirSonido();
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Polimorfismo e Interfaces</h2>
+    <p>El polimorfismo te permite tratar objetos de diferentes clases de manera uniforme. Las interfaces son un
+        mecanismo para lograr polimorfismo en Java. Aquí hay un ejemplo:</p>
+    <pre>
+        <code>
+interface Figura {
+    double calcularArea();
+}
+
+class Circulo implements Figura {
+    double radio;
+    
+    Circulo(double r) {
+        radio = r;
+    }
+    
+    @Override
+    public double calcularArea() {
+        return Math.PI * radio * radio;
+    }
+}
+
+class Rectangulo implements Figura {
+    double base;
+    double altura;
+    
+    Rectangulo(double b, double a) {
+        base = b;
+        altura = a;
+    }
+    
+    @Override
+    public double calcularArea() {
+        return base * altura;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Figura figura1 = new Circulo(5);
+        Figura figura2 = new Rectangulo(4, 6);
+        
+        System.out.println("Área del círculo: " + figura1.calcularArea());
+        System.out.println("Área del rectángulo: " + figura2.calcularArea());
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Organización en Paquetes</h2>
+    <p>Los paquetes son una forma de organizar y agrupar clases relacionadas en Java. Puedes definir tus propios
+        paquetes y estructurar tu código de manera más ordenada:</p>
+    <pre>
+        <code>
+package com.miempresa.miproyecto;
+
+public class MiClase {
+    // Código de la clase
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 6 y tienes una comprensión sólida de conceptos avanzados de la Programación
+        Orientada a Objetos (POO) en Java, incluyendo herencia, polimorfismo, interfaces y organización en paquetes.</p>
+
+</body>
+
+</html>

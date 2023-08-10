@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosLecciones.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lección 4: Funciones y Métodos</h1>
+
+    <h2>Definición y Llamada de Funciones</h2>
+    <p>Una función es un bloque de código reutilizable que realiza una tarea específica. Puedes definir tus propias
+        funciones en Java:</p>
+    <pre>
+        <code>
+public class Funciones {
+    // Definición de una función
+    static void saludar() {
+        System.out.println("¡Hola, Mundo!");
+    }
+    
+    public static void main(String[] args) {
+        // Llamada a la función
+        saludar();
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Parámetros y Argumentos</h2>
+    <p>Las funciones pueden aceptar parámetros, que son valores que se pasan cuando se llama a la función. Aquí hay un
+        ejemplo:</p>
+    <pre>
+        <code>
+public class Parametros {
+    // Función con parámetros
+    static void saludarPersona(String nombre) {
+        System.out.println("¡Hola, " + nombre + "!");
+    }
+    
+    public static void main(String[] args) {
+        // Llamada a la función con argumento
+        saludarPersona("Juan");
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Retorno de Valores</h2>
+    <p>Una función puede devolver un valor utilizando la palabra clave <code>return</code>:</p>
+    <pre>
+        <code>
+public class Retorno {
+    // Función que devuelve un valor
+    static int sumar(int a, int b) {
+        return a + b;
+    }
+    
+    public static void main(String[] args) {
+        int resultado = sumar(5, 3);
+        System.out.println("La suma es: " + resultado);
+    }
+}
+        </code>
+    </pre>
+
+    <h2>Ámbito de Variables</h2>
+    <p>Las variables tienen un ámbito que determina dónde pueden ser accedidas. Las variables locales solo son visibles
+        dentro de la función donde se declaran:</p>
+    <pre>
+        <code>
+public class Ambito {
+    static void miFuncion() {
+        int numero = 10; // Variable local
+        System.out.println(numero);
+    }
+    
+    public static void main(String[] args) {
+        miFuncion(); // Llamada a la función
+        // System.out.println(numero); // Error: la variable no es accesible aquí
+    }
+}
+        </code>
+    </pre>
+
+    <p>Con esto, has completado la Lección 4 y tienes una comprensión sólida de cómo definir, llamar y trabajar con
+        funciones y métodos en Java, así como la gestión del ámbito de las variables.</p>
+
+</body>
+
+</html>
