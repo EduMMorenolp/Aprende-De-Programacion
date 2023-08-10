@@ -7,7 +7,8 @@ function cargarLeccion(event) {
   fetch(enlace) // Obtiene el contenido de "Leccion1.html"
     .then((response) => response.text())
     .then((html) => {
-      contenidoLeccion.innerHTML = html; // Coloca el contenido en el div
+      contenidoLeccion.in;
+      nerHTML = html; // Coloca el contenido en el div
     })
     .catch((error) => {
       console.error("Error al cargar la lección:", error);
