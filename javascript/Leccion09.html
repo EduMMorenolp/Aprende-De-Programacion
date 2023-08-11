@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 9: Trabajo con Fechas y Tiempos</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 9: Trabajo con Fechas y Tiempos</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Creación de objetos de fecha</h2>
+      <p>JavaScript proporciona un objeto <code>Date</code> para trabajar con fechas y tiempos.</p>
+      <pre><code>
+        &lt;script&gt;
+          var fechaActual = new Date();
+          console.log(fechaActual);
+
+          var fechaEspecifica = new Date("2023-09-01T12:00:00");
+          console.log(fechaEspecifica);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Métodos de fecha y tiempo</h2>
+      <p>El objeto <code>Date</code> tiene varios métodos para obtener información específica de las fechas y tiempos.</p>
+      <pre><code>
+        &lt;script&gt;
+          var fecha = new Date();
+
+          var anio = fecha.getFullYear();
+          var mes = fecha.getMonth();
+          var dia = fecha.getDate();
+
+          console.log(anio, mes, dia);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Formato y manipulación de fechas</h2>
+      <p>Es posible formatear y manipular fechas utilizando métodos específicos.</p>
+      <pre><code>
+        &lt;script&gt;
+          var fecha = new Date();
+          var opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+
+          var fechaFormateada = fecha.toLocaleDateString("es-ES", opciones);
+          console.log(fechaFormateada);
+
+          fecha.setDate(fecha.getDate() + 7);
+          console.log(fecha);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

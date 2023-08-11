@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 8: Manipulación de Cadenas y Expresiones Regulares</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 8: Manipulación de Cadenas y Expresiones Regulares</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Métodos de cadenas: concat, length, indexOf, substring</h2>
+      <p>Los métodos de cadenas permiten realizar operaciones en texto.</p>
+      <pre><code>
+        &lt;script&gt;
+          var mensaje = "Hola, mundo";
+
+          var resultado = mensaje.concat("!", " ¡Bienvenidos!");
+          console.log(resultado); // Hola, mundo! ¡Bienvenidos!
+
+          var longitud = mensaje.length;
+          console.log("Longitud: " + longitud); // Longitud: 11
+
+          var posicion = mensaje.indexOf("mundo");
+          console.log("Posición: " + posicion); // Posición: 6
+
+          var subcadena = mensaje.substring(0, 5);
+          console.log("Subcadena: " + subcadena); // Subcadena: Hola,
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Expresiones regulares: patrones y búsqueda</h2>
+      <p>Las expresiones regulares son secuencias de caracteres que definen un patrón de búsqueda.</p>
+      <pre><code>
+        &lt;script&gt;
+          var texto = "JavaScript es un lenguaje de programación";
+
+          var patron = /JavaScript/;
+          var resultado = patron.test(texto);
+          console.log(resultado); // true
+
+          var patron2 = /Python/;
+          var resultado2 = patron2.test(texto);
+          console.log(resultado2); // false
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Reemplazo y coincidencia de patrones</h2>
+      <p>Las expresiones regulares también se utilizan para reemplazar y manipular cadenas.</p>
+      <pre><code>
+        &lt;script&gt;
+          var mensaje = "JavaScript es un lenguaje de programación";
+
+          var nuevoMensaje = mensaje.replace("JavaScript", "JS");
+          console.log(nuevoMensaje); // JS es un lenguaje de programación
+
+          var patron = /lenguaje/;
+          var nuevoMensaje2 = mensaje.replace(patron, "idioma");
+          console.log(nuevoMensaje2); // JavaScript es un idioma de programación
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

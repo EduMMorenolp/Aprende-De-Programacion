@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 3: Estructuras de Control</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 3: Estructuras de Control</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Condiciones: if, else if, else</h2>
+      <p>Las estructuras de control de flujo permiten tomar decisiones en el código. La estructura <code>if</code> se usa para ejecutar un bloque de código si una condición es verdadera.</p>
+      <pre><code>
+        &lt;script&gt;
+          var edad = 18;
+
+          if (edad >= 18) {
+            console.log("Eres mayor de edad.");
+          } else {
+            console.log("Eres menor de edad.");
+          }
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Operadores de comparación</h2>
+      <p>Los operadores de comparación se utilizan para comparar valores y producir un resultado booleano.</p>
+      <pre><code>
+        &lt;script&gt;
+          var numero1 = 10;
+          var numero2 = 5;
+
+          console.log(numero1 > numero2); // true
+          console.log(numero1 === numero2); // false
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Bucles: for, while, do while</h2>
+      <p>Los bucles permiten ejecutar un bloque de código varias veces.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Bucle for
+          for (var i = 0; i < 5; i++) {
+            console.log("Iteración #" + i);
+          }
+
+          // Bucle while
+          var contador = 0;
+          while (contador < 3) {
+            console.log("Contador: " + contador);
+            contador++;
+          }
+
+          // Bucle do while
+          var x = 0;
+          do {
+            console.log("x es igual a " + x);
+            x++;
+          } while (x < 5);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Instrucciones break y continue</h2>
+      <p>Las instrucciones <code>break</code> y <code>continue</code> permiten controlar el flujo dentro de un bucle.</p>
+      <pre><code>
+        &lt;script&gt;
+          for (var i = 0; i < 5; i++) {
+            if (i === 3) {
+              break; // Termina el bucle
+            }
+            console.log("Iteración #" + i);
+          }
+
+          for (var j = 0; j < 5; j++) {
+            if (j === 2) {
+              continue; // Salta a la siguiente iteración
+            }
+            console.log("Iteración #" + j);
+          }
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

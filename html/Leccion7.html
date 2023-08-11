@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 7: Estilos y CSS en HTML</title>
+  <style>
+    /* Estilos CSS para la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header, main, footer {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+    h1 {
+      color: #333;
+    }
+    section {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lección 7: Estilos y CSS en HTML</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introducción a CSS</h2>
+      <p>CSS (Cascading Style Sheets) se utiliza para aplicar estilos y diseño a las páginas web. Permite controlar la apariencia de los elementos HTML, como colores, fuentes, márgenes y más.</p>
+    </section>
+
+    <section>
+      <h2>Estilos en línea</h2>
+      <p>Los estilos en línea se aplican directamente a elementos HTML utilizando el atributo style. Por ejemplo:</p>
+      <pre><code>
+        &lt;p style="color: blue; font-size: 18px;"&gt;Texto con estilo en línea&lt;/p&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Estilos internos</h2>
+      <p>Los estilos internos se definen en la sección &lt;style&gt; dentro del encabezado HTML. Por ejemplo:</p>
+      <pre><code>
+        &lt;style&gt;
+          p {
+            color: green;
+          }
+        &lt;/style&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Estilos externos</h2>
+      <p>Los estilos externos se almacenan en un archivo CSS separado y se vinculan a la página HTML utilizando la etiqueta &lt;link&gt; en el encabezado:</p>
+      <pre><code>
+        &lt;link rel="stylesheet" href="estilos.css"&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

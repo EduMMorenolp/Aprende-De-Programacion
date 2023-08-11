@@ -5,6 +5,74 @@
   border-radius: 0 0 .8rem .8rem;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilos para el menu de Lecciones*/
+
+.lateral, .central {
+  position: absolute;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  width: 250px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Estilos para los botones */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el enlace convertido en botón */
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.sidebar a:hover {
+  background-color: #9baabb;
+}
+
+/* Estilo para el botón activo */
+.sidebar a:active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+/*Estilos para el contenido de las lecciones*/
+
+.content {
+  float: left;
+  display: block;
+  margin-left: 280px;
+}
+
+/*Estilos para el pie de página*/
+
+footer {
+  position: sticky;
+  bottom: auto;
+}
+
 /*Colores para el nav-bar*/
 
 /*HTML y CSS*/

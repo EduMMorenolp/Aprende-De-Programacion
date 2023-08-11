@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 5: Arreglos</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 5: Arreglos</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Creación y manipulación de arreglos</h2>
+      <p>Los arreglos son colecciones ordenadas de elementos. Se declaran utilizando corchetes <code>[]</code>.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Creación de un arreglo
+          var frutas = ["manzana", "banana", "naranja"];
+
+          // Acceso a elementos por índice
+          console.log(frutas[0]); // manzana
+          console.log(frutas[1]); // banana
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Métodos de arreglo: push, pop, shift, unshift, slice</h2>
+      <p>Los métodos de arreglo permiten agregar, eliminar y manipular elementos en un arreglo.</p>
+      <pre><code>
+        &lt;script&gt;
+          var numeros = [1, 2, 3];
+
+          // Agregar elemento al final
+          numeros.push(4);
+
+          // Eliminar último elemento
+          var ultimo = numeros.pop();
+
+          // Agregar elemento al inicio
+          numeros.unshift(0);
+
+          // Eliminar primer elemento
+          var primero = numeros.shift();
+
+          // Copiar parte del arreglo
+          var subarreglo = numeros.slice(1, 3);
+
+          console.log(numeros);
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Iteración en arreglos con loops y forEach</h2>
+      <p>Los bucles y el método <code>forEach</code> permiten recorrer y realizar operaciones en cada elemento de un arreglo.</p>
+      <pre><code>
+        &lt;script&gt;
+          var colores = ["rojo", "verde", "azul"];
+
+          // Bucle for
+          for (var i = 0; i < colores.length; i++) {
+            console.log(colores[i]);
+          }
+
+          // forEach
+          colores.forEach(function(color) {
+            console.log(color);
+          });
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

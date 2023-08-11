@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 10: Formularios en HTML</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 10: Formularios en HTML</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introducción a los Formularios</h2>
+      <p>Los formularios permiten a los usuarios enviar datos a un servidor web. Son esenciales para la recopilación de información, como registros, comentarios y más. Se definen utilizando la etiqueta &lt;form&gt;:</p>
+      <pre><code>
+        &lt;form action="procesar.php" method="post"&gt;
+          <!-- Campos del formulario aquí -->
+        &lt;/form&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Campos de Entrada</h2>
+      <p>Los campos de entrada permiten a los usuarios ingresar datos. Algunos tipos comunes son:</p>
+      <ul>
+        <li>Texto: &lt;input type="text" name="nombre"&gt;</li>
+        <li>Contraseña: &lt;input type="password" name="contrasena"&gt;</li>
+        <li>Correo electrónico: &lt;input type="email" name="correo"&gt;</li>
+        <li>Número: &lt;input type="number" name="edad"&gt;</li>
+        <li>Checkbox: &lt;input type="checkbox" name="acepto"&gt;</li>
+        <li>Radio: &lt;input type="radio" name="genero" value="masculino"&gt; Masculino</li>
+        <li>Área de texto: &lt;textarea name="comentarios"&gt;&lt;/textarea&gt;</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Etiqueta de Selección (&lt;select&gt;)</h2>
+      <p>La etiqueta &lt;select&gt; se utiliza para crear listas desplegables. Cada opción se define con la etiqueta &lt;option&gt;:</p>
+      <pre><code>
+        &lt;select name="pais"&gt;
+          &lt;option value="usa"&gt;Estados Unidos&lt;/option&gt;
+          &lt;option value="canada"&gt;Canadá&lt;/option&gt;
+          &lt;option value="mexico"&gt;México&lt;/option&gt;
+        &lt;/select&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Botones de Envío (&lt;input type="submit"&gt;)</h2>
+      <p>El botón de envío permite enviar los datos del formulario al servidor. Se define con la etiqueta &lt;input&gt; y el atributo type="submit":</p>
+      <pre><code>
+        &lt;input type="submit" value="Enviar"&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>

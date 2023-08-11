@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 10: Introducción a Programación Asíncrona y Promesas</title>
+</head>
+<body>
+  <header>
+    <h1>Lección 10: Introducción a Programación Asíncrona y Promesas</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introducción a la programación asíncrona</h2>
+      <p>La programación asíncrona permite ejecutar tareas en segundo plano mientras el programa principal sigue funcionando.</p>
+      <pre><code>
+        &lt;script&gt;
+          console.log("Inicio del programa");
+
+          setTimeout(function() {
+            console.log("Tarea asíncrona completada");
+          }, 2000);
+
+          console.log("Fin del programa");
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Promesas: concepto y uso básico</h2>
+      <p>Las promesas son objetos que representan la eventual finalización o fracaso de una operación asíncrona.</p>
+      <pre><code>
+        &lt;script&gt;
+          var miPromesa = new Promise(function(resolve, reject) {
+            var exito = true; // Cambiar a false para simular rechazo
+
+            if (exito) {
+              resolve("La promesa se cumplió correctamente.");
+            } else {
+              reject("La promesa fue rechazada.");
+            }
+          });
+
+          miPromesa.then(function(resultado) {
+            console.log(resultado);
+          }).catch(function(error) {
+            console.log(error);
+          });
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Uso de promesas con AJAX y fetch</h2>
+      <p>Las promesas son comúnmente utilizadas para realizar solicitudes AJAX y obtener datos de forma asíncrona.</p>
+      <pre><code>
+        &lt;script&gt;
+          // Ejemplo con fetch
+          fetch("https://jsonplaceholder.typicode.com/posts/1")
+            .then(function(response) {
+              return response.json();
+            })
+            .then(function(data) {
+              console.log(data);
+            })
+            .catch(function(error) {
+              console.log(error);
+            });
+        &lt;/script&gt;
+      </code></pre>
+    </section>
+  </main>
+  <footer>
+    <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
+      reservados.
+    </h6>
+  </footer>
+</body>
+</html>
+
