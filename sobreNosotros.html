@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="indexEstilos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
     rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="indexEstilos.css" />
   <title>Sobre Nosotros</title>
 </head>
 
@@ -96,22 +96,33 @@
   <br>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 about">
+    <div class="row contenedor-sobre-nosotros">
+
+      <div class="about-descipcion">
         <h3> Eduardo Manuel Moreno </h3>
-        <img class="img-thumbnail" src="https://avatars.githubusercontent.com/u/126937215?v=4">
+        <img class="img-thumbnail profile-photo" src="https://avatars.githubusercontent.com/u/126937215?v=4">
         <h5> Redes </h5>
-        <ul>
-          <li><a class="btn btn-primary" href="https://www.linkedin.com/in/eduardo-m-moreno-programador/">LinkedIn</a></li>
-          <li><a class="btn btn-primary" href="https://github.com/EduMMorenolp">GitHub</a></li>
-          <p><strong> Email : e.m.morenolp@gmail.com </strong></p>
+        <ul class="redes-sobre-nosotros">
+          <li><a class="item-descripcion"  href="https://www.linkedin.com/in/eduardo-m-moreno-programador/">LinkedIn</a>
+          </li>
+          <li><a class="item-descripcion"  href="https://github.com/EduMMorenolp">GitHub</a></li>
+          <li><a class="item-descripcion"  href="mailto:e.m.morenolp@gmail.com"><strong> Email : e.m.morenolp@gmail.com
+              </strong></a></p>
         </ul>
       </div>
-      <div class="col-md-6 col-lg-6 about">
-        <h3> Luis Nombre Apellido </h3>
-        <h1> FALTA COMPLETAR </h1>
-        <!-- Copia el ejmplo mio asi quedan iguales -->
+
+      <div class="about-descipcion">
+        <h3> Luis Fernando Rodriguez </h3>
+        <img class="img-thumbnail profile-photo" src="/imag/perfil-luis.png">
+        <h5>Redes</h5>
+        <ul class="redes-sobre-nosotros">
+          <li><a class="item-descripcion" href="https://www.linkedin.com/in/rodriguez-luis-fernando/" target="_blank">LinkedIn</a></li>
+          <li><a class="item-descripcion" href="https://github.com/Luishi98" target="_blank">GitHub</a></li>
+          <li><a class="item-descripcion" href="mailto:luishi.rodriguez@gmail.com"><strong> Email :
+                luishi.rodriguez@gmail.com </strong></a></li>
+        </ul>
       </div>
+
     </div>
 
   </div>
@@ -125,27 +136,6 @@
       reservados.
     </h6>
   </footer>
-
-  <style>
-    /* Estilos para la sección "Sobre Nosotros" */
-    .about {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .about p {
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      margin: 2px;
-      padding: 3px;
-    }
-  </style>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
