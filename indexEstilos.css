@@ -5,6 +5,13 @@ body {
   padding: 0;
 }
 
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #860876;
+  border-radius: 0 0 .8rem .8rem;
+}
+
 /* Estilos para los bloques de características */
 .feature {
   text-align: center;
@@ -77,4 +84,74 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #860876 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Pruebas*/
+
+/*Fotos de perfil*/
+
+.profile-photo {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+.redes-sobre-nosotros {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-sobre-nosotros {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-descipcion {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: repeating-radial-gradient(#333, #999);
+  border-radius: 0 0 2.5rem 2.5rem;
+  border-top: 20px solid #aaa;
+  padding-top: 20px;
+  margin: .5%;
+}
+
+.about-descipcion h5 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 12px;
+  text-decoration: underline;
+  color: #181818;
+}
+
+.redes-sobre-nosotros li{
+  list-style: none;
+  text-align: center;
+  margin: 12px;
+  align-items: center;
+}
+
+.item-descripcion {
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 1.3rem;
+  background-color: #000;
+  color: #888;
+  padding: 7px;
 }
