@@ -8,8 +8,8 @@ body {
 /*Barra de navegacion*/
 
 .navbar {
-  border-bottom: 7px solid #aaa;
-  border-radius: 0 0 .8rem .8rem;
+  border-bottom: 7px solid #2E2E2E;
+  border-radius: .8rem;
 }
 
 /*Estilos para el menu de Lecciones*/
@@ -19,7 +19,8 @@ body {
 }
 
 .sidebar {
-  background-color: #f0f0f0;
+  border-radius: .8rem;
+  background-color: #2E2E2E;
   width: 250px;
   padding: 20px;
   overflow-y: auto;
@@ -44,12 +45,12 @@ body {
   padding: 10px;
   background-color: #007bff;
   color: #fff;
-  border-radius: 5px;
+  border-radius: .8rem;
 }
 
 /* Efecto al pasar el mouse sobre el botón */
 .sidebar a:hover {
-  background-color: #9baabb;
+  background-color: #c7c41d;
 }
 
 /* Estilo para el botón activo */
@@ -74,6 +75,14 @@ footer {
 }
 
 /*Colores para el nav-bar*/
+
+/*Iinicio*/
+.nav-item:nth-child(1) .nav-link:hover {
+  background: linear-gradient(90deg, #4bc5ce 50%, #911b1b 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 /*HTML y CSS*/
 .nav-item:nth-child(2) .nav-link:hover {
@@ -107,9 +116,9 @@ footer {
   color: transparent;
 }
 
-/*Git y GitHub*/
-.nav-item:nth-child(6) .nav-link:hover {
-  background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+/*Sobre Nosotros*/
+.nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #860876 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

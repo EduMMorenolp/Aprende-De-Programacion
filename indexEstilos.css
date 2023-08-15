@@ -8,7 +8,7 @@ body {
 /*Barra de navegacion*/
 
 .navbar {
-  border-bottom: 7px solid #aaa;
+  border-bottom: 7px solid #860876;
   border-radius: 0 0 .8rem .8rem;
 }
 
@@ -81,6 +81,14 @@ footer {
 /*Git y GitHub*/
 .nav-item:nth-child(6) .nav-link:hover {
   background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #860876 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
