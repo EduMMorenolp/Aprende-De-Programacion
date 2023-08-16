@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 9: Buenas Prácticas y Optimización</title>
+</head>
+<body>
+  <h1>Módulo 9: Buenas Prácticas y Optimización</h1>
+
+  <h2>9.1 Rendimiento y Optimización</h2>
+  <h3>Identificación de cuellos de botella:</h3>
+  <p>La optimización del rendimiento implica identificar las partes de tu aplicación que están ralentizando el rendimiento. Pueden ser operaciones costosas en cuanto a tiempo de ejecución o uso ineficiente del estado y actualizaciones del DOM.</p>
+
+  <h3>Lazy loading de componentes:</h3>
+  <pre><code>
+import React, { lazy, Suspense } from 'react';
+
+const ComponenteTardio = lazy(() => import('./ComponenteTardio'));
+
+const App = () => (
+  &lt;div&gt;
+    &lt;Suspense fallback=&lt;div&gt;Cargando...&lt;/div&gt;&gt;
+      &lt;ComponenteTardio /&gt;
+    &lt;/Suspense&gt;
+  &lt;/div&gt;
+);
+
+export default App;
+  </code></pre>
+
+  <h3>Uso de React.memo y useMemo:</h3>
+  <pre><code>
+import React, { useMemo } from 'react';
+
+const ComponenteMemo = ({ data }) => {
+  const resultadoCostoso = useMemo(() => hacerCalculoCostoso(data), [data]);
+
+  return &lt;div&gt;{resultadoCostoso}&lt;/div&gt;;
+};
+
+export default React.memo(ComponenteMemo);
+  </code></pre>
+
+  <h2>9.2 Pruebas Unitarias en React</h2>
+  <p><strong>Introducción a las pruebas con Jest y Enzyme:</strong></p>
+  <p>Jest es un marco de pruebas unitarias para JavaScript, y Enzyme es una biblioteca que simplifica la prueba de componentes React. Juntos, permiten escribir pruebas unitarias efectivas y confiables para tus componentes.</p>
+
+  <p><strong>Instalación y configuración básica de pruebas:</strong></p>
+  <pre><code>
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["&lt;rootDir&gt;/src/setupTests.js"]
+  }
+}
+  </code></pre>
+
+  <p><strong>Testeo de componentes y funciones:</strong></p>
+  <pre><code>
+import React from 'react';
+import { shallow } from 'enzyme';
+import MiComponente from './MiComponente';
+
+describe('Pruebas de MiComponente', () => {
+  it('Renderiza correctamente', () => {
+    const wrapper = shallow(&lt;MiComponente /&gt;);
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('Realiza algo en respuesta a un evento', () => {
+    const wrapper = shallow(&lt;MiComponente /&gt;);
+    wrapper.find('button').simulate('click');
+    // Realizar expectativas aquí
+  });
+});
+  </code></pre>
+
+  <p>Las pruebas unitarias son esenciales para garantizar que los componentes y funciones en tu aplicación React funcionen como se espera. Te ayudarán a evitar errores y a mantener un alto nivel de calidad en tu código.</p>
+</body>
+</html>

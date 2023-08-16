@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1: Introducción a React</title>
+</head>
+<body>
+  <h1>Módulo 1: Introducción a React</h1>
+
+  <h2>1.1 ¿Qué es React?</h2>
+  <p>React es una biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario interactivas y reutilizables. Fue desarrollada por Facebook y es ampliamente utilizada en el desarrollo web moderno. Algunos conceptos básicos de React incluyen:</p>
+  <ul>
+    <li><strong>Componentes:</strong> React se basa en la idea de componentes reutilizables. Un componente en React es como un bloque de construcción que encapsula el código, la estructura y la lógica de una parte específica de la interfaz de usuario.</li>
+    <li><strong>Virtual DOM:</strong> React utiliza un Virtual DOM (Documento de Objeto Modelo Virtual) para mejorar el rendimiento y eficiencia en las actualizaciones de la interfaz de usuario. En lugar de actualizar directamente el DOM del navegador, React compara el Virtual DOM con el DOM real y aplica solo los cambios necesarios.</li>
+  </ul>
+  <p><strong>Ejemplo de Componente en React:</strong></p>
+  <pre><code>
+import React from 'react';
+
+class MiComponente extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hola desde mi componente&lt;/h1&gt;
+        &lt;p&gt;Este es un ejemplo de componente en React.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default MiComponente;
+  </code></pre>
+
+  <h2>1.2 Configuración del entorno</h2>
+  <p><strong>Instalación de Node.js y npm:</strong></p>
+  <p>Node.js es un entorno de ejecución de JavaScript que nos permite ejecutar código JavaScript en el lado del servidor. npm (Node Package Manager) es un administrador de paquetes que se utiliza para instalar y gestionar bibliotecas y dependencias de proyectos.</p>
+  <p>Para instalar Node.js y npm, sigue los siguientes pasos:</p>
+  <ol>
+    <li>Descarga e instala Node.js desde <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+    <li>Verifica que Node.js y npm se hayan instalado correctamente ejecutando los siguientes comandos en la terminal:</li>
+  </ol>
+  <pre><code>
+node -v
+npm -v
+  </code></pre>
+  <p><strong>Creación de un proyecto con Create React App:</strong></p>
+  <p>Create React App es una herramienta que facilita la configuración inicial de un proyecto de React. Permite crear un proyecto con una estructura de archivos y configuraciones predefinidas.</p>
+  <p>Para crear un nuevo proyecto de React con Create React App, sigue estos pasos:</p>
+  <ol>
+    <li>Abre la terminal y ejecuta el siguiente comando:</li>
+  </ol>
+  <pre><code>
+npx create-react-app mi-proyecto-react
+  </code></pre>
+  <ol start="2">
+    <li>Cambia al directorio del proyecto recién creado:</li>
+  </ol>
+  <pre><code>
+cd mi-proyecto-react
+  </code></pre>
+  <ol start="3">
+    <li>Inicia el servidor de desarrollo:</li>
+  </ol>
+  <pre><code>
+npm start
+  </code></pre>
+  <p>El servidor de desarrollo iniciará y podrás acceder a tu aplicación React en el navegador en la dirección <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+
+  <h2>Estructura de archivos y carpetas:</h2>
+  <p>La estructura de archivos y carpetas de un proyecto creado con Create React App se verá similar a la siguiente:</p>
+  <pre><code>
+mi-proyecto-react/
+|-- node_modules/
+|-- public/
+|-- src/
+|   |-- App.js
+|   |-- index.js
+|   |-- ...
+|-- package.json
+|-- README.md
+|-- ...
+  </code></pre>
+  <ul>
+    <li><code>node_modules/:</code> Contiene las dependencias instaladas para el proyecto.</li>
+    <li><code>public/:</code> Contiene archivos públicos como el archivo HTML principal y otros recursos estáticos.</li>
+    <li><code>src/:</code> Contiene los archivos fuente de la aplicación, incluyendo componentes, estilos y otros archivos.</li>
+    <li><code>package.json:</code> Archivo de configuración del proyecto que incluye información sobre dependencias y scripts.</li>
+  </ul>
+  <p>Este es solo el comienzo de tu viaje con React. En los siguientes módulos, profundizaremos en la creación de componentes, la gestión de estados, el enrutamiento y otros conceptos esenciales para el desarrollo de aplicaciones React.</p>
+</body>
+</html>

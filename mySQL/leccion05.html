@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 5: Optimización y Mantenimiento de Bases de Datos</title>
+</head>
+<body>
+  <h1>Módulo 5: Optimización y Mantenimiento de Bases de Datos</h1>
+
+  <h2>5.1 Índices y Optimización</h2>
+  <p><strong>Creación y uso de índices:</strong></p>
+  <p>Los índices son estructuras que mejoran la velocidad de búsqueda y recuperación de datos en una tabla. Aprenderás a crear y usar índices para optimizar consultas.</p>
+  <pre>
+    -- Creación de un índice
+    CREATE INDEX indice_nombre ON tabla(columna);
+
+    -- Uso de un índice en una consulta
+    SELECT * FROM empleados WHERE apellido = 'Smith';
+  </pre>
+
+  <p><strong>Optimización de consultas:</strong></p>
+  <p>Optimizar consultas es esencial para garantizar un rendimiento eficiente de la base de datos. Aprenderás a utilizar herramientas de análisis de consultas y técnicas para mejorar la velocidad de ejecución de tus consultas.</p>
+  <pre>
+    -- Uso de EXPLAIN para analizar una consulta
+    EXPLAIN SELECT * FROM productos WHERE categoria = 'Electrónica';
+
+    -- Uso de índices compuestos para consultas múltiples columnas
+    CREATE INDEX idx_categoria_precio ON productos(categoria, precio);
+  </pre>
+
+  <h2>5.2 Copias de Seguridad y Restauración</h2>
+  <p><strong>Exportación e importación de datos:</strong></p>
+  <p>Aprenderás a realizar copias de seguridad de bases de datos y tablas, así como a exportar e importar datos utilizando comandos SQL y herramientas de administración.</p>
+  <pre>
+    -- Exportar una tabla a un archivo CSV
+    SELECT * INTO OUTFILE '/ruta/archivo.csv' FROM tabla;
+
+    -- Importar datos desde un archivo CSV
+    LOAD DATA INFILE '/ruta/archivo.csv' INTO TABLE tabla;
+  </pre>
+
+  <p><strong>Programación de tareas de respaldo:</strong></p>
+  <p>Asegurarte de tener copias de seguridad regulares es crucial para la integridad de tus datos. Aprenderás a programar tareas automatizadas de respaldo utilizando herramientas como cron en sistemas Unix o el Programador de tareas en Windows.</p>
+  <pre>
+    # Ejemplo de tarea cron para respaldo diario a las 2 AM
+    0 2 * * * mysqldump -u usuario -pcontraseña nombre_base_de_datos > /ruta/respaldo.sql
+  </pre>
+
+  <p>Recursos adicionales:</p>
+  <ul>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/indexes.html" target="_blank">Documentación de MySQL sobre Índices</a></li>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/query-optimization.html" target="_blank">Cómo optimizar consultas en MySQL</a></li>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/backup-and-recovery.html" target="_blank">Documentación de MySQL sobre Copias de Seguridad</a></li>
+  </ul>
+</body>
+</html>

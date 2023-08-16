@@ -91,9 +91,17 @@ footer {
     -webkit-background-clip: text;
     color: transparent;
   }
-
-  /*Sobre Nosotros*/
+  
+/* React */
 .nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #1619f0 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(8) .nav-link:hover {
   background: linear-gradient(90deg, #860876 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;

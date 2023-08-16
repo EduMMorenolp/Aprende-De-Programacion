@@ -29,6 +29,13 @@ const barraNavengacionCod = `
           <li class="nav-item">
             <a class="nav-link" href="../github/github.html"> Git / GitHub </a>
           </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../react/react.html"> React </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="../mySQL/mysql.html"> mySQL </a>
+        </li>
           <li class="nav-item">
             <a class="nav-link active" href="../sobreNosotros.html">
               Sobre Nosotros

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5: Enrutamiento y Navegación</title>
+</head>
+<body>
+
+    <h1>Módulo 5: Enrutamiento y Navegación</h1>
+
+    <h2>5.1 React Router</h2>
+    <h3>Configuración de rutas:</h3>
+    <p>React Router es una biblioteca que permite gestionar el enrutamiento y la navegación en aplicaciones React. Permite definir rutas para diferentes componentes y renderizar el componente adecuado según la URL actual.</p>
+
+    <h3>Instalación:</h3>
+    <p>Para instalar React Router, utiliza el siguiente comando:</p>
+
+    <pre><code class="jsx">
+npm install react-router-dom
+    </code></pre>
+
+    <h3>Configuración básica:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const App = () => (
+  &lt;Router&gt;
+    &lt;div&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;Link to="/"&gt;Inicio&lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link to="/acerca"&gt;Acerca de&lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link to="/contacto"&gt;Contacto&lt;/Link&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+      &lt;Route path="/" exact component={Inicio} /&gt;
+      &lt;Route path="/acerca" component={Acerca} /&gt;
+      &lt;Route path="/contacto" component={Contacto} /&gt;
+    &lt;/div&gt;
+  &lt;/Router&gt;
+);
+
+const Inicio = () => &lt;h2&gt;Página de inicio&lt;/h2&gt;;
+const Acerca = () => &lt;h2&gt;Acerca de nosotros&lt;/h2&gt;;
+const Contacto = () => &lt;h2&gt;Página de contacto&lt;/h2&gt;;
+
+export default App;
+    </code></pre>
+
+    <h3>Navegación entre componentes:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const Menu = () => (
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;Link to="/"&gt;Inicio&lt;/Link&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;Link to="/acerca"&gt;Acerca de&lt;/Link&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;Link to="/contacto"&gt;Contacto&lt;/Link&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+);
+
+export default Menu;
+    </code></pre>
+
+    <h3>Uso de parámetros en las rutas:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const App = () => (
+  &lt;Router&gt;
+    &lt;div&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;Link to="/"&gt;Inicio&lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link to="/usuario/123"&gt;Usuario 123&lt;/Link&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+      &lt;Route path="/" exact component={Inicio} /&gt;
+      &lt;Route path="/usuario/:id" component={Usuario} /&gt;
+    &lt;/div&gt;
+  &lt;/Router&gt;
+);
+
+const Inicio = () => &lt;h2&gt;Página de inicio&lt;/h2&gt;;
+
+const Usuario = ({ match }) => (
+  &lt;h2&gt;Página de usuario: {match.params.id}&lt;/h2&gt;
+);
+
+export default App;
+    </code></pre>
+
+    <p>React Router facilita la navegación y el enrutamiento en aplicaciones React, permitiendo a los usuarios cambiar entre diferentes vistas sin tener que recargar la página completa.</p>
+
+    <p>En los siguientes módulos, exploraremos la gestión de estado más avanzada y la integración de APIs externas en aplicaciones React.</p>
+
+</body>
+</html>
