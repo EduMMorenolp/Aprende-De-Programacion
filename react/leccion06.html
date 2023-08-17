@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 6: Gestión de Estado</title>
+</head>
+<body>
+
+    <h1>Módulo 6: Gestión de Estado</h1>
+
+    <h2>6.1 Introducción a la Gestión de Estado</h2>
+    <h3>Problemas comunes con el estado en React:</h3>
+    <p>A medida que las aplicaciones crecen en tamaño y complejidad, gestionar el estado de los componentes puede volverse complicado. Los problemas comunes con la gestión de estado en React incluyen:</p>
+    <ul>
+      <li>Prop drilling: Pasar props a través de múltiples niveles de componentes, lo que puede llevar a un código desordenado y difícil de mantener.</li>
+      <li>Duplicación de estado: Tener el mismo estado en múltiples componentes, lo que puede causar problemas de sincronización y aumentar la posibilidad de errores.</li>
+      <li>Dificultad para compartir estado: Compartir datos entre componentes hermanos o distantes puede ser engorroso sin un enfoque adecuado.</li>
+    </ul>
+
+    <h3>Ventajas de un sistema de gestión de estado:</h3>
+    <p>Un sistema de gestión de estado, como Redux o la Context API de React, aborda estos problemas al proporcionar un lugar centralizado para almacenar y gestionar el estado de la aplicación. Esto permite:</p>
+    <ul>
+      <li>Acceso sencillo al estado desde cualquier componente.</li>
+      <li>Evitar la duplicación innecesaria de estado.</li>
+      <li>Facilitar el intercambio de datos entre componentes.</li>
+      <li>Simplificar el proceso de seguimiento y depuración de cambios en el estado.</li>
+    </ul>
+
+    <h2>6.2 Context API</h2>
+    <h3>Creación y consumo de contextos:</h3>
+    <p>La Context API es una característica incorporada en React que permite compartir datos a través de la jerarquía de componentes sin necesidad de pasar props manualmente en cada nivel.</p>
+
+    <h3>Creación de un contexto:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+
+const MiContexto = React.createContext();
+
+export default MiContexto;
+    </code></pre>
+
+    <h3>Consumo de un contexto:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import MiContexto from './MiContexto';
+
+const ComponenteConsumidor = () => {
+  return (
+    &lt;MiContexto.Consumer&gt;
+      {(valor) => &lt;p&gt;Valor del contexto: {valor}&lt;/p&gt;}
+    &lt;/MiContexto.Consumer&gt;
+  );
+};
+
+export default ComponenteConsumidor;
+    </code></pre>
+
+    <h3>Evitando la prop drilling:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import MiContexto from './MiContexto';
+import ComponenteConsumidor from './ComponenteConsumidor';
+
+const ComponenteProductor = () => {
+  const valor = 'Este es el valor compartido';
+
+  return (
+    &lt;MiContexto.Provider value={valor}&gt;
+      &lt;ComponenteConsumidor /&gt;
+    &lt;/MiContexto.Provider&gt;
+  );
+};
+
+export default ComponenteProductor;
+    </code></pre>
+
+    <p>La Context API es una excelente opción para gestionar el estado global o compartir datos específicos entre componentes sin recurrir al prop drilling. Sin embargo, si la aplicación crece en complejidad, también puedes considerar la integración de bibliotecas de gestión de estado como Redux.</p>
+
+    <p>En los siguientes módulos, exploraremos temas más avanzados y trabajaremos en la creación de aplicaciones completas con React.</p>
+
+</body>
+</html>

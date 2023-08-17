@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 7: Introducción a Redux (opcional)</title>
+</head>
+<body>
+
+    <h1>Módulo 7: Introducción a Redux (opcional)</h1>
+
+    <h2>7.1 Conceptos básicos de Redux</h2>
+    <h3>Store, Acciones, Reductores:</h3>
+    <p>Redux es una biblioteca de gestión de estado predecible para aplicaciones JavaScript. Sus conceptos fundamentales incluyen:</p>
+    <ul>
+      <li>Store: El store es un objeto que contiene el estado global de la aplicación. Es el único lugar donde se almacena el estado de la aplicación.</li>
+      <li>Acciones: Las acciones son objetos planos que describen un cambio en el estado. Se envían al store utilizando funciones llamadas "action creators".</li>
+      <li>Reductores: Los reductores son funciones que especifican cómo cambia el estado de la aplicación en respuesta a una acción. Cada reductor maneja una parte específica del estado.</li>
+    </ul>
+
+    <h3>Flujo de datos en Redux:</h3>
+    <ol>
+      <li>Una acción es despachada por un componente.</li>
+      <li>El reductor correspondiente procesa la acción y actualiza el estado en el store.</li>
+      <li>Los componentes conectados al store reciben las actualizaciones del estado y se vuelven a renderizar según sea necesario.</li>
+    </ol>
+
+    <h2>7.2 Integración de Redux en una aplicación React</h2>
+    <h3>Configuración de la store:</h3>
+    <p>Para usar Redux en una aplicación React, primero debes instalar las bibliotecas necesarias:</p>
+
+    <pre><code>
+npm install redux react-redux
+    </code></pre>
+
+    <h3>Creación de un store:</h3>
+    <pre><code class="jsx">
+import { createStore } from 'redux';
+
+// Reductor inicial
+const contadorReducer = (state = { contador: 0 }, action) => {
+  if (action.type === 'INCREMENTAR') {
+    return { contador: state.contador + 1 };
+  }
+  return state;
+};
+
+const store = createStore(contadorReducer);
+
+export default store;
+    </code></pre>
+
+    <h3>Conexión de componentes a Redux:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+import { connect } from 'react-redux';
+
+class Contador extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;Contador: {this.props.contador}&lt;/p&gt;
+        &lt;button onClick={this.props.incrementar}&gt;Incrementar&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    contador: state.contador,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    incrementar: () => dispatch({ type: 'INCREMENTAR' }),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contador);
+    </code></pre>
+
+    <p>Resumen:</p>
+    <p>La integración de Redux en una aplicación React proporciona un sistema de gestión de estado centralizado que simplifica la administración del estado y la comunicación entre componentes.</p>
+    <p>Recuerda que Redux es opcional y puede ser más adecuado para aplicaciones más grandes y complejas. Si decides explorar Redux en profundidad, hay conceptos adicionales, como middleware y acciones asíncronas, que pueden enriquecer tu comprensión y habilidades en el desarrollo de aplicaciones React.</p>
+
+</body>
+</html>

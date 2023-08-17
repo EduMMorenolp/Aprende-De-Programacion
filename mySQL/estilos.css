@@ -1,15 +1,15 @@
-/*Barra de navegacion*/
-
-.navbar {
-  border-bottom: 7px solid #f0db4f;
-  border-radius: 0 0 .8rem .8rem;
-}
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+}
+
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #007bff;
+  border-radius: .8rem;
 }
 
 /*Estilos para el menu de Lecciones*/
@@ -20,7 +20,7 @@ body {
 
 .sidebar {
   border-radius: .8rem;
-  background-color: #343a40;
+  background-color: #007bff;
   width: 250px;
   padding: 20px;
   overflow-y: auto;
@@ -40,17 +40,17 @@ body {
 /* Estilos para el enlace convertido en botón */
 .sidebar a {
   display: block;
-  text-decoration: solid;
+  text-decoration: none;
   color: #333;
   padding: 10px;
-  background-color: #ffd000;
+  background-color: #0c2138;
   color: #fff;
   border-radius: .8rem;
 }
 
 /* Efecto al pasar el mouse sobre el botón */
 .sidebar a:hover {
-  background-color: #9baabb;
+  background-color: #170f6e;
 }
 
 /* Estilo para el botón activo */
@@ -73,6 +73,7 @@ footer {
   position: sticky;
   bottom: auto;
 }
+
 /*Colores para el nav-bar*/
 
 /*Iinicio*/
@@ -122,6 +123,8 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+
 
 /* mySQL */
 .nav-item:nth-child(8) .nav-link:hover {
