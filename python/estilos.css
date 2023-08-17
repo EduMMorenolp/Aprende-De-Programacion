@@ -118,11 +118,12 @@ footer {
 
 /* React */
 .nav-item:nth-child(7) .nav-link:hover {
-  background: linear-gradient(90deg, #1619f0 30%, #181717 70%);
+  background: linear-gradient(90deg, #6ba9eb 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
 
 
 /* mySQL */
