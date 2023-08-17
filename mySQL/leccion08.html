@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 8: Proyecto Práctico</title>
+</head>
+<body>
+
+    <h1>Módulo 8: Proyecto Práctico</h1>
+
+    <h2>8.1 Diseño y Creación de una Base de Datos</h2>
+    <p><strong>Definición de requisitos:</strong></p>
+    <p>Aprenderás a identificar y definir los requisitos para tu proyecto práctico. Esto incluye comprender los objetivos, las entidades involucradas y las relaciones entre ellas.</p>
+
+    <p><strong>Diseño de la base de datos:</strong></p>
+    <p>Utilizando los requisitos definidos, diseñarás la estructura de la base de datos. Esto implica la identificación de tablas, atributos y relaciones entre tablas.</p>
+
+    <p><strong>Creación de tablas y relaciones:</strong></p>
+    <p>Llevarás a cabo la creación de la base de datos en MySQL. Definirás las tablas utilizando las sentencias CREATE TABLE y establecerás las relaciones utilizando claves primarias y foráneas.</p>
+
+    <p><strong>Ejemplo: Diseño de una base de datos para una tienda en línea:</strong></p>
+    <pre><code>-- Creación de tablas
+CREATE TABLE Productos (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(255),
+  Precio DECIMAL(10, 2),
+  Categoria VARCHAR(50)
+);
+
+CREATE TABLE Clientes (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(255),
+  CorreoElectronico VARCHAR(255)
+);
+
+-- Creación de relaciones
+CREATE TABLE Ordenes (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Cliente_ID INT,
+  Fecha DATE,
+  Total DECIMAL(10, 2),
+  FOREIGN KEY (Cliente_ID) REFERENCES Clientes(ID)
+);
+
+CREATE TABLE Detalles_Ordenes (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Orden_ID INT,
+  Producto_ID INT,
+  Cantidad INT,
+  FOREIGN KEY (Orden_ID) REFERENCES Ordenes(ID),
+  FOREIGN KEY (Producto_ID) REFERENCES Productos(ID)
+);</code></pre>
+
+    <h2>8.2 Consultas y Manejo de Datos</h2>
+    <p><strong>Implementación de consultas complejas:</strong></p>
+    <p>Utilizarás las consultas SQL que has aprendido para realizar consultas complejas en tu base de datos, que involucran múltiples tablas y criterios de filtro.</p>
+
+    <p><strong>Ejemplo: Consulta de productos comprados por un cliente:</strong></p>
+    <pre><code>SELECT c.Nombre, p.Nombre AS Producto, d.Cantidad, o.Fecha
+FROM Clientes c
+JOIN Ordenes o ON c.ID = o.Cliente_ID
+JOIN Detalles_Ordenes d ON o.ID = d.Orden_ID
+JOIN Productos p ON d.Producto_ID = p.ID
+WHERE c.Nombre = 'Juan' AND o.Fecha BETWEEN '2023-01-01' AND '2023-06-30';</code></pre>
+
+    <p><strong>Inserción, actualización y eliminación de datos:</strong></p>
+    <p>Aprenderás a insertar nuevos datos en tu base de datos, actualizar registros existentes y eliminar información cuando sea necesario.</p>
+    <pre><code>-- Inserción de un nuevo producto
+INSERT INTO Productos (Nombre, Precio, Categoria) VALUES ('Nuevo Producto', 25.99, 'Electrónica');
+
+-- Actualización del precio de un producto
+UPDATE Productos SET Precio = 29.99 WHERE Nombre = 'Nuevo Producto';
+
+-- Eliminación de un cliente y sus órdenes
+DELETE FROM Clientes WHERE Nombre = 'Juan';</code></pre>
+
+    <h2>Recursos adicionales:</h2>
+    <p><a href="https://dev.mysql.com/doc/" target="_blank">Documentación de MySQL sobre Diseño de Bases de Datos</a></p>
+    <p><a href="https://www.databaseanswers.org/data_models/" target="_blank">Ejemplos de Diseño de Bases de Datos</a></p>
+    <p><a href="https://dev.mysql.com/doc/" target="_blank">Documentación de MySQL sobre Manipulación de Datos</a></p>
+
+</body>
+</html>

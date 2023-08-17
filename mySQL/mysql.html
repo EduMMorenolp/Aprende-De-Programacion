@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de MySQL</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Barra Navegacion -->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="barraNavegacion">
+    </nav>
+    <!--Menu de lecciones-->
+    <article>
+        <section class="lateral">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="Leccion01.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 1:
+                            Introducción a MySQL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Leccion02.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 2:
+                            Fundamentos de Bases de Datos</a>
+                    </li>
+                    <li>
+                        <a href="Leccion03.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 3: Consultas
+                            SQL Básicas</a>
+                    </li>
+                    <li>
+                        <a href="Leccion04.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 4: Consultas
+                            SQL Avanzadas</a>
+                    </li>
+                    <li>
+                        <a href="Leccion05.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 5:
+                            Optimización y Mantenimiento de Bases de Datos</a>
+                    </li>
+                    <li>
+                        <a href="Leccion06.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 6: Seguridad
+                            y Usuarios</a>
+                    </li>
+                    <li>
+                        <a href="Leccion07.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 7: Uso de
+                            Herramientas Externas</a>
+                    </li>
+                    <li>
+                        <a href="Leccion08.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 8: Proyecto
+                            Práctico</a>
+                    </li>
+                    <li>
+                        <a href="Leccion09.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 9:
+                            Despliegue de Aplicaciones con MySQL</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="central">
+            <div class="content" id="contenido-leccion">
+                <h1>Curso de MySQL</h1>
+
+                <h2>Módulo 1: Introducción a MySQL</h2>
+                <h3>1.1 ¿Qué es MySQL?</h3>
+                <p>Historia y contexto</p>
+                <p>Características y ventajas</p>
+
+                <h3>1.2 Instalación y Configuración</h3>
+                <p>Descarga e instalación de MySQL</p>
+                <p>Configuración básica</p>
+                <p>Herramientas de administración</p>
+
+                <h2>Módulo 2: Fundamentos de Bases de Datos</h2>
+                <h3>2.1 Conceptos Básicos de Bases de Datos</h3>
+                <p>¿Qué es una base de datos?</p>
+                <p>Modelo Relacional y otros modelos de bases de datos</p>
+
+                <h3>2.2 Creación de Bases de Datos y Tablas</h3>
+                <p>Creación y selección de una base de datos</p>
+                <p>Creación de tablas con tipos de datos</p>
+                <p>Claves primarias y claves foráneas</p>
+
+                <h2>Módulo 3: Consultas SQL Básicas</h2>
+                <h3>3.1 SELECT: Recuperación de Datos</h3>
+                <p>Sintaxis básica de SELECT</p>
+                <p>Filtrado de resultados con WHERE</p>
+                <p>Ordenamiento de resultados con ORDER BY</p>
+
+                <h3>3.2 Funciones de Agregación</h3>
+                <p>SUM, AVG, COUNT, MIN, MAX</p>
+                <p>Agrupación de resultados con GROUP BY</p>
+                <p>Filtros en resultados agrupados con HAVING</p>
+
+                <h2>Módulo 4: Consultas SQL Avanzadas</h2>
+                <h3>4.1 JOIN: Combinación de Tablas</h3>
+                <p>INNER JOIN, LEFT JOIN, RIGHT JOIN</p>
+                <p>JOIN múltiples tablas</p>
+                <p>Subconsultas</p>
+
+                <h3>4.2 Modificación de Datos</h3>
+                <p>INSERT, UPDATE, DELETE</p>
+                <p>Transacciones y control de cambios</p>
+
+                <h2>Módulo 5: Optimización y Mantenimiento de Bases de Datos</h2>
+                <h3>5.1 Índices y Optimización</h3>
+                <p>Creación y uso de índices</p>
+                <p>Optimización de consultas</p>
+
+                <h3>5.2 Copias de Seguridad y Restauración</h3>
+                <p>Exportación e importación de datos</p>
+                <p>Programación de tareas de respaldo</p>
+
+                <h2>Módulo 6: Seguridad y Usuarios</h2>
+                <h3>6.1 Gestión de Usuarios y Privilegios</h3>
+                <p>Creación de usuarios y asignación de permisos</p>
+                <p>Control de acceso a bases de datos y tablas</p>
+
+                <h3>6.2 Prácticas de Seguridad</h3>
+                <p>Mejores prácticas de seguridad en MySQL</p>
+
+                <h2>Módulo 7: Uso de Herramientas Externas</h2>
+                <h3>7.1 phpMyAdmin</h3>
+                <p>Instalación y configuración</p>
+                <p>Uso de phpMyAdmin para administrar bases de datos</p>
+
+                <h3>7.2 Otras Herramientas de Administración</h3>
+                <p>Exploración de herramientas externas para administración y visualización de datos en MySQL</p>
+
+                <h2>Módulo 8: Proyecto Práctico</h2>
+                <h3>8.1 Diseño y Creación de una Base de Datos</h3>
+                <p>Definición de requisitos</p>
+                <p>Diseño de la base de datos</p>
+                <p>Creación de tablas y relaciones</p>
+
+                <h3>8.2 Consultas y Manejo de Datos</h3>
+                <p>Implementación de consultas complejas</p>
+                <p>Inserción, actualización y eliminación de datos</p>
+
+                <h2>Módulo 9: Despliegue de Aplicaciones con MySQL</h2>
+                <h3>9.1 Integración de MySQL en Aplicaciones</h3>
+                <p>Conexión a bases de datos desde aplicaciones web</p>
+                <p>Consideraciones de seguridad</p>
+
+                <h3>9.2 Despliegue de Bases de Datos</h3>
+                <p>Opciones de despliegue para bases de datos MySQL</p>
+
+
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+
+        <script src="scripts.js"></script>
+        <script src="../barraNavegacion.js"></script>
+</body>
+
+</html>

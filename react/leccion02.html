@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Fundamentos de React</title>
+</head>
+<body>
+
+    <h1>Módulo 2: Fundamentos de React</h1>
+
+    <h2>2.1 Componentes y JSX</h2>
+    <h3>Creación de componentes:</h3>
+    <p>En React, los componentes son los bloques de construcción básicos de la interfaz de usuario. Pueden ser clases o funciones que retornan elementos de React. Los componentes permiten encapsular el código y la lógica para partes específicas de la interfaz de usuario.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class MiComponente extends React.Component {
+  render() {
+    return &lt;h1&gt;Hola desde MiComponente&lt;/h1&gt;;
+  }
+}
+
+export default MiComponente;
+    </code></pre>
+
+    <h3>Sintaxis JSX y su importancia:</h3>
+    <p>JSX (JavaScript XML) es una extensión de sintaxis que permite escribir HTML dentro del código JavaScript. JSX hace que la creación de elementos y componentes en React sea más legible y expresiva.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class MiComponente extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hola desde MiComponente&lt;/h1&gt;
+        &lt;p&gt;Esto es JSX en acción.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default MiComponente;
+    </code></pre>
+
+    <h3>Renderizado de componentes:</h3>
+    <p>El método render() de un componente es responsable de definir qué elementos o componentes se mostrarán en la interfaz de usuario. React utiliza este método para generar una representación del Virtual DOM y actualizar el DOM real según sea necesario.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class MiComponente extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Hola desde MiComponente&lt;/h1&gt;
+        &lt;p&gt;Renderizado de componentes en acción.&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default MiComponente;
+    </code></pre>
+
+    <h2>2.2 Propiedades (Props) y Estado (State)</h2>
+    <h3>Pasar datos a través de props:</h3>
+    <p>Las props son la forma principal de pasar datos de un componente padre a un componente hijo en React. Las props son inmutables y permiten que los componentes compartan información entre sí.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class Saludo extends React.Component {
+  render() {
+    return &lt;p&gt;Hola, {this.props.nombre}!&lt;/p&gt;;
+  }
+}
+
+// Uso del componente Saludo
+&lt;Saludo nombre="Juan" /&gt;;
+    </code></pre>
+
+    <h3>Uso del estado interno en componentes:</h3>
+    <p>El estado es una característica importante en React que permite que un componente mantenga y controle su propia información mutable. Para usar el estado, se debe definir en el constructor del componente y luego se accede a través de this.state.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class Contador extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { contador: 0 };
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;Contador: {this.state.contador}&lt;/p&gt;
+        &lt;button onClick={() =&gt; this.setState({ contador: this.state.contador + 1 })}&gt;
+          Incrementar
+        &lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default Contador;
+    </code></pre>
+
+    <h3>Actualización del estado y su impacto en la interfaz:</h3>
+    <p>Cuando se actualiza el estado de un componente mediante setState(), React realiza una comparación con el estado anterior y el nuevo estado para determinar qué cambios aplicar al Virtual DOM y al DOM real.</p>
+
+    <pre><code class="jsx">
+import React from 'react';
+
+class Contador extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { contador: 0 };
+  }
+
+  incrementarContador = () =&gt; {
+    this.setState({ contador: this.state.contador + 1 });
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;Contador: {this.state.contador}&lt;/p&gt;
+        &lt;button onClick={this.incrementarContador}&gt;Incrementar&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default Contador;
+    </code></pre>
+
+    <p>Estos conceptos son fundamentales para trabajar con React. En los próximos módulos, exploraremos cómo manejar eventos, comunicación entre componentes y más avanzado en el desarrollo de aplicaciones React.</p>
+
+</body>
+</html>
