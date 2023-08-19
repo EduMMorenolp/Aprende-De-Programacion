@@ -134,10 +134,50 @@ footer {
   color: transparent;
 }
 
-/*Sobre Nosotros*/
+/* Generador de Ejercicios */
 .nav-item:nth-child(9) .nav-link:hover {
+  background: linear-gradient(90deg, #1fdd39 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(10) .nav-link:hover {
   background: linear-gradient(90deg, #860876 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #343a40;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  overflow-x: auto;
 }

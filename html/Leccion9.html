@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lección 9: Imágenes y Multimedia en HTML</title>
 </head>
+
 <body>
   <header>
-    <h1>Lección 9: Imágenes y Multimedia en HTML</h1>
+    <h1>Lección 9: Diseño Responsivo y Flexbox</h1>
   </header>
   <main>
     <section>
-      <h2>Etiqueta de imagen (&lt;img&gt;)</h2>
-      <p>La etiqueta &lt;img&gt; se utiliza para insertar imágenes en una página web. Se debe proporcionar la ubicación de la imagen en el atributo src y un texto alternativo en el atributo alt:</p>
-      <pre><code>
-        &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
-      </code></pre>
+      <h2>Diseño responsivo y la metaetiqueta viewport:</h2>
+      <p>Aprenderás cómo crear sitios web que se adapten automáticamente a diferentes dispositivos y tamaños de pantalla
+        utilizando técnicas de diseño responsivo.</p>
+      <pre><code>&lt;!-- Metaetiqueta viewport para diseño responsivo -->
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
     </section>
 
     <section>
-      <h2>Etiqueta de video (&lt;video&gt;)</h2>
-      <p>La etiqueta &lt;video&gt; se utiliza para insertar videos en una página web. Se puede especificar varios formatos de video para garantizar la compatibilidad en diferentes navegadores:</p>
-      <pre><code>
-        &lt;video controls width="640" height="360"&gt;
-          &lt;source src="video.mp4" type="video/mp4"&gt;
-          &lt;source src="video.webm" type="video/webm"&gt;
-          Tu navegador no admite el elemento &lt;video&gt;.
-        &lt;/video&gt;
-      </code></pre>
+      <h2>Uso de unidades de medida relativas (em, %):</h2>
+      <p>Explorarás las unidades de medida relativas, como em y %, que te permiten crear diseños más flexibles y
+        adaptables a diferentes tamaños de fuente y pantallas.</p>
+      <pre><code>/* Uso de unidades em para tamaño de fuente */
+body {
+font-size: 16px;
+}
+
+h1 {
+font-size: 2em; /* 32px (16px * 2) */
+}
+
+/* Uso de porcentaje para ancho de contenedores */
+.container {
+width: 80%; /* 80% del ancho del contenedor padre */
+}</code></pre>
     </section>
 
     <section>
-      <h2>Etiqueta de audio (&lt;audio&gt;)</h2>
-      <p>La etiqueta &lt;audio&gt; se utiliza para insertar archivos de audio en una página web. Al igual que con los videos, se pueden especificar varios formatos para mejorar la compatibilidad:</p>
-      <pre><code>
-        &lt;audio controls&gt;
-          &lt;source src="audio.mp3" type="audio/mpeg"&gt;
-          &lt;source src="audio.ogg" type="audio/ogg"&gt;
-          Tu navegador no admite el elemento &lt;audio&gt;.
-        &lt;/audio&gt;
-      </code></pre>
+      <h2>Introducción a Flexbox para diseño flexible:</h2>
+      <p>Aprenderás los conceptos básicos de Flexbox, un sistema de diseño en CSS que facilita la creación de diseños
+        flexibles y alineados de manera eficiente.</p>
+      <pre><code>/* Uso de Flexbox para alinear elementos en fila */
+.container {
+display: flex;
+justify-content: space-between; /* Distribución equitativa */
+}
+
+.item {
+flex: 1; /* Distribución equitativa del espacio disponible */
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Recursos adicionales:</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design">Documentación de
+            diseño responsivo en MDN</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units">Guía de unidades
+            de medida en CSS</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_Flexbox">Documentación de Flexbox en MDN</a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
@@ -48,4 +72,5 @@
     </h6>
   </footer>
 </body>
+
 </html>
