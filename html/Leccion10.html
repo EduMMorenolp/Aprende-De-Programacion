@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lección 10: Formularios en HTML</title>
 </head>
+
 <body>
   <header>
-    <h1>Lección 10: Formularios en HTML</h1>
+    <h1>Lección 10: Publicación en la Web</h1>
   </header>
   <main>
     <section>
-      <h2>Introducción a los Formularios</h2>
-      <p>Los formularios permiten a los usuarios enviar datos a un servidor web. Son esenciales para la recopilación de información, como registros, comentarios y más. Se definen utilizando la etiqueta &lt;form&gt;:</p>
-      <pre><code>
-        &lt;form action="procesar.php" method="post"&gt;
-          <!-- Campos del formulario aquí -->
-        &lt;/form&gt;
-      </code></pre>
-    </section>
-
-    <section>
-      <h2>Campos de Entrada</h2>
-      <p>Los campos de entrada permiten a los usuarios ingresar datos. Algunos tipos comunes son:</p>
+      <h2>Hospedaje y dominios:</h2>
+      <p>Aprenderás cómo seleccionar un servicio de hospedaje web y cómo registrar un dominio para tu sitio web. Esto es
+        esencial para que tu sitio esté disponible en línea.</p>
+      <h3>Sugerencias:</h3>
       <ul>
-        <li>Texto: &lt;input type="text" name="nombre"&gt;</li>
-        <li>Contraseña: &lt;input type="password" name="contrasena"&gt;</li>
-        <li>Correo electrónico: &lt;input type="email" name="correo"&gt;</li>
-        <li>Número: &lt;input type="number" name="edad"&gt;</li>
-        <li>Checkbox: &lt;input type="checkbox" name="acepto"&gt;</li>
-        <li>Radio: &lt;input type="radio" name="genero" value="masculino"&gt; Masculino</li>
-        <li>Área de texto: &lt;textarea name="comentarios"&gt;&lt;/textarea&gt;</li>
+        <li>Investiga y compara diferentes servicios de hospedaje web para encontrar el que se adapte a tus necesidades.
+        </li>
+        <li>Elige un nombre de dominio relevante y fácil de recordar.</li>
       </ul>
     </section>
 
     <section>
-      <h2>Etiqueta de Selección (&lt;select&gt;)</h2>
-      <p>La etiqueta &lt;select&gt; se utiliza para crear listas desplegables. Cada opción se define con la etiqueta &lt;option&gt;:</p>
-      <pre><code>
-        &lt;select name="pais"&gt;
-          &lt;option value="usa"&gt;Estados Unidos&lt;/option&gt;
-          &lt;option value="canada"&gt;Canadá&lt;/option&gt;
-          &lt;option value="mexico"&gt;México&lt;/option&gt;
-        &lt;/select&gt;
-      </code></pre>
+      <h2>Transferencia de archivos a un servidor web:</h2>
+      <p>Explorarás cómo transferir los archivos de tu sitio web desde tu computadora local al servidor web utilizando
+        protocolos como FTP o SFTP.</p>
+      <h3>Sugerencias:</h3>
+      <ul>
+        <li>Utiliza clientes FTP como FileZilla para una transferencia segura y eficiente.</li>
+        <li>Asegúrate de transferir todos los archivos, incluyendo HTML, CSS, imágenes y archivos JavaScript.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>Botones de Envío (&lt;input type="submit"&gt;)</h2>
-      <p>El botón de envío permite enviar los datos del formulario al servidor. Se define con la etiqueta &lt;input&gt; y el atributo type="submit":</p>
-      <pre><code>
-        &lt;input type="submit" value="Enviar"&gt;
-      </code></pre>
+      <h2>Aspectos básicos de SEO (Optimización para Motores de Búsqueda):</h2>
+      <p>Aprenderás los conceptos básicos de SEO para mejorar la visibilidad de tu sitio web en los motores de búsqueda,
+        lo que puede aumentar su tráfico.</p>
+      <h3>Sugerencias:</h3>
+      <ul>
+        <li>Utiliza etiquetas de encabezado (h1, h2, etc.) para estructurar tu contenido.</li>
+        <li>Utiliza URLs descriptivas y legibles para las páginas.</li>
+        <li>Optimiza las imágenes con atributos alt y tamaños adecuados.</li>
+        <li>Crea contenido de calidad y relevante para tus usuarios.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ejemplo de optimización de SEO en HTML:</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Mi Sitio Web&lt;/title&gt;
+&lt;meta name="description" content="Descripción de mi sitio web para motores de búsqueda"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;h1&gt;Mi Sitio Web&lt;/h1&gt;
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+&lt;!-- Contenido principal de la página --&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+&lt;p&gt;Derechos de autor © 2023 Mi Sitio Web&lt;/p&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Recursos adicionales:</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Guía
+            de Hosting en MDN</a></li>
+        <li><a href="https://www.hostinger.mx/tutoriales/filezilla-ftp">Cómo Transferir Archivos con FileZilla</a></li>
+        <li><a href="https://support.google.com/webmasters/answer/7451184?hl=es">Guía de Optimización de SEO en
+            Google</a></li>
+      </ul>
     </section>
   </main>
   <footer>
@@ -60,4 +97,5 @@
     </h6>
   </footer>
 </body>
+
 </html>
