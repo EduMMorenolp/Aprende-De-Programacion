@@ -36,6 +36,9 @@ const barraNavengacionCod = `
           <li class="nav-item">
           <a class="nav-link" href="../mySQL/mysql.html"> mySQL </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../generadorEjercicios/index.html"> Generador de Ejercicios </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" href="../sobreNosotros.html">
               Sobre Nosotros

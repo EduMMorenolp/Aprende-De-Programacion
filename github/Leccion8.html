@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección 8: Gestión de Proyectos con GitHub</title>
-</head>
-<body>
-    <header>
-        <h1>Lección 8: Gestión de Proyectos con GitHub</h1>
-      </header>
-      <main>
-        <section>
-          <h2>Proyectos y Tableros en GitHub</h2>
-          <p>GitHub proporciona herramientas para planificar y gestionar proyectos utilizando tableros. Puedes crear tareas, organizarlas en columnas y asignarlas a colaboradores.</p>
-          <p>Beneficios de los tableros de proyecto:</p>
-          <ul>
-            <li>Visualización clara del flujo de trabajo.</li>
-            <li>Organización de tareas por prioridad y estado.</li>
-            <li>Asignación de tareas a colaboradores.</li>
-            <li>Seguimiento del progreso del proyecto.</li>
-          </ul>
-        </section>
-    
-        <section>
-          <h2>Integración de Problemas y Solicitudes de Extracción en la Gestión de Proyectos</h2>
-          <p>Puedes vincular problemas (issues) y solicitudes de extracción (pull requests) a elementos en los tableros de proyecto. Esto ayuda a mantener un seguimiento y una visibilidad claros de las tareas en curso.</p>
-          <p>Ejemplo de uso de problemas y solicitudes de extracción en un tablero:</p>
-          <pre><code>
-            // Crear un problema y asignarlo a un colaborador
-            En la página del repositorio en GitHub, ve a la pestaña "Issues".
-            Haz clic en "Nuevo issue" y proporciona los detalles del problema.
-            En el tablero de proyecto, arrastra el problema a la columna correspondiente.
-    
-            // Vincular una solicitud de extracción a un problema
-            En la página de la solicitud de extracción, menciona el número del problema en el comentario.
-            La solicitud de extracción se vinculará automáticamente al problema y aparecerá en el tablero.
-          </code></pre>
-        </section>
-    
-        <section>
-          <h2>Organización y Etiquetas para Mantener el Orden</h2>
-          <p>Utiliza etiquetas para categorizar y clasificar los problemas y las solicitudes de extracción. Esto facilita la búsqueda y permite identificar rápidamente el estado de cada elemento.</p>
-          <p>Ejemplo de uso de etiquetas:</p>
-          <pre><code>
-            // Crear una etiqueta
-            En la página del repositorio, ve a la pestaña "Issues" y haz clic en "Etiquetas".
-            Haz clic en "Nueva etiqueta" y proporciona un nombre y color.
-    
-            // Aplicar etiquetas a problemas y solicitudes de extracción
-            Al crear o editar un problema o solicitud de extracción, puedes asignar etiquetas relevantes.
-            Por ejemplo, etiquetas como "bug", "mejora" o "pendiente" para identificar el tipo o estado.
-          </code></pre>
-        </section>
-    
-        <section>
-          <h2>Documentación y Colaboración en la Wiki del Repositorio</h2>
-          <p>La wiki del repositorio en GitHub permite crear y mantener documentación relacionada con el proyecto. Puedes colaborar en la creación de guías, tutoriales y otros recursos útiles.</p>
-          <p>Ejemplo de colaboración en la wiki:</p>
-          <pre><code>
-            // Acceder a la wiki del repositorio
-            En la página del repositorio en GitHub, ve a la pestaña "Wiki".
-            Puedes crear nuevas páginas o editar las existentes directamente en línea.
-    
-            // Colaboración en la documentación
-            Invita a colaboradores al repositorio para que puedan contribuir a la wiki.
-            Utiliza la sintaxis de formato Markdown para dar formato a los contenidos y añadir enlaces y recursos.
-          </code></pre>
-        </section>
-      </main>
-    <footer>
-        <p>© 2023 Aprende Programación - Git y GitHub</p>
-    </footer>
-</body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 8: Gestión de Proyectos con GitHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2 {
+      color: #343a40;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    pre {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lección 8: Gestión de Proyectos con GitHub</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Proyectos y Tableros en GitHub</h2>
+      <p>GitHub proporciona herramientas para planificar y gestionar proyectos utilizando tableros. Puedes crear tareas,
+        organizarlas en columnas y asignarlas a colaboradores.</p>
+      <p>Beneficios de los tableros de proyecto:</p>
+      <ul>
+        <li>Visualización clara del flujo de trabajo.</li>
+        <li>Organización de tareas por prioridad y estado.</li>
+        <li>Asignación de tareas a colaboradores.</li>
+        <li>Seguimiento del progreso del proyecto.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Integración de Problemas y Solicitudes de Extracción en la Gestión de Proyectos</h2>
+      <p>Puedes vincular problemas (issues) y solicitudes de extracción (pull requests) a elementos en los tableros de
+        proyecto. Esto ayuda a mantener un seguimiento y una visibilidad claros de las tareas en curso.</p>
+      <p>Ejemplo de uso de problemas y solicitudes de extracción en un tablero:</p>
+      <pre><code>
+// Crear un problema y asignarlo a un colaborador
+En la página del repositorio en GitHub, ve a la pestaña "Issues".
+Haz clic en "Nuevo issue" y proporciona los detalles del problema.
+En el tablero de proyecto, arrastra el problema a la columna correspondiente.
+
+// Vincular una solicitud de extracción a un problema
+En la página de la solicitud de extracción, menciona el número del problema en el comentario.
+La solicitud de extracción se vinculará automáticamente al problema y aparecerá en el tablero.
+        </code></pre>
+    </section>
+
+    <section>
+      <h2>Organización y Etiquetas para Mantener el Orden</h2>
+      <p>Utiliza etiquetas para categorizar y clasificar los problemas y las solicitudes de extracción. Esto facilita la
+        búsqueda y permite identificar rápidamente el estado de cada elemento.</p>
+      <p>Ejemplo de uso de etiquetas:</p>
+      <pre><code>
+// Crear una etiqueta
+En la página del repositorio, ve a la pestaña "Issues" y haz clic en "Etiquetas".
+Haz clic en "Nueva etiqueta" y proporciona un nombre y color.
+
+// Aplicar etiquetas a problemas y solicitudes de extracción
+Al crear o editar un problema o solicitud de extracción, puedes asignar etiquetas relevantes.
+Por ejemplo, etiquetas como "bug", "mejora" o "pendiente" para identificar el tipo o estado.
+        </code></pre>
+    </section>
+
+    <section>
+      <h2>Documentación y Colaboración en la Wiki del Repositorio</h2>
+      <p>La wiki del repositorio en GitHub permite crear y mantener documentación relacionada con el proyecto. Puedes
+        colaborar en la creación de guías, tutoriales y otros recursos útiles.</p>
+      <p>Ejemplo de colaboración en la wiki:</p>
+      <pre><code>
+// Acceder a la wiki del repositorio
+En la página del repositorio en GitHub, ve a la pestaña "Wiki".
+Puedes crear nuevas páginas o editar las existentes directamente en línea.
+
+// Colaboración en la documentación
+Invita a colaboradores al repositorio para que puedan contribuir a la wiki.
+Utiliza la sintaxis de formato Markdown para dar formato a los contenidos y añadir enlaces y recursos.
+        </code></pre>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Aprende Programación - Git y GitHub</p>
+  </footer>
+</body>
+
+</html>
