@@ -74,7 +74,7 @@
                     // Asignar el ejercicio y nivel para el ejercicio viejo
                     const listaEjerciciosViejos = document.getElementById('ejerciciodos');
                     const ejercicioViejoElement = document.createElement('div');
-                    ejercicioViejoElement.textContent = "Dificultad " + ejercicioNuevo.nivel  + " : " + ejercicioViejo.ejercicio;
+                    ejercicioViejoElement.textContent = "Dificultad " + ejercicioNuevo.nivel + " : " + ejercicioViejo.ejercicio;
                     listaEjerciciosViejos.appendChild(ejercicioViejoElement);
 
                 } else {
@@ -93,6 +93,8 @@
                         return 'orange';
                     case 'alto':
                         return 'red';
+                    case `muy alto`:
+                        return 'purple';
                     default:
                         return 'black'; // Color por defecto en caso de nivel desconocido
                 }

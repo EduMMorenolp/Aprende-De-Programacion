@@ -213,6 +213,86 @@
     {
       "nivel": "Alto",
       "ejercicio": "Crea una base de datos para una plataforma educativa. Diseña tablas para 'Cursos', 'Estudiantes', 'Profesores', 'Inscripciones' y 'Calificaciones'."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una plataforma de comercio electrónico que maneje productos, usuarios, carritos de compra y pedidos. Implementa consultas complejas para obtener información detallada."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de gestión de proyectos que permita a los usuarios asignar tareas, establecer plazos y hacer seguimiento del progreso."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un sistema de reservas para un hotel que controle las disponibilidades de habitaciones, tarifas y reservas de clientes, con funciones de check-in y check-out."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una red social que permita a los usuarios crear perfiles, enviar solicitudes de amistad, publicar contenido y comentar en las publicaciones de otros usuarios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de cursos en línea. Permite a los usuarios registrarse en cursos, realizar evaluaciones, obtener certificados y revisar su historial académico."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de gestión de inventario de una tienda física. Controla el stock de productos, las compras a proveedores y la generación de reportes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una aplicación de seguimiento de salud y estado físico. Los usuarios pueden registrar sus comidas, actividades físicas, mediciones y metas de bienestar."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de streaming de música. Organiza canciones, álbumes y artistas, y permite a los usuarios crear listas de reproducción personalizadas y seguir a sus artistas favoritos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para una empresa de viajes que gestione reservas de vuelos, hoteles y actividades. Proporciona funciones de búsqueda, filtrado y confirmación de itinerarios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de bibliotecas. Controla el registro de libros, préstamos, devoluciones y la información de los lectores."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de recursos humanos. Administra empleados, departamentos, salarios, historiales laborales y procesos de contratación."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de seguimiento y análisis de ventas. Registra ventas, clientes, productos y genera reportes que muestren tendencias y estadísticas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de reserva de entradas para eventos. Administra eventos, ubicaciones, horarios, asientos y permite a los usuarios seleccionar y comprar boletos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de administración de flotas de vehículos. Controla vehículos, mantenimientos, rutas, conductores y gastos operativos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de seguimiento de proyectos de desarrollo de software. Gestiona tareas, hitos, colaboradores y versiones, y ofrece métricas de rendimiento."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de gestión de clínicas médicas. Administra pacientes, historiales médicos, citas, tratamientos y recetas médicas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de inventario de una cadena de tiendas. Sincroniza inventarios, administra proveedores, realiza pedidos y distribuye productos entre tiendas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de evaluación y calificación de cursos en línea. Registra evaluaciones, criterios de evaluación, notas y comentarios de los estudiantes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de reserva de mesas en restaurantes. Administra restaurantes, mesas, horarios de reservas y pedidos de los clientes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de seguimiento y gestión de proyectos de construcción. Controla recursos, etapas de construcción, cronogramas y costos."
     }
   ],
   "javascript": [
@@ -375,6 +455,86 @@
     {
       "nivel": "Alto",
       "ejercicio": "Diseña una función que tome un número decimal y lo convierta a su representación binaria."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación web de lista de tareas (To-Do List) que permita agregar, eliminar y marcar tareas como completadas. Utiliza HTML, CSS y JavaScript para gestionar la interfaz y los datos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego de ahorcado en el navegador. Permite a los usuarios adivinar una palabra oculta, mostrando el progreso y las letras incorrectas. Utiliza JavaScript para manejar la lógica del juego."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea un conversor de unidades completo que permita convertir entre diferentes sistemas, como longitud, masa, temperatura y más. Proporciona una interfaz intuitiva y precisa."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un simulador de cajero automático que permita a los usuarios realizar operaciones bancarias, como retirar dinero, depositar fondos y consultar el saldo. Implementa seguridad y validación de transacciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de chat en tiempo real utilizando Firebase o Socket.io. Permite a los usuarios enviar y recibir mensajes instantáneos en una interfaz interactiva y atractiva."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un tablero interactivo de ajedrez en el navegador. Implementa la lógica de movimiento de las piezas, manejo de turnos y detección de jaque y jaque mate."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de reserva de citas que permita a los usuarios programar citas con profesionales. Maneja horarios, disponibilidad y notificaciones en tiempo real."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de gestión de proyectos que permita a los usuarios crear, asignar y realizar un seguimiento de tareas. Implementa funcionalidades como diagramas de Gantt y recordatorios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un reproductor de música en línea que permita a los usuarios buscar, reproducir y crear listas de reproducción personalizadas. Integra características como recomendaciones y letras de canciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma interactiva para aprender idiomas que incluya lecciones, ejercicios de gramática, pruebas de vocabulario y seguimiento del progreso del usuario."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de comercio electrónico que permita a los usuarios buscar, explorar y comprar productos. Implementa carritos de compra, pagos seguros y seguimiento de pedidos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego de memoria con cartas en el navegador. Las cartas deben voltearse y el jugador debe encontrar coincidencias. Incluye múltiples niveles de dificultad."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de blog interactiva donde los usuarios puedan crear, editar y eliminar publicaciones. Agrega comentarios, etiquetas y búsqueda de contenido."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea un editor de imágenes en línea que permita a los usuarios cargar, editar y descargar imágenes. Implementa herramientas de edición como recorte, filtros y superposiciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una plataforma de aprendizaje en línea que ofrezca cursos, evaluaciones y certificados. Incluye una interfaz para instructores y estudiantes, así como seguimiento del progreso."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un generador de historias interactivas donde los usuarios puedan tomar decisiones que afecten el desarrollo de la trama. Utiliza programación orientada a objetos para manejar la lógica."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de colaboración en tiempo real para programar en pareja. Permite a los usuarios codificar juntos en un entorno compartido con resaltado de sintaxis y ejecución de código."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una red social temática que permita a los usuarios crear perfiles, conectarse con otros y compartir contenido relacionado con un interés específico, como la fotografía o la música."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de seguimiento de hábitos y metas personales. Los usuarios pueden establecer objetivos, registrar su progreso y recibir recordatorios personalizados."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de intercambio de libros electrónicos donde los usuarios puedan prestar y pedir prestados libros digitales, gestionando la disponibilidad y los préstamos."
     }
   ],
   "html": [
