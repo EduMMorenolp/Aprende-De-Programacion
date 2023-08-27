@@ -902,5 +902,169 @@
       "nivel": "Alto",
       "ejercicio": "Realiza una reversión (revert) de un commit específico para deshacer los cambios introducidos por ese commit."
     }
+  ],
+  "react": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente que muestre una tarjeta de perfil con nombre, imagen de avatar y una breve descripción."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Desarrolla una calculadora simple que realice operaciones de suma, resta, multiplicación y división."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de lista de tareas (to-do list) donde los usuarios puedan agregar, marcar como completadas y eliminar tareas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de búsqueda de películas utilizando una API pública de películas. Muestra detalles como título, imagen y descripción."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de inventario de una cadena de tiendas. Sincroniza inventarios, administra proveedores, realiza pedidos y distribuye productos entre tiendas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de cronómetro (stopwatch) que permita a los usuarios iniciar, pausar y reiniciar el tiempo."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego simple como el clásico Piedra, Papel o Tijera contra la computadora."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una aplicación de red social donde los usuarios puedan registrarse, iniciar sesión, crear publicaciones y comentar en las publicaciones de otros usuarios."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de clima que muestre el pronóstico actual utilizando una API de clima."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de carrusel que muestre imágenes y permita a los usuarios navegar entre ellas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de barra de navegación con enlaces a diferentes secciones de un sitio web."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de chat en tiempo real donde los usuarios puedan enviar y recibir mensajes."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de aprendizaje en línea que permita a los usuarios registrarse en cursos, ver lecciones y completar evaluaciones."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un formulario de registro que solicite nombre de usuario, correo electrónico y contraseña."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un sistema de votación en tiempo real para una encuesta donde los votos sean registrados y reflejados en tiempo real."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una aplicación de seguimiento de fitness que registre datos como pasos, distancia recorrida y calorías quemadas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de tarjeta de producto que muestre información como nombre, imagen, precio y botón de compra."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego de ahorcado donde los usuarios adivinen una palabra oculta letra por letra."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de gestión de proyectos donde los usuarios puedan crear proyectos, asignar tareas y hacer un seguimiento del progreso."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de búsqueda y reproducción de videos utilizando una API pública de videos."
+    },
+
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de contador que permita a los usuarios incrementar y decrementar un valor numérico."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de notas donde los usuarios puedan crear, editar y eliminar notas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña un tablero Kanban para la gestión de tareas con columnas de Por hacer, En progreso y Hecho."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de reloj digital que muestre la hora actual en tiempo real."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de búsqueda de recetas de cocina utilizando una API pública de recetas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una aplicación de reserva de habitaciones de hotel donde los usuarios puedan seleccionar fechas y tipos de habitaciones."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de acordeón que muestre y oculte contenido al hacer clic en los encabezados."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego de memoria donde los usuarios encuentren pares de cartas iguales en un tablero."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de publicación de blogs donde los usuarios puedan escribir, editar y publicar entradas de blog."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de búsqueda de música que permita a los usuarios buscar canciones y artistas utilizando una API pública."
+    },
+
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de reserva y pago en línea para la compra de boletos de eventos, con selección de asientos en tiempo real."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una plataforma de comercio electrónico completa con carrito de compras, gestión de inventario y opciones de pago."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de aprendizaje automático (machine learning) que analice y clasifique imágenes utilizando TensorFlow.js."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una red social avanzada con funcionalidades de amistad, seguimiento, chat en tiempo real y publicaciones multimedia."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un sistema de gestión de contenido (CMS) que permita a los usuarios crear y administrar contenido multimedia y páginas web."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de alquiler de propiedades vacacionales donde los usuarios puedan buscar, reservar y calificar alojamientos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de asistencia médica en línea que ofrezca consultas virtuales, seguimiento de pacientes y registros médicos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego en 3D utilizando bibliotecas como Three.js, donde los usuarios puedan explorar un mundo interactivo."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de educación en línea que ofrezca cursos interactivos con videoconferencias en tiempo real y evaluaciones automatizadas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de planificación de viajes que recomiende itinerarios personalizados basados en las preferencias de los usuarios."
+    }
   ]
 }
