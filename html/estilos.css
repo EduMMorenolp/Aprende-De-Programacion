@@ -2,7 +2,7 @@
 
 .navbar {
   border-bottom: 7px solid #aaa;
-  border-radius: 0 0 .8rem .8rem;
+  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 body {
@@ -14,9 +14,7 @@ body {
 
 /*Estilos para el menu de Lecciones*/
 
-.lateral, .central {
-  position: absolute;
-}
+
 
 .sidebar {
   background-color: #f0f0f0;
@@ -59,11 +57,21 @@ body {
 }
 
 /*Estilos para el contenido de las lecciones*/
-
+/*
 .content {
   float: left;
   display: block;
   margin-left: 280px;
+}
+*/
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-left: 20px;
 }
 
 /*Estilos para el pie de página*/
@@ -77,40 +85,40 @@ footer {
 
 /*HTML y CSS*/
 .nav-item:nth-child(2) .nav-link:hover {
-    background: linear-gradient(90deg, #E34F26 50%, #1572B6 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  /*Java*/
-  .nav-item:nth-child(3) .nav-link:hover {
-    background: linear-gradient(90deg, #F00 50%, #00F 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  /*JavaScript*/
-  .nav-item:nth-child(4) .nav-link:hover {
-    background: linear-gradient(90deg, #F7DF1E 50%, #F7DF1E 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  /*Python*/
-  .nav-item:nth-child(5) .nav-link:hover {
-    background: linear-gradient(90deg, #306998 50%, #306998 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  /*Git y GitHub*/
-  .nav-item:nth-child(6) .nav-link:hover {
-    background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+  background: linear-gradient(90deg, #e34f26 50%, #1572b6 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Java*/
+.nav-item:nth-child(3) .nav-link:hover {
+  background: linear-gradient(90deg, #f00 50%, #00f 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*JavaScript*/
+.nav-item:nth-child(4) .nav-link:hover {
+  background: linear-gradient(90deg, #f7df1e 50%, #f7df1e 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Python*/
+.nav-item:nth-child(5) .nav-link:hover {
+  background: linear-gradient(90deg, #306998 50%, #306998 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Git y GitHub*/
+.nav-item:nth-child(6) .nav-link:hover {
+  background: linear-gradient(90deg, #6cc24a 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
