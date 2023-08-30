@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 2: Fundamentos de Bases de Datos</title>
+</head>
+
+<body>
+  <div class="body">
+    <h1>Módulo 2: Fundamentos de Bases de Datos</h1>
+
+    <h2>2.1 Conceptos Básicos de Bases de Datos</h2>
+    <p><strong>¿Qué es una base de datos?</strong></p>
+    <p>Una base de datos es una colección organizada de datos que se almacenan y administran de manera eficiente.
+      Proporciona un método para almacenar, recuperar y administrar información de manera estructurada. Las bases de
+      datos son esenciales para muchas aplicaciones modernas y sitios web, ya que permiten un acceso rápido y confiable
+      a grandes cantidades de datos.</p>
+
+    <p><strong>Modelo Relacional y otros modelos de bases de datos:</strong></p>
+    <p>El Modelo Relacional es uno de los modelos de bases de datos más comunes y ampliamente utilizados. En este
+      modelo, los datos se organizan en tablas relacionadas entre sí mediante claves. Además del modelo relacional,
+      existen otros modelos de bases de datos, como el modelo NoSQL, que se utilizan para diferentes tipos de
+      aplicaciones y requisitos.</p>
+
+    <p><strong>Ejemplo de Modelo Relacional:</strong></p>
+    <p>Supongamos que estamos construyendo una base de datos para una tienda en línea. Podríamos tener dos tablas:
+      "Productos" y "Órdenes". Aquí hay un ejemplo simple de cómo se vería esto:</p>
+    <pre>
+    Tabla "Productos":
+
+    ID	Nombre	Precio
+    1	Camiseta	$20
+    2	Pantalón	$40
+    3	Zapatillas	$60
+
+    Tabla "Órdenes":
+
+    ID	Producto_ID	Cantidad	Total
+    1	1	2	$40
+    2	3	1	$60
+  </pre>
+
+    <h2>2.2 Creación de Bases de Datos y Tablas</h2>
+    <p><strong>Creación y selección de una base de datos:</strong></p>
+    <pre>
+    -- Creación de una base de datos
+    CREATE DATABASE MiBaseDeDatos;
+
+    -- Selección de la base de datos
+    USE MiBaseDeDatos;
+  </pre>
+
+    <p><strong>Creación de tablas con tipos de datos:</strong></p>
+    <pre>
+    -- Creación de la tabla "Productos"
+    CREATE TABLE Productos (
+      ID INT AUTO_INCREMENT PRIMARY KEY,
+      Nombre VARCHAR(255),
+      Precio DECIMAL(10, 2)
+    );
+
+    -- Creación de la tabla "Órdenes"
+    CREATE TABLE Ordenes (
+      ID INT AUTO_INCREMENT PRIMARY KEY,
+      Producto_ID INT,
+      Cantidad INT,
+      Total DECIMAL(10, 2),
+      FOREIGN KEY (Producto_ID) REFERENCES Productos(ID)
+    );
+  </pre>
+
+    <p><strong>Claves primarias y claves foráneas:</strong></p>
+    <p>En el ejemplo anterior, hemos creado una clave primaria en la columna "ID" de ambas tablas. La clave primaria
+      garantiza que cada fila en la tabla tenga un valor único en esa columna. Además, hemos establecido una clave
+      foránea en la tabla "Órdenes" que se refiere a la columna "ID" en la tabla "Productos". Esto establece una
+      relación entre las tablas.</p>
+
+    <p>Recursos adicionales:</p>
+    <ul>
+      <li><a href="https://www.mysqltutorial.org/introduction-to-relational-database-management-systems-rdbms.aspx"
+          target="_blank">Introducción a las bases de datos relacionales</a></li>
+      <li><a href="https://www.mongodb.com/nosql-explained/nosql-vs-sql" target="_blank">Modelos de bases de datos:
+          Relacional vs. NoSQL</a></li>
+      <li><a href="https://dev.mysql.com/doc/refman/8.0/en/data-types.html" target="_blank">Documentación de MySQL sobre
+          Tipos de Datos</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 9: Despliegue de Aplicaciones con MySQL</title>
+</head>
+<body>
+  <h1>Módulo 9: Despliegue de Aplicaciones con MySQL</h1>
+
+  <h2>9.1 Integración de MySQL en Aplicaciones</h2>
+  <p><strong>Conexión a bases de datos desde aplicaciones web:</strong></p>
+  <p>Aprenderás cómo establecer conexiones a bases de datos MySQL desde aplicaciones web utilizando lenguajes de programación como PHP, Python, Node.js, entre otros.</p>
+  <pre>
+    // Ejemplo de conexión a MySQL en PHP
+    $servername = "localhost";
+    $username = "usuario";
+    $password = "contraseña";
+    $dbname = "basededatos";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }
+  </pre>
+
+  <p><strong>Consideraciones de seguridad:</strong></p>
+  <p>Explorarás las mejores prácticas para asegurar la integridad y seguridad de las conexiones a la base de datos, incluyendo el uso de parámetros en consultas preparadas y la protección contra inyección SQL.</p>
+  <pre>
+    // Ejemplo de consulta preparada en PHP
+    $stmt = $conn->prepare("SELECT nombre FROM usuarios WHERE id = ?");
+    $stmt->bind_param("i", $id);
+    $id = 1;
+    $stmt->execute();
+    $result = $stmt->get_result();
+  </pre>
+
+  <h2>9.2 Despliegue de Bases de Datos</h2>
+  <p><strong>Opciones de despliegue para bases de datos MySQL:</strong></p>
+  <p>Aprenderás sobre diferentes opciones para desplegar bases de datos MySQL en entornos de producción, incluyendo configuración de servidores dedicados, alojamiento en la nube y servicios administrados.</p>
+
+  <p>Recursos adicionales:</p>
+  <ul>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/c-api.html" target="_blank">Documentación de MySQL sobre Conexiones de Cliente</a></li>
+    <li><a href="https://www.php.net/manual/en/security.database.sql-injection.php" target="_blank">Evitar Inyección SQL en PHP</a></li>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/deployment.html" target="_blank">Documentación de MySQL sobre Despliegue y Administración</a></li>
+  </ul>
+</body>
+</html>

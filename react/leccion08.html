@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 8: Desarrollo de Aplicaciones Complejas</title>
+</head>
+<body>
+  <h1>Módulo 8: Desarrollo de Aplicaciones Complejas</h1>
+
+  <h2>8.1 Patrones de Diseño en React</h2>
+  <h3>Contenedores y presentacionales:</h3>
+  <p>El patrón de Contenedores y Presentacionales (Container and Presentational) es una técnica que separa la lógica y el estado de la interfaz de usuario en dos tipos de componentes:</p>
+  <ul>
+    <li><strong>Contenedores:</strong> Componentes responsables de la lógica y el estado. Interactúan con el estado global y manejan acciones y eventos.</li>
+    <li><strong>Presentacionales:</strong> Componentes que se centran en la representación visual y reciben datos y funciones a través de props. Son reutilizables y fáciles de entender.</li>
+  </ul>
+
+  <h3>Composición de componentes:</h3>
+  <pre><code>
+import React from 'react';
+
+const Encabezado = () => &lt;h1&gt;Título del Encabezado&lt;/h1&gt;;
+const Cuerpo = () => &lt;p&gt;Contenido del Cuerpo&lt;/p&gt;;
+const Pie = () => &lt;footer&gt;Pie de Página&lt;/footer&gt;;
+
+const Pagina = () => (
+  &lt;div&gt;
+    &lt;Encabezado /&gt;
+    &lt;Cuerpo /&gt;
+    &lt;Pie /&gt;
+  &lt;/div&gt;
+);
+
+export default Pagina;
+  </code></pre>
+
+  <h3>Patrón HOC (Higher Order Component):</h3>
+  <pre><code>
+import React from 'react';
+
+const withEstiloRojo = (Componente) => {
+  return (props) => (
+    &lt;div style={{ color: 'red' }}&gt;
+      &lt;Componente {...props} /&gt;
+    &lt;/div&gt;
+  );
+};
+
+const TextoDestacado = ({ texto }) => &lt;p&gt;{texto}&lt;/p&gt;;
+const TextoDestacadoRojo = withEstiloRojo(TextoDestacado);
+
+export default TextoDestacadoRojo;
+  </code></pre>
+
+  <h2>8.2 Acceso a APIs externas</h2>
+  <p><strong>Uso de APIs REST:</strong></p>
+  <p>Las APIs REST (Representational State Transfer) son una forma común de acceder a datos y recursos en aplicaciones web. Se utilizan para realizar solicitudes HTTP para obtener, enviar y actualizar información.</p>
+
+  <pre><code>
+import React, { useState, useEffect } from 'react';
+
+const App = () => {
+  const [datos, setDatos] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.example.com/data')
+      .then((response) => response.json())
+      .then((data) => setDatos(data));
+  }, []);
+
+  return (
+    &lt;div&gt;
+      {datos.map((item) => (
+        &lt;p key={item.id}&gt;{item.nombre}&lt;/p&gt;
+      ))}
+    &lt;/div&gt;
+  );
+};
+
+export default App;
+  </code></pre>
+
+  <h3>Manejo de respuestas asíncronas:</h3>
+  <p>Las operaciones de API son asíncronas, lo que significa que se realizan fuera del flujo principal de ejecución. Puedes usar async/await o .then() para manejar respuestas asíncronas y actualizar el estado de tu componente cuando se reciban los datos.</p>
+
+  <p><strong>Actualización del estado basado en datos externos:</strong></p>
+  <p>Puedes utilizar el estado local del componente para representar y actualizar los datos obtenidos de una API externa. Al realizar cambios en el estado, el componente se vuelve a renderizar y muestra la información actualizada.</p>
+
+  <p>En este módulo, aprenderás cómo abordar patrones de diseño avanzados y cómo acceder a APIs externas para integrar datos en tus aplicaciones React. Estos conocimientos te ayudarán a desarrollar aplicaciones más completas y robustas.</p>
+</body>
+</html>

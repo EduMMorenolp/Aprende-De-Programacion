@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Consultas SQL Básicas</title>
+</head>
+<body>
+
+    <h1>Módulo 3: Consultas SQL Básicas</h1>
+
+    <h2>3.1 SELECT: Recuperación de Datos</h2>
+    <p><strong>Sintaxis básica de SELECT:</strong></p>
+    <p>La cláusula SELECT se utiliza para recuperar datos de una tabla. Puedes seleccionar columnas específicas o todas las columnas en una tabla.</p>
+    <pre><code>SELECT columna1, columna2 FROM tabla;
+SELECT * FROM tabla;</code></pre>
+
+    <p><strong>Filtrado de resultados con WHERE:</strong></p>
+    <p>La cláusula WHERE se utiliza para filtrar los resultados según una condición.</p>
+    <pre><code>SELECT columna1, columna2 FROM tabla WHERE condicion;
+SELECT * FROM productos WHERE precio > 50;</code></pre>
+
+    <p><strong>Ordenamiento de resultados con ORDER BY:</strong></p>
+    <p>La cláusula ORDER BY se utiliza para ordenar los resultados en orden ascendente (ASC) o descendente (DESC).</p>
+    <pre><code>SELECT columna1, columna2 FROM tabla ORDER BY columna ASC/DESC;
+SELECT * FROM productos ORDER BY precio DESC;</code></pre>
+
+    <h2>3.2 Funciones de Agregación</h2>
+    <p><strong>SUM, AVG, COUNT, MIN, MAX:</strong></p>
+    <p>Las funciones de agregación realizan cálculos en un conjunto de valores y devuelven un único valor calculado.</p>
+    <pre><code>SELECT SUM(precio) FROM productos;
+SELECT AVG(edad) FROM empleados;
+SELECT COUNT(*) FROM clientes;
+SELECT MIN(precio) FROM productos;
+SELECT MAX(salario) FROM empleados;</code></pre>
+
+    <p><strong>Agrupación de resultados con GROUP BY:</strong></p>
+    <p>La cláusula GROUP BY se utiliza para agrupar filas que tienen el mismo valor en una columna específica.</p>
+    <pre><code>SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1;
+SELECT categoria, AVG(precio) FROM productos GROUP BY categoria;</code></pre>
+
+    <p><strong>Filtros en resultados agrupados con HAVING:</strong></p>
+    <p>La cláusula HAVING se utiliza para filtrar resultados después de aplicar la cláusula GROUP BY.</p>
+    <pre><code>SELECT columna1, COUNT(*) FROM tabla GROUP BY columna1 HAVING condicion;
+SELECT categoria, AVG(precio) FROM productos GROUP BY categoria HAVING AVG(precio) > 50;</code></pre>
+
+    <h2>Recursos adicionales:</h2>
+    <p><a href="https://www.w3schools.com/sql/" target="_blank">Tutorial de SQL en W3Schools</a></p>
+    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/select.html" target="_blank">Documentación de MySQL sobre SELECT</a></p>
+    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html" target="_blank">Documentación de MySQL sobre Funciones de Agregación</a></p>
+
+</body>
+</html>

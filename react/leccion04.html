@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 4: Interacción y Eventos</title>
+</head>
+<body>
+  <h1>Módulo 4: Interacción y Eventos</h1>
+
+  <h2>4.1 Manipulación de Eventos</h2>
+  <h3>Manejo de eventos en React:</h3>
+  <p>En React, los eventos se manejan de manera similar a cómo se manejan en el DOM tradicional. Sin embargo, en lugar de asignar manejadores directamente a los elementos del DOM, se utilizan funciones manejadoras en los componentes de React.</p>
+
+  <h3>Sintaxis y uso de funciones manejadoras:</h3>
+  <pre><code>
+import React from 'react';
+
+class BotonClic extends React.Component {
+  handleClick = () => {
+    alert('¡Botón clickeado!');
+  };
+
+  render() {
+    return button onClick={this.handleClick}>Clic aquí /button;
+  }
+}
+
+export default BotonClic;
+  </code></pre>
+
+  <h3>Eventos comunes: onClick, onChange, etc.:</h3>
+  <pre><code>
+import React from 'react';
+
+class Formulario extends React.Component {
+  handleChange = (event) => {
+    console.log('Texto ingresado:', event.target.value);
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;input type="text" onChange={this.handleChange} /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default Formulario;
+  </code></pre>
+
+  <h2>4.2 Comunicación entre Componentes</h2>
+  <h3>Elevación de estados:</h3>
+  <p>La elevación de estado es un patrón en React donde el estado se mantiene en un componente padre y se pasa como prop a los componentes hijos que lo necesitan. Esto permite que los componentes compartan y sincronicen información.</p>
+
+  <pre><code>
+import React from 'react';
+
+class Padre extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { contador: 0 };
+  }
+
+  incrementarContador = () => {
+    this.setState({ contador: this.state.contador + 1 });
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Hijo contador={this.state.contador} /&gt;
+        &lt;button onClick={this.incrementarContador}>Incrementar&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+class Hijo extends React.Component {
+  render() {
+    return &lt;p&gt;Contador: {this.props.contador}&lt;/p&gt;;
+  }
+}
+
+export default Padre;
+  </code></pre>
+
+  <h3>Uso de callbacks y props para pasar datos:</h3>
+  <pre><code>
+import React from 'react';
+
+class Hijo extends React.Component {
+  render() {
+    return (
+      &lt;button onClick={this.props.onBotonClic}>Clic aquí&lt;/button&gt;
+    );
+  }
+}
+
+class Padre extends React.Component {
+  manejarBotonClic = () => {
+    console.log('Botón clickeado en el padre');
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Hijo onBotonClic={this.manejarBotonClic} /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default Padre;
+  </code></pre>
+
+  <h3>Patrones de comunicación:</h3>
+  <p>Además de la elevación de estado y el uso de callbacks, existen otros patrones de comunicación entre componentes en React, como el uso de contextos y bibliotecas de gestión de estado como Redux. La comunicación efectiva entre componentes es crucial para construir aplicaciones React bien organizadas y mantenibles.</p>
+
+  <p>En los próximos módulos, exploraremos el enrutamiento y la gestión de estado en profundidad.</p>
+</body>
+</html>

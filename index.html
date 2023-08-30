@@ -47,14 +47,35 @@
             <a class="nav-link" href="github/github.html"> Git / GitHub </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="react/react.html"> React </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mySQL/mysql.html"> mySQL </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="generadorEjercicios/index.html"> Generador de Ejercicios </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" href="sobreNosotros.html"> Sobre Nosotros </a>
           </li>
           <li class="nav-item dropdown">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Busqueda</button>
-            </form>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
           </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
       </div>
     </div>
   </nav>
@@ -79,7 +100,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
-            <form action="procesar_registro.php" method="POST">
+            <form>
               <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -109,14 +130,14 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-          <form action="procesar_inicio_sesion.php" method="POST">
+          <form>
             <div class="mb-3">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <label for="emailInicioSesion" class="form-label">Correo electrónico</label>
+              <input type="emailInicioSesion" class="form-control" id="emailInicioSesion" name="emailInicioSesion" required>
             </div>
             <div class="mb-3">
-              <label for="contrasena" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+              <label for="contrasenaSesion" class="form-label">Contraseña</label>
+              <input type="passwordSesion" class="form-control" id="contrasenaSesion" name="contrasenaSesion" required>
             </div>
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
           </form>

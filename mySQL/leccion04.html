@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 4: Consultas SQL Avanzadas</title>
+</head>
+<body>
+  <h1>Módulo 4: Consultas SQL Avanzadas</h1>
+
+  <h2>4.1 JOIN: Combinación de Tablas</h2>
+  <p><strong>INNER JOIN, LEFT JOIN, RIGHT JOIN:</strong></p>
+  <p>Aprenderás a utilizar diferentes tipos de JOIN para combinar datos de múltiples tablas. Los JOIN permiten acceder a información relacionada en diferentes tablas.</p>
+  <pre>
+    -- INNER JOIN: Combina registros coincidentes en ambas tablas
+    SELECT clientes.nombre, pedidos.fecha
+    FROM clientes
+    INNER JOIN pedidos ON clientes.id = pedidos.cliente_id;
+
+    -- LEFT JOIN: Incluye todos los registros de la tabla izquierda y los coincidentes de la derecha
+    SELECT productos.nombre, ventas.cantidad
+    FROM productos
+    LEFT JOIN ventas ON productos.id = ventas.producto_id;
+  </pre>
+
+  <p><strong>JOIN múltiples tablas:</strong></p>
+  <p>Aprenderás a combinar tres o más tablas en una consulta utilizando JOINs múltiples.</p>
+  <pre>
+    SELECT c.nombre, p.nombre, v.fecha
+    FROM clientes AS c
+    JOIN pedidos AS p ON c.id = p.cliente_id
+    JOIN ventas AS v ON p.id = v.pedido_id;
+  </pre>
+
+  <p><strong>Subconsultas:</strong></p>
+  <p>Las subconsultas son consultas anidadas dentro de otras consultas. Pueden utilizarse en diferentes partes de una consulta, como condiciones WHERE o cláusulas FROM.</p>
+  <pre>
+    SELECT nombre
+    FROM clientes
+    WHERE id IN (SELECT cliente_id FROM pedidos WHERE total > 1000);
+  </pre>
+
+  <h2>4.2 Modificación de Datos</h2>
+  <p><strong>INSERT, UPDATE, DELETE:</strong></p>
+  <p>Aprenderás a insertar, actualizar y eliminar datos en una tabla.</p>
+  <pre>
+    -- INSERT: Agregar un nuevo registro
+    INSERT INTO productos (nombre, precio) VALUES ('Nuevo Producto', 50);
+
+    -- UPDATE: Actualizar registros existentes
+    UPDATE clientes SET nombre = 'Nuevo Nombre' WHERE id = 3;
+
+    -- DELETE: Eliminar registros
+    DELETE FROM pedidos WHERE fecha < '2023-01-01';
+  </pre>
+
+  <p><strong>Transacciones y control de cambios:</strong></p>
+  <p>Las transacciones te permiten agrupar una serie de operaciones SQL en una única unidad lógica. Aprenderás a utilizar transacciones para garantizar la integridad de los datos y el control de cambios.</p>
+  <pre>
+    -- Inicio de una transacción
+    START TRANSACTION;
+
+    -- Realización de operaciones dentro de la transacción
+    INSERT INTO compras (producto_id, cantidad) VALUES (5, 10);
+    UPDATE inventario SET cantidad = cantidad - 10 WHERE producto_id = 5;
+
+    -- Confirmación de la transacción
+    COMMIT;
+
+    -- Revertir cambios en la transacción
+    ROLLBACK;
+  </pre>
+
+  <p>Recursos adicionales:</p>
+  <ul>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/join.html" target="_blank">Documentación de MySQL sobre JOIN</a></li>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/subqueries.html" target="_blank">Uso de Subconsultas en SQL</a></li>
+    <li><a href="https://dev.mysql.com/doc/refman/8.0/en/commit.html" target="_blank">Documentación de MySQL sobre Transacciones</a></li>
+  </ul>
+</body>
+</html>

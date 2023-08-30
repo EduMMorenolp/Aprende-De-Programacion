@@ -1,15 +1,15 @@
-/*Barra de navegacion*/
-
-.navbar {
-  border-bottom: 7px solid #dd940c;
-  border-radius: .8rem;
-}
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+}
+
+/*Barra de navegacion*/
+
+.navbar {
+  border-bottom: 7px solid #007bff;
+  border-radius: .8rem;
 }
 
 /*Estilos para el menu de Lecciones*/
@@ -20,7 +20,7 @@ body {
 */
 .sidebar {
   border-radius: .8rem;
-  background-color: #2f32c2;
+  background-color: #007bff;
   width: 250px;
   padding: 20px;
   overflow-y: auto;
@@ -39,23 +39,23 @@ body {
 
 /* Estilos para el enlace convertido en botón */
 .sidebar a {
-  border-radius: .8rem;
   display: block;
   text-decoration: none;
   color: #333;
   padding: 10px;
-  background-color: #dd940c;
+  background-color: #0c2138;
   color: #fff;
+  border-radius: .8rem;
 }
 
 /* Efecto al pasar el mouse sobre el botón */
 .sidebar a:hover {
-  background-color: #9baabb;
+  background-color: #170f6e;
 }
 
 /* Estilo para el botón activo */
 .sidebar a:active {
-  background-color: #9baabb;
+  background-color: #0056b3;
   font-weight: bold;
 }
 
@@ -83,8 +83,6 @@ footer {
   position: sticky;
   bottom: auto;
 }
-
-/*Colores para el nav-bar*/
 
 /*Colores para el nav-bar*/
 
@@ -128,14 +126,6 @@ footer {
   color: transparent;
 }
 
-/*Git y GitHub*/
-.nav-item:nth-child(6) .nav-link:hover {
-  background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 /* React */
 .nav-item:nth-child(7) .nav-link:hover {
   background: linear-gradient(90deg, #6ba9eb 30%, #181717 70%);
@@ -143,6 +133,8 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+
 
 /* mySQL */
 .nav-item:nth-child(8) .nav-link:hover {
@@ -177,6 +169,7 @@ body {
 
 main {
   max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

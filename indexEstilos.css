@@ -8,9 +8,11 @@ body {
 /*Barra de navegacion*/
 
 .navbar {
-  border-bottom: 7px solid #aaa;
+  border-bottom: 7px solid #860876;
   border-radius: 0 0 .8rem .8rem;
 }
+
+/* Generador de Ejercicios */ 
 
 /* Estilos para los bloques de características */
 .feature {
@@ -81,6 +83,30 @@ footer {
 /*Git y GitHub*/
 .nav-item:nth-child(6) .nav-link:hover {
   background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* React */
+.nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #6ba9eb 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* mySQL */
+.nav-item:nth-child(8) .nav-link:hover {
+  background: linear-gradient(90deg, #4b4dda 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(9) .nav-link:hover {
+  background: linear-gradient(90deg, #860876 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

@@ -1,0 +1,1068 @@
+{
+  "python": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que imprima '¡Hola, mundo!' en la consola."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que calcule la suma de dos números ingresados por el usuario."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que determine si un número ingresado por el usuario es primo o no."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que genere los N primeros números de la serie de Fibonacci."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que lea un archivo de texto y cuente la cantidad de palabras en él."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Contacto' que tenga atributos como nombre, correo y teléfono. Crea métodos para mostrar y modificar estos atributos."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que simule el juego de Piedra, Papel o Tijera contra la computadora."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que maneje una lista de tareas por hacer (to-do list) con opciones de agregar, marcar como hechas y eliminar tareas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Rectángulo' que calcule el área y el perímetro del rectángulo. Crea un programa que utilice esta clase."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que realice consultas a una API pública (por ejemplo, clima) y muestre la información obtenida."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que calcule el área de un triángulo con la fórmula (base * altura) / 2."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que determine si un número ingresado por el usuario es par o impar."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva la lista ordenada de forma ascendente."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que encuentre y muestre todos los números primos en un rango dado."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que lea un archivo CSV, calcule el promedio de una columna numérica y lo muestre."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'CuentaBancaria' con métodos para depósito, retiro y consulta de saldo."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente el juego del Ahorcado, donde el jugador debe adivinar una palabra oculta."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que permita a los usuarios gestionar una lista de contactos, con opciones de agregar, editar y eliminar."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Libro' con atributos como título, autor y método para mostrar información."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que consulte una API de películas, permita buscar por título y muestre detalles de la película seleccionada."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que calcule el área de un círculo utilizando la fórmula π * radio²."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que verifique si una cadena es un palíndromo (se lee igual de izquierda a derecha y viceversa)."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de palabras y devuelva la lista ordenada por longitud de palabra."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que genere un número aleatorio entre un rango dado y permita al usuario adivinarlo."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que lea un archivo JSON y muestre la información en forma de tabla."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Tienda' con métodos para agregar productos, calcular total de compra y mostrar factura."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente un juego de preguntas y respuestas con una puntuación acumulativa."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que simule una agenda de contactos con búsqueda por nombre, edición y eliminación."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Persona' con atributos como nombre, edad y dirección. Crea un método para cambiar la dirección."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que interactúe con una API de traducción, permitiendo al usuario traducir frases entre idiomas."
+    }
+  ],
+  "mysql": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una tabla llamada 'Estudiantes' con las columnas 'ID', 'Nombre', 'Edad' y 'Promedio'. Inserta al menos 3 registros en la tabla."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una tabla llamada 'Productos' con las columnas 'ID', 'Nombre', 'Precio' y 'Stock'. Realiza una consulta que muestre los productos con un precio mayor a $50."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de biblioteca. Crea tablas para 'Libros', 'Autores', 'Usuarios' y 'Préstamos'. Permite registrar préstamos de libros por parte de los usuarios."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una tabla llamada 'Empleados' con las columnas 'ID', 'Nombre', 'Cargo' y 'Salario'. Inserta al menos 5 registros en la tabla."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una tabla llamada 'Categorías' con las columnas 'ID' y 'Nombre'. Inserta algunas categorías como 'Electrónica', 'Ropa', 'Alimentos', etc."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una base de datos para un sistema de tienda en línea. Diseña tablas para 'Productos', 'Usuarios', 'Carrito de Compras' y 'Órdenes'."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una tabla llamada 'Estudiantes' con las columnas 'ID', 'Nombre', 'Edad' y 'Promedio'. Luego, crea una tabla 'Asignaturas' y relaciónalas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una tabla llamada 'Pedidos' con las columnas 'ID', 'Fecha', 'Total' y 'Cliente'. Diseña otra tabla 'Detalles de Pedido' relacionada."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de empleados en una empresa. Crea tablas para 'Empleados', 'Departamentos', 'Puestos' y 'Historial Laboral'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una base de datos para un blog. Diseña tablas para 'Posts', 'Autores', 'Comentarios' y 'Categorías de Posts'. Relaciona las tablas de manera adecuada."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para una plataforma educativa. Crea tablas para 'Cursos', 'Estudiantes', 'Profesores' y 'Inscripciones'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una base de datos para una red social. Diseña tablas para 'Usuarios', 'Publicaciones', 'Comentarios', 'Amistades' y 'Likes'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para una empresa de alquiler de automóviles. Crea tablas para 'Vehículos', 'Clientes', 'Reservas' y 'Historial de Alquileres'."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una tabla llamada 'Clientes' con las columnas 'ID', 'Nombre', 'Correo' y 'Teléfono'. Inserta al menos 5 registros en la tabla."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una tabla llamada 'Productos' con las columnas 'ID', 'Nombre', 'Precio' y 'Stock'. Inserta algunos productos con diferentes valores."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una base de datos para una aplicación de gestión de tareas. Crea tablas para 'Tareas', 'Categorías', 'Usuarios' y 'Proyectos'."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una tabla llamada 'Pedidos' con las columnas 'ID', 'Fecha', 'Total' y 'Cliente'. Luego, crea una tabla 'Detalles de Pedido' para los productos en cada pedido."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una base de datos para una aplicación de reservas de vuelos. Crea tablas para 'Vuelos', 'Pasajeros', 'Reservas' y 'Asientos'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una base de datos para una tienda en línea. Diseña tablas para 'Productos', 'Categorías', 'Usuarios', 'Carrito de Compras' y 'Órdenes'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para una red social. Crea tablas para 'Usuarios', 'Publicaciones', 'Comentarios', 'Amistades' y 'Likes'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una base de datos para un sistema de gestión de empleados en una empresa. Diseña tablas para 'Empleados', 'Departamentos', 'Puestos' y 'Historial Laboral'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de biblioteca. Crea tablas para 'Libros', 'Autores', 'Usuarios', 'Préstamos' y 'Categorías'."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una base de datos para una plataforma educativa. Diseña tablas para 'Cursos', 'Estudiantes', 'Profesores', 'Inscripciones' y 'Calificaciones'."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una plataforma de comercio electrónico que maneje productos, usuarios, carritos de compra y pedidos. Implementa consultas complejas para obtener información detallada."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de gestión de proyectos que permita a los usuarios asignar tareas, establecer plazos y hacer seguimiento del progreso."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un sistema de reservas para un hotel que controle las disponibilidades de habitaciones, tarifas y reservas de clientes, con funciones de check-in y check-out."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una red social que permita a los usuarios crear perfiles, enviar solicitudes de amistad, publicar contenido y comentar en las publicaciones de otros usuarios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de cursos en línea. Permite a los usuarios registrarse en cursos, realizar evaluaciones, obtener certificados y revisar su historial académico."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de gestión de inventario de una tienda física. Controla el stock de productos, las compras a proveedores y la generación de reportes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para una aplicación de seguimiento de salud y estado físico. Los usuarios pueden registrar sus comidas, actividades físicas, mediciones y metas de bienestar."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de streaming de música. Organiza canciones, álbumes y artistas, y permite a los usuarios crear listas de reproducción personalizadas y seguir a sus artistas favoritos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para una empresa de viajes que gestione reservas de vuelos, hoteles y actividades. Proporciona funciones de búsqueda, filtrado y confirmación de itinerarios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de bibliotecas. Controla el registro de libros, préstamos, devoluciones y la información de los lectores."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de recursos humanos. Administra empleados, departamentos, salarios, historiales laborales y procesos de contratación."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de seguimiento y análisis de ventas. Registra ventas, clientes, productos y genera reportes que muestren tendencias y estadísticas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de reserva de entradas para eventos. Administra eventos, ubicaciones, horarios, asientos y permite a los usuarios seleccionar y comprar boletos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de administración de flotas de vehículos. Controla vehículos, mantenimientos, rutas, conductores y gastos operativos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para un sistema de seguimiento de proyectos de desarrollo de software. Gestiona tareas, hitos, colaboradores y versiones, y ofrece métricas de rendimiento."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de gestión de clínicas médicas. Administra pacientes, historiales médicos, citas, tratamientos y recetas médicas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de inventario de una cadena de tiendas. Sincroniza inventarios, administra proveedores, realiza pedidos y distribuye productos entre tiendas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una base de datos para una plataforma de evaluación y calificación de cursos en línea. Registra evaluaciones, criterios de evaluación, notas y comentarios de los estudiantes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una base de datos para un sistema de reserva de mesas en restaurantes. Administra restaurantes, mesas, horarios de reservas y pedidos de los clientes."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de seguimiento y gestión de proyectos de construcción. Controla recursos, etapas de construcción, cronogramas y costos."
+    }
+  ],
+  "javascript": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que muestre '¡Hola, mundo!' en la consola del navegador."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que sume dos números ingresados por el usuario y muestre el resultado."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva la suma de todos los elementos."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que valide si una cadena es un palíndromo y muestre el resultado en el navegador."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que solicite el nombre del usuario y muestre un saludo personalizado en el navegador."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una función que calcule el área de un triángulo utilizando la base y la altura ingresadas por el usuario."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente el juego de Piedra, Papel o Tijera contra el usuario en el navegador."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una función que tome un número y devuelva su factorial (por ejemplo, 5! = 5 * 4 * 3 * 2 * 1)."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña un programa que simule una lista de tareas por hacer (to-do list) en el navegador."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que haga una solicitud a una API pública (por ejemplo, datos climáticos) y muestre la información obtenida."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe una función que sume dos números y devuelva el resultado. Luego, muestra el resultado en la consola."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un programa que muestre un mensaje de 'Bienvenido' en el navegador al cargar la página."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe una función que tome un arreglo de números y devuelva el promedio de sus elementos."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea un programa que reciba una palabra ingresada por el usuario y muestre si es un palíndromo o no."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una función que calcule el área de un triángulo utilizando su base y altura ingresadas por el usuario."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que simule un juego de adivinanza, donde el usuario debe adivinar un número secreto generado aleatoriamente."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una función que tome una lista de palabras y devuelva la lista ordenada alfabéticamente."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña un programa que simule una tienda en línea, con productos y un carrito de compras que calcule el total de la compra."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que consulte una API de clima, permitiendo al usuario buscar por ciudad y mostrando la información en el navegador."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una función que reciba una cadena y devuelva la misma cadena pero en orden inverso."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe una función que tome dos números y devuelva el mayor de ellos."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un programa que genere un número aleatorio entre 1 y 10 y le pida al usuario adivinarlo."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una función que reciba una cadena y devuelva la misma cadena pero con las letras en mayúscula."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva una nueva lista con solo los números pares."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que calcule el factorial de un número ingresado por el usuario."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente el juego del ahorcado, donde el usuario debe adivinar una palabra oculta."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una función que determine si un número ingresado por el usuario es primo o no."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una función que reciba una cadena y devuelva la misma cadena pero con las palabras en orden inverso."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que interactúe con una API de traducción, permitiendo al usuario traducir frases entre idiomas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una función que tome un número y devuelva su representación en binario."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe una función que tome dos números y devuelva su suma."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un programa que genere un número aleatorio entre 1 y 100 y le pida al usuario adivinarlo."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una función que reciba una cadena y devuelva la misma cadena pero en mayúsculas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva una nueva lista con solo los números impares."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que calcule el área de un círculo con el radio ingresado por el usuario."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente el juego del ahorcado, donde el usuario debe adivinar una palabra oculta."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una función que determine si un número ingresado por el usuario es primo."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una función que reciba una cadena y devuelva la misma cadena pero con las palabras en orden inverso."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que haga una solicitud a una API de traducción, permitiendo al usuario traducir frases entre idiomas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una función que tome un número decimal y lo convierta a su representación binaria."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación web de lista de tareas (To-Do List) que permita agregar, eliminar y marcar tareas como completadas. Utiliza HTML, CSS y JavaScript para gestionar la interfaz y los datos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego de ahorcado en el navegador. Permite a los usuarios adivinar una palabra oculta, mostrando el progreso y las letras incorrectas. Utiliza JavaScript para manejar la lógica del juego."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea un conversor de unidades completo que permita convertir entre diferentes sistemas, como longitud, masa, temperatura y más. Proporciona una interfaz intuitiva y precisa."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un simulador de cajero automático que permita a los usuarios realizar operaciones bancarias, como retirar dinero, depositar fondos y consultar el saldo. Implementa seguridad y validación de transacciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de chat en tiempo real utilizando Firebase o Socket.io. Permite a los usuarios enviar y recibir mensajes instantáneos en una interfaz interactiva y atractiva."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un tablero interactivo de ajedrez en el navegador. Implementa la lógica de movimiento de las piezas, manejo de turnos y detección de jaque y jaque mate."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de reserva de citas que permita a los usuarios programar citas con profesionales. Maneja horarios, disponibilidad y notificaciones en tiempo real."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de gestión de proyectos que permita a los usuarios crear, asignar y realizar un seguimiento de tareas. Implementa funcionalidades como diagramas de Gantt y recordatorios."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un reproductor de música en línea que permita a los usuarios buscar, reproducir y crear listas de reproducción personalizadas. Integra características como recomendaciones y letras de canciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma interactiva para aprender idiomas que incluya lecciones, ejercicios de gramática, pruebas de vocabulario y seguimiento del progreso del usuario."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de comercio electrónico que permita a los usuarios buscar, explorar y comprar productos. Implementa carritos de compra, pagos seguros y seguimiento de pedidos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego de memoria con cartas en el navegador. Las cartas deben voltearse y el jugador debe encontrar coincidencias. Incluye múltiples niveles de dificultad."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de blog interactiva donde los usuarios puedan crear, editar y eliminar publicaciones. Agrega comentarios, etiquetas y búsqueda de contenido."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea un editor de imágenes en línea que permita a los usuarios cargar, editar y descargar imágenes. Implementa herramientas de edición como recorte, filtros y superposiciones."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una plataforma de aprendizaje en línea que ofrezca cursos, evaluaciones y certificados. Incluye una interfaz para instructores y estudiantes, así como seguimiento del progreso."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un generador de historias interactivas donde los usuarios puedan tomar decisiones que afecten el desarrollo de la trama. Utiliza programación orientada a objetos para manejar la lógica."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de colaboración en tiempo real para programar en pareja. Permite a los usuarios codificar juntos en un entorno compartido con resaltado de sintaxis y ejecución de código."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una red social temática que permita a los usuarios crear perfiles, conectarse con otros y compartir contenido relacionado con un interés específico, como la fotografía o la música."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de seguimiento de hábitos y metas personales. Los usuarios pueden establecer objetivos, registrar su progreso y recibir recordatorios personalizados."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de intercambio de libros electrónicos donde los usuarios puedan prestar y pedir prestados libros digitales, gestionando la disponibilidad y los préstamos."
+    }
+  ],
+  "html": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un archivo HTML básico con un encabezado, un párrafo y un enlace a una página externa."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Agrega una imagen a tu página HTML y ajusta su tamaño utilizando atributos."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una página que presente una lista ordenada de tus pasatiempos favoritos con viñetas personalizadas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea un formulario de contacto con campos para nombre, correo electrónico y mensaje."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Agrega una tabla a tu página HTML con información sobre productos, como nombre, precio y disponibilidad."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página web para tu currículum vitae, incluyendo secciones de experiencia laboral, educación y habilidades."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un menú de navegación horizontal utilizando una lista desordenada y aplica estilos CSS para mejorar su apariencia."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de inicio de sesión con campos para nombre de usuario y contraseña, y un botón de inicio de sesión."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Agrega un video incrustado de YouTube a tu página web y ajusta las opciones de reproducción."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una página de destino para un producto imaginario, incluyendo descripción, imágenes y botón de compra."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una página HTML que muestre tu información personal, como nombre, edad y ciudad."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Agrega enlaces a diferentes páginas de tu sitio web en una barra de navegación."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una página web para un restaurante ficticio, con menú, horarios de atención y formulario de reserva."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea un formulario de registro con campos para nombre de usuario, correo electrónico y contraseña."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Agrega una galería de imágenes con miniaturas que se abran en una ventana emergente al hacer clic."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de blog con entradas y comentarios. Agrega un formulario para dejar un comentario en cada entrada."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una página de inicio con un carrusel de imágenes que cambie automáticamente y botones para navegar entre ellas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de tienda en línea con productos, descripciones, precios y un carrito de compras funcional."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Agrega un mapa interactivo de Google Maps que muestre la ubicación de tu negocio o lugar favorito."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una página de eventos con detalles sobre conferencias, talleres y fechas de inicio. Incluye botones de registro."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una página HTML que muestre información sobre tu película favorita, incluyendo título, imagen y sinopsis."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Agrega una tabla a tu página HTML que muestre información sobre tus canciones favoritas, como nombre y artista."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Diseña una página web para una tienda de ropa, con categorías de productos y un formulario de contacto."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea un formulario de suscripción a un boletín con campos para nombre, correo electrónico y botón de envío."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Agrega un video incrustado de Vimeo o cualquier plataforma de video a tu página web y ajusta las opciones de reproducción."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de perfil para un personaje de un videojuego, incluyendo información ficticia y una imagen."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una página de recetas culinarias con ingredientes, instrucciones y fotos de cada plato."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de destino para un evento deportivo, con detalles sobre la fecha, lugar y opciones de compra de entradas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Agrega un formulario de contacto a tu sitio web con campos para nombre, correo electrónico, asunto y mensaje."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una página de portafolio para mostrar tus proyectos personales, incluyendo descripciones y capturas de pantalla."
+    }
+  ],
+  "java": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que muestre '¡Hola, mundo!' en la consola."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que calcule la suma de dos números ingresados por el usuario."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que determine si un número ingresado por el usuario es primo o no."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que genere los N primeros números de la serie de Fibonacci."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que lea un archivo de texto y cuente la cantidad de palabras en él."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Contacto' que tenga atributos como nombre, correo y teléfono. Crea métodos para mostrar y modificar estos atributos."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que simule el juego de Piedra, Papel o Tijera contra la computadora."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que maneje una lista de tareas por hacer (to-do list) con opciones de agregar, marcar como hechas y eliminar tareas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Rectángulo' que calcule el área y el perímetro del rectángulo. Crea un programa que utilice esta clase."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que realice consultas a una API pública (por ejemplo, clima) y muestre la información obtenida."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que calcule el área de un triángulo utilizando la fórmula (base * altura) / 2."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que determine si un número ingresado por el usuario es par o impar."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva la lista ordenada de forma ascendente."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que encuentre y muestre todos los números primos en un rango dado."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que lea un archivo de texto y cuente la cantidad de palabras que comienzan con una letra específica."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'CuentaBancaria' con métodos para depósito, retiro y consulta de saldo."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que implemente el juego del Ahorcado, donde el jugador debe adivinar una palabra oculta."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que permita a los usuarios gestionar una lista de contactos, con opciones de agregar, editar y eliminar."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Libro' con atributos como título, autor y método para mostrar información."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que consulte una API de películas, permita buscar por título y muestre detalles de la película seleccionada."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Escribe un programa que determine si un número ingresado por el usuario es positivo, negativo o cero."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea una función que calcule el área de un círculo utilizando la fórmula π * radio²."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una lista de números y devuelva el número mayor y el número menor."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una función que verifique si una cadena es un palíndromo (se lee igual de izquierda a derecha y viceversa)."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Escribe un programa que tome una matriz (arreglo bidimensional) y calcule la suma de sus elementos."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Estudiante' con atributos como nombre, edad y calificaciones. Crea un método para calcular el promedio."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que simule el juego de Piedra, Papel o Tijera contra la computadora."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un programa que gestione una lista de tareas por hacer (to-do list) con opciones de agregar, marcar como hechas y eliminar."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una clase 'Empleado' con atributos como nombre, salario y departamento. Crea métodos para mostrar y modificar estos atributos."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Escribe un programa que consulte una API de noticias y muestre los titulares más recientes en la consola."
+    }
+  ],
+  "git": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un repositorio en Git y realiza tu primer commit con un archivo de texto que contenga tu nombre."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Clona un repositorio remoto en tu máquina local y agrega un archivo nuevo. Luego, realiza un commit y push."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una rama nueva en tu repositorio, realiza algunos cambios y luego fusiona la rama con la rama principal."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Resuelve un conflicto de fusión entre dos ramas al combinar cambios en un archivo específico."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Utiliza el comando 'git log' para ver el historial de commits de un repositorio y encuentra un commit específico."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un repositorio remoto en una plataforma de hosting como GitHub o GitLab. Clona el repositorio en tu máquina y realiza cambios colaborativos."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Utiliza etiquetas (tags) para marcar un punto específico en la historia de tu repositorio, como una versión lanzada."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un archivo '.gitignore' para evitar que ciertos archivos o carpetas sean rastreados por Git en tu repositorio."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Explora las diferencias entre ramas utilizando el comando 'git diff' y encuentra las modificaciones realizadas en un archivo."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Realiza una reversión (revert) de un commit específico para deshacer cambios no deseados en tu repositorio."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un repositorio en Git y realiza tu primer commit con un archivo de texto que contenga una descripción de tu proyecto."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Clona un repositorio remoto en tu máquina local y agrega un archivo nuevo. Luego, realiza un commit y push para subir los cambios."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una rama nueva en tu repositorio y realiza algunos cambios en archivos. Luego, fusiona la rama con la rama principal."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Resuelve un conflicto de fusión que surja al combinar cambios en el mismo archivo en diferentes ramas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Utiliza el comando 'git log' para ver el historial de commits en tu repositorio. Encuentra un commit específico y muestra sus detalles."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un repositorio remoto en una plataforma como GitHub. Clona el repositorio, realiza cambios y colabora con otras personas en el mismo proyecto."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Utiliza etiquetas (tags) para marcar una versión importante de tu proyecto en el historial de commits."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un archivo '.gitignore' para evitar que ciertos archivos o carpetas se incluyan en el control de versiones."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Explora las diferencias entre ramas utilizando el comando 'git diff' y analiza los cambios realizados en un archivo específico."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Realiza una reversión (revert) de un commit específico para deshacer los cambios asociados a ese commit."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un repositorio en Git y realiza tu primer commit con un archivo de texto que contenga una breve introducción sobre ti."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Clona un repositorio remoto en tu máquina local, agrega un archivo nuevo y realiza un commit y push para subir los cambios."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una rama nueva en tu repositorio y realiza cambios en al menos tres archivos diferentes. Luego, fusiona la rama con la rama principal."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Resuelve un conflicto de fusión que ocurra al combinar cambios en un archivo que ha sido modificado en diferentes ramas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Utiliza el comando 'git log' para ver el historial de commits en tu repositorio y encuentra el commit en el que se agregó un archivo específico."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un repositorio remoto en una plataforma como GitHub. Clona el repositorio, realiza cambios y colabora con otros usuarios en el mismo proyecto."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Utiliza etiquetas (tags) para marcar una versión importante de tu proyecto en el historial de commits."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea un archivo '.gitignore' para evitar que ciertos archivos o carpetas se incluyan en el seguimiento de versiones."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Explora las diferencias entre ramas utilizando el comando 'git diff' y analiza los cambios realizados en un archivo específico."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Realiza una reversión (revert) de un commit específico para deshacer los cambios introducidos por ese commit."
+    }
+  ],
+  "react": [
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente que muestre una tarjeta de perfil con nombre, imagen de avatar y una breve descripción."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Desarrolla una calculadora simple que realice operaciones de suma, resta, multiplicación y división."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de lista de tareas (to-do list) donde los usuarios puedan agregar, marcar como completadas y eliminar tareas."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de búsqueda de películas utilizando una API pública de películas. Muestra detalles como título, imagen y descripción."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una base de datos para un sistema de gestión de inventario de una cadena de tiendas. Sincroniza inventarios, administra proveedores, realiza pedidos y distribuye productos entre tiendas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de cronómetro (stopwatch) que permita a los usuarios iniciar, pausar y reiniciar el tiempo."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego simple como el clásico Piedra, Papel o Tijera contra la computadora."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Crea una aplicación de red social donde los usuarios puedan registrarse, iniciar sesión, crear publicaciones y comentar en las publicaciones de otros usuarios."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de clima que muestre el pronóstico actual utilizando una API de clima."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de carrusel que muestre imágenes y permita a los usuarios navegar entre ellas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de barra de navegación con enlaces a diferentes secciones de un sitio web."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de chat en tiempo real donde los usuarios puedan enviar y recibir mensajes."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de aprendizaje en línea que permita a los usuarios registrarse en cursos, ver lecciones y completar evaluaciones."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un formulario de registro que solicite nombre de usuario, correo electrónico y contraseña."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un sistema de votación en tiempo real para una encuesta donde los votos sean registrados y reflejados en tiempo real."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una aplicación de seguimiento de fitness que registre datos como pasos, distancia recorrida y calorías quemadas."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de tarjeta de producto que muestre información como nombre, imagen, precio y botón de compra."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego de ahorcado donde los usuarios adivinen una palabra oculta letra por letra."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de gestión de proyectos donde los usuarios puedan crear proyectos, asignar tareas y hacer un seguimiento del progreso."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de búsqueda y reproducción de videos utilizando una API pública de videos."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de contador que permita a los usuarios incrementar y decrementar un valor numérico."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de notas donde los usuarios puedan crear, editar y eliminar notas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña un tablero Kanban para la gestión de tareas con columnas de Por hacer, En progreso y Hecho."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de reloj digital que muestre la hora actual en tiempo real."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla una aplicación de búsqueda de recetas de cocina utilizando una API pública de recetas."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una aplicación de reserva de habitaciones de hotel donde los usuarios puedan seleccionar fechas y tipos de habitaciones."
+    },
+    {
+      "nivel": "Bajo",
+      "ejercicio": "Crea un componente de acordeón que muestre y oculte contenido al hacer clic en los encabezados."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Desarrolla un juego de memoria donde los usuarios encuentren pares de cartas iguales en un tablero."
+    },
+    {
+      "nivel": "Alto",
+      "ejercicio": "Diseña una plataforma de publicación de blogs donde los usuarios puedan escribir, editar y publicar entradas de blog."
+    },
+    {
+      "nivel": "Medio",
+      "ejercicio": "Crea una aplicación de búsqueda de música que permita a los usuarios buscar canciones y artistas utilizando una API pública."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de reserva y pago en línea para la compra de boletos de eventos, con selección de asientos en tiempo real."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla una plataforma de comercio electrónico completa con carrito de compras, gestión de inventario y opciones de pago."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una aplicación de aprendizaje automático (machine learning) que analice y clasifique imágenes utilizando TensorFlow.js."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una red social avanzada con funcionalidades de amistad, seguimiento, chat en tiempo real y publicaciones multimedia."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un sistema de gestión de contenido (CMS) que permita a los usuarios crear y administrar contenido multimedia y páginas web."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de alquiler de propiedades vacacionales donde los usuarios puedan buscar, reservar y calificar alojamientos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña una aplicación de asistencia médica en línea que ofrezca consultas virtuales, seguimiento de pacientes y registros médicos."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Desarrolla un juego en 3D utilizando bibliotecas como Three.js, donde los usuarios puedan explorar un mundo interactivo."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Crea una plataforma de educación en línea que ofrezca cursos interactivos con videoconferencias en tiempo real y evaluaciones automatizadas."
+    },
+    {
+      "nivel": "Muy Alto",
+      "ejercicio": "Diseña un sistema de planificación de viajes que recomiende itinerarios personalizados basados en las preferencias de los usuarios."
+    }
+  ]
+}

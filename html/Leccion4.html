@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,51 @@
 </head>
 <body>
   <header>
-    <h1>Lección 4: Imágenes y Multimedia en HTML</h1>
-  </header>
-  <main>
+    <h1>Lección 4: Imágenes y Multimedia</h1>
+</header>
+<main>
     <section>
-      <h2>Etiqueta de imagen (&lt;img&gt;)</h2>
-      <p>La etiqueta &lt;img&gt; se utiliza para mostrar imágenes en una página web. El atributo src especifica la ruta de la imagen y el atributo alt proporciona un texto alternativo para accesibilidad:</p>
-      <pre><code>
-        &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
-      </code></pre>
+        <h2>Inserción de imágenes (<img>):</h2>
+        <p>Aprenderás cómo insertar imágenes en tus páginas web utilizando la etiqueta &lt;img&gt;. Las imágenes son una parte esencial para mejorar la presentación y el atractivo visual de tus sitios web.</p>
+        <pre><code><!-- Inserción de una imagen con atributos src, alt y width -->
+&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="300"&gt;</code></pre>
+        <p><strong>Atributos src, alt y width:</strong></p>
+        <ul>
+            <li><strong>src:</strong> El atributo src se utiliza para especificar la ruta de la imagen que deseas mostrar en la página.</li>
+            <li><strong>alt:</strong> El atributo alt proporciona un texto alternativo para la imagen, que se muestra cuando la imagen no se puede cargar o para accesibilidad.</li>
+            <li><strong>width:</strong> El atributo width establece el ancho de la imagen en píxeles.</li>
+        </ul>
     </section>
 
     <section>
-      <h2>Etiqueta de video (&lt;video&gt;)</h2>
-      <p>La etiqueta &lt;video&gt; se utiliza para insertar videos en una página web. Puede contener múltiples fuentes de video para diferentes formatos y navegadores:</p>
-      <pre><code>
-        &lt;video controls width="400">
-          &lt;source src="video.mp4" type="video/mp4">
-          &lt;source src="video.webm" type="video/webm">
-          Tu navegador no admite el elemento de video.
-        &lt;/video>
-      </code></pre>
+        <h2>Incorporación de audio y video (&lt;audio&gt;, &lt;video&gt;):</h2>
+        <p>Aprenderás cómo incorporar archivos de audio y video en tus páginas web utilizando las etiquetas &lt;audio&gt; y &lt;video&gt;. Estas etiquetas permiten a los visitantes reproducir contenido multimedia directamente en tu sitio.</p>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <h3>Video</h3>
+        <video controls width="600">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
     </section>
 
     <section>
-      <h2>Etiqueta de audio (&lt;audio&gt;)</h2>
-      <p>La etiqueta &lt;audio&gt; se utiliza para reproducir archivos de audio. Al igual que con el elemento de video, puedes proporcionar múltiples fuentes de audio:</p>
-      <pre><code>
-        &lt;audio controls>
-          &lt;source src="audio.mp3" type="audio/mpeg">
-          &lt;source src="audio.ogg" type="audio/ogg">
-          Tu navegador no admite el elemento de audio.
-        &lt;/audio>
-      </code></pre>
+        <h2>Recursos adicionales:</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img">Documentación de HTML sobre la etiqueta &lt;img&gt;</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio">Documentación de HTML sobre la etiqueta &lt;audio&gt;</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video">Documentación de HTML sobre la etiqueta &lt;video&gt;</a></li>
+        </ul>
     </section>
-  </main>
+</main>
   <footer>
     <h6>// EN CONTRUCCION // © 2023 Cursos de Programación. Todos los derechos
       reservados.
     </h6>
   </footer>
 </body>
+
 </html>

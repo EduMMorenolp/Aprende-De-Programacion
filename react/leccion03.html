@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 3: Desarrollo de Componentes</title>
+</head>
+
+<body>
+  <div class="body">
+    <h1>Módulo 3: Desarrollo de Componentes</h1>
+
+    <h2>3.1 Componentes Funcionales y de Clase</h2>
+    <h3>Diferencias y ventajas:</h3>
+    <p>Los componentes funcionales y los componentes de clase son dos enfoques diferentes para crear componentes en
+      React, cada uno con sus propias ventajas y casos de uso.</p>
+    <p>Los componentes funcionales son más simples y concisos, ideales para componentes que no requieren estado interno
+      ni métodos del ciclo de vida. Son fáciles de entender, probar y optimizar.</p>
+    <p>Los componentes de clase, por otro lado, son más potentes y versátiles. Pueden manejar el estado interno y los
+      métodos del ciclo de vida. Son útiles cuando se necesita un mayor control sobre el componente y sus interacciones.
+    </p>
+
+    <h3>Creación y uso de componentes funcionales:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+
+const Saludo = (props) => {
+  return &lt;p&gt;Hola, {props.nombre}!&lt;/p&gt;;
+};
+
+// Uso del componente Saludo
+&lt;Saludo nombre="María" /&gt;;
+    </code></pre>
+
+    <h3>Creación y uso de componentes de clase:</h3>
+    <pre><code class="jsx">
+import React from 'react';
+
+class Saludo extends React.Component {
+  render() {
+    return &lt;p&gt;Hola, {this.props.nombre}!&lt;/p&gt;;
+  }
+}
+
+// Uso del componente Saludo
+&lt;Saludo nombre="Pedro" /&gt;;
+    </code></pre>
+
+    <h2>3.2 Ciclo de Vida de los Componentes</h2>
+    <h3>Montaje, actualización y desmontaje:</h3>
+    <p>Los componentes en React pasan por tres fases principales durante su ciclo de vida: montaje, actualización y
+      desmontaje.</p>
+    <p>Montaje (Mounting): Ocurre cuando un componente se crea e ingresa en el DOM. Se invoca el constructor, render() y
+      otros métodos especiales.</p>
+    <p>Actualización (Updating): Sucede cuando el componente recibe nuevas props o se actualiza su estado. Se invocan
+      métodos como shouldComponentUpdate(), render() y componentDidUpdate().</p>
+    <p>Desmontaje (Unmounting): Se produce cuando el componente es eliminado del DOM. Se invoca el método
+      componentWillUnmount().</p>
+
+    <h3>Métodos del ciclo de vida:</h3>
+    <p>Algunos métodos del ciclo de vida de los componentes de clase:</p>
+    <ul>
+      <li>constructor(props): Se llama cuando se crea una instancia del componente.</li>
+      <li>render(): Devuelve la representación del componente en el DOM.</li>
+      <li>componentDidMount(): Se ejecuta después de que el componente se monta en el DOM.</li>
+      <li>shouldComponentUpdate(nextProps, nextState): Permite controlar si el componente debe actualizarse o no.</li>
+      <li>componentDidUpdate(prevProps, prevState): Se llama después de que el componente se actualiza en el DOM.</li>
+      <li>componentWillUnmount(): Se ejecuta antes de que el componente sea desmontado y eliminado del DOM.</li>
+    </ul>
+
+    <h3>Uso adecuado de cada fase:</h3>
+    <p>Montaje: Inicializar el estado y realizar solicitudes de datos iniciales.</p>
+    <p>Actualización: Realizar tareas basadas en cambios de props o estado, como actualizar datos, realizar solicitudes
+      AJAX, etc.</p>
+    <p>Desmontaje: Limpiar tareas, cancelar solicitudes, liberar recursos, etc.</p>
+    <p>Es fundamental comprender el ciclo de vida de los componentes para poder gestionar adecuadamente su
+      comportamiento y optimizar el rendimiento de las aplicaciones React.</p>
+
+    <p>En los próximos módulos, profundizaremos en la interacción y los eventos en React, así como en la comunicación
+      entre componentes.</p>
+  </div>
+</body>
+
+</html>

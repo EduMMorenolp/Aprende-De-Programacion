@@ -8,18 +8,19 @@ body {
 /*Barra de navegacion*/
 
 .navbar {
-  border-bottom: 7px solid #aaa;
-  border-radius: 0 0 .8rem .8rem;
+  border-bottom: 7px solid #6ba9eb;
+  border-radius: .8rem;
 }
 
 /*Estilos para el menu de Lecciones*/
-
+/*
 .lateral, .central {
   position: absolute;
 }
-
+*/
 .sidebar {
-  background-color: #f0f0f0;
+  border-radius: .8rem;
+  background-color: #6ba9eb;
   width: 250px;
   padding: 20px;
   overflow-y: auto;
@@ -42,14 +43,14 @@ body {
   text-decoration: none;
   color: #333;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #158296;
   color: #fff;
-  border-radius: 5px;
+  border-radius: .8rem;
 }
 
 /* Efecto al pasar el mouse sobre el botón */
 .sidebar a:hover {
-  background-color: #9baabb;
+  background-color: #170f6e;
 }
 
 /* Estilo para el botón activo */
@@ -59,13 +60,22 @@ body {
 }
 
 /*Estilos para el contenido de las lecciones*/
-
+/*
 .content {
   float: left;
   display: block;
   margin-left: 280px;
 }
+*/
 
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-left: 20px;
+}
 /*Estilos para el pie de página*/
 
 footer {
@@ -74,6 +84,14 @@ footer {
 }
 
 /*Colores para el nav-bar*/
+
+/*Iinicio*/
+.nav-item:nth-child(1) .nav-link:hover {
+  background: linear-gradient(90deg, #4bc5ce 50%, #911b1b 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 /*HTML y CSS*/
 .nav-item:nth-child(2) .nav-link:hover {
@@ -107,10 +125,65 @@ footer {
   color: transparent;
 }
 
-/*Git y GitHub*/
-.nav-item:nth-child(6) .nav-link:hover {
-  background: linear-gradient(90deg, #6CC24A 30%, #181717 70%);
+/* React */
+.nav-item:nth-child(7) .nav-link:hover {
+  background: linear-gradient(90deg, #6ba9eb 30%, #181717 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+/* mySQL */
+.nav-item:nth-child(8) .nav-link:hover {
+  background: linear-gradient(90deg, #4b4dda 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Generador de Ejercicios */
+.nav-item:nth-child(9) .nav-link:hover {
+  background: linear-gradient(90deg, #1fdd39 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*Sobre Nosotros*/
+.nav-item:nth-child(10) .nav-link:hover {
+  background: linear-gradient(90deg, #860876 30%, #181717 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #343a40;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  overflow-x: auto;
 }

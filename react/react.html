@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Introductorio de React</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Manrope:wght@200&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- Barra Navegacion -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="barraNavegacion">
+    </nav>
+    <!--Menu de lecciones-->
+    <article>
+        <section class="lateral">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="leccion01.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 1:
+                            Introducción a React
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leccion02.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 2:
+                            Fundamentos de React</a>
+                    </li>
+                    <li>
+                        <a href="leccion03.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 3:
+                            Desarrollo de Componentes</a>
+                    </li>
+                    <li>
+                        <a href="leccion04.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 4:
+                            Interacción y Eventos</a>
+                    </li>
+                    <li>
+                        <a href="leccion05.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 5:
+                            Enrutamiento y Navegación</a>
+                    </li>
+                    <li>
+                        <a href="leccion06.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 6: Gestión
+                            de Estado</a>
+                    </li>
+                    <li>
+                        <a href="leccion07.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 7:
+                            Introducción a Redux (opcional)</a>
+                    </li>
+                    <li>
+                        <a href="leccion08.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 8:
+                            Desarrollo de Aplicaciones Complejas</a>
+                    </li>
+                    <li>
+                        <a href="leccion09.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 9: Buenas
+                            Prácticas y Optimización</a>
+                    </li>
+                    <li>
+                        <a href="leccion10.html" class="leccion-link" onclick="cargarLeccion(event)">Módulo 10: Proyecto
+                            Final</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="central">
+            <div class="content" id="contenido-leccion">
+                <h1>Curso Introductorio de React</h1>
+
+                <h2>Módulo 1: Introducción a React</h2>
+                <h3>1.1 ¿Qué es React?</h3>
+                <ul>
+                    <li>Conceptos básicos de React</li>
+                    <li>Componentes y su importancia</li>
+                    <li>Virtual DOM y su ventaja</li>
+                </ul>
+
+                <h3>1.2 Configuración del entorno</h3>
+                <ul>
+                    <li>Instalación de Node.js y npm</li>
+                    <li>Creación de un proyecto con Create React App</li>
+                    <li>Estructura de archivos y carpetas</li>
+                </ul>
+
+                <h2>Módulo 2: Fundamentos de React</h2>
+                <h3>2.1 Componentes y JSX</h3>
+                <ul>
+                    <li>Creación de componentes</li>
+                    <li>Sintaxis JSX y su importancia</li>
+                    <li>Renderizado de componentes</li>
+                </ul>
+
+                <h3>2.2 Propiedades (Props) y Estado (State)</h3>
+                <ul>
+                    <li>Pasar datos a través de props</li>
+                    <li>Uso del estado interno en componentes</li>
+                    <li>Actualización del estado y su impacto en la interfaz</li>
+                </ul>
+
+                <h2>Módulo 3: Desarrollo de Componentes</h2>
+                <h3>3.1 Componentes Funcionales y de Clase</h3>
+                <ul>
+                    <li>Diferencias y ventajas</li>
+                    <li>Creación y uso de componentes funcionales</li>
+                    <li>Creación y uso de componentes de clase</li>
+                </ul>
+
+                <h3>3.2 Ciclo de Vida de los Componentes</h3>
+                <ul>
+                    <li>Montaje, actualización y desmontaje</li>
+                    <li>Métodos del ciclo de vida</li>
+                    <li>Uso adecuado de cada fase</li>
+                </ul>
+
+                <h2>Módulo 4: Interacción y Eventos</h2>
+                <h3>4.1 Manipulación de Eventos</h3>
+                <ul>
+                    <li>Manejo de eventos en React</li>
+                    <li>Sintaxis y uso de funciones manejadoras</li>
+                    <li>Eventos comunes: onClick, onChange, etc.</li>
+                </ul>
+
+                <h3>4.2 Comunicación entre Componentes</h3>
+                <ul>
+                    <li>Elevación de estados</li>
+                    <li>Uso de callbacks y props para pasar datos</li>
+                    <li>Patrones de comunicación</li>
+                </ul>
+
+                <h2>Módulo 5: Enrutamiento y Navegación</h2>
+                <h3>5.1 React Router</h3>
+                <ul>
+                    <li>Configuración de rutas</li>
+                    <li>Navegación entre componentes</li>
+                    <li>Uso de parámetros en las rutas</li>
+                </ul>
+
+                <h2>Módulo 6: Gestión de Estado</h2>
+                <h3>6.1 Introducción a la Gestión de Estado</h3>
+                <ul>
+                    <li>Problemas comunes con el estado en React</li>
+                    <li>Ventajas de un sistema de gestión de estado</li>
+                </ul>
+
+                <h3>6.2 Context API</h3>
+                <ul>
+                    <li>Creación y consumo de contextos</li>
+                    <li>Evitando la prop drilling</li>
+                </ul>
+
+                <h2>Módulo 7: Introducción a Redux (opcional)</h2>
+                <h3>7.1 Conceptos básicos de Redux</h3>
+                <ul>
+                    <li>Store, Acciones, Reductores</li>
+                    <li>Flujo de datos en Redux</li>
+                </ul>
+
+                <h3>7.2 Integración de Redux en una aplicación React</h3>
+                <ul>
+                    <li>Configuración de la store</li>
+                    <li>Conexión de componentes a Redux</li>
+                </ul>
+
+                <h2>Módulo 8: Desarrollo de Aplicaciones Complejas</h2>
+                <h3>8.1 Patrones de Diseño en React</h3>
+                <ul>
+                    <li>Contenedores y presentacionales</li>
+                    <li>Composición de componentes</li>
+                    <li>Patrón HOC (Higher Order Component)</li>
+                </ul>
+
+                <h3>8.2 Acceso a APIs externas</h3>
+                <ul>
+                    <li>Uso de APIs REST</li>
+                    <li>Manejo de respuestas asíncronas</li>
+                    <li>Actualización del estado basado en datos externos</li>
+                </ul>
+
+                <h2>Módulo 9: Buenas Prácticas y Optimización</h2>
+                <h3>9.1 Rendimiento y Optimización</h3>
+                <ul>
+                    <li>Identificación de cuellos de botella</li>
+                    <li>Lazy loading de componentes</li>
+                    <li>Uso de React.memo y useMemo</li>
+                </ul>
+
+                <h3>9.2 Pruebas Unitarias en React</h3>
+                <ul>
+                    <li>Introducción a las pruebas con Jest y Enzyme</li>
+                    <li>Testeo de componentes y funciones</li>
+                </ul>
+
+                <h2>Módulo 10: Proyecto Final</h2>
+                <h3>10.1 Desarrollo de una Aplicación con React</h3>
+                <ul>
+                    <li>Integración de los conceptos aprendidos</li>
+                    <li>Implementación de funcionalidades y diseño</li>
+                </ul>
+
+                <h3>10.2 Despliegue de la Aplicación</h3>
+                <ul>
+                    <li>Opciones de despliegue (Netlify, Vercel, etc.)</li>
+                    <li>Creación de una versión de producción</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <script src="../scripts.js"></script>
+    <script src="../barraNavegacion.js"></script>
+</body>
+
+</html>

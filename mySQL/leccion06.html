@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 6: Seguridad y Usuarios</title>
+</head>
+<body>
+
+    <h1>Módulo 6: Seguridad y Usuarios</h1>
+
+    <h2>6.1 Gestión de Usuarios y Privilegios</h2>
+    <p><strong>Creación de usuarios y asignación de permisos:</strong></p>
+    <p>Aprenderás a crear usuarios en MySQL y asignarles permisos específicos para acceder a bases de datos y realizar operaciones.</p>
+    <pre><code>-- Creación de un usuario
+CREATE USER 'nuevo_usuario'@'localhost' IDENTIFIED BY 'contraseña';
+
+-- Asignación de permisos
+GRANT SELECT, INSERT ON basededatos.tabla TO 'nuevo_usuario'@'localhost';</code></pre>
+
+    <p><strong>Control de acceso a bases de datos y tablas:</strong></p>
+    <p>Aprenderás a controlar el acceso de los usuarios a bases de datos y tablas utilizando permisos específicos.</p>
+    <pre><code>-- Revocación de permisos
+REVOKE INSERT ON basededatos.tabla FROM 'nuevo_usuario'@'localhost';
+
+-- Eliminación de un usuario
+DROP USER 'nuevo_usuario'@'localhost';</code></pre>
+
+    <h2>6.2 Prácticas de Seguridad</h2>
+    <p><strong>Mejores prácticas de seguridad en MySQL:</strong></p>
+    <p>Aprenderás las mejores prácticas para mantener la seguridad en tu servidor MySQL, incluyendo la importancia de mantener el software actualizado, configurar contraseñas seguras, limitar el acceso remoto y auditar el acceso a la base de datos.</p>
+    <pre><code>-- Configuración de contraseñas seguras
+ALTER USER 'usuario'@'localhost' IDENTIFIED BY 'nueva_contraseña';
+
+-- Restricción de acceso remoto
+GRANT ALL PRIVILEGES ON basededatos.* TO 'usuario'@'localhost';</code></pre>
+
+    <h2>Recursos adicionales:</h2>
+    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/adding-users.html" target="_blank">Documentación de MySQL sobre Creación y Manejo de Usuarios</a></p>
+    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/security-best-practices.html" target="_blank">Mejores Prácticas de Seguridad en MySQL</a></p>
+    <p><a href="https://dev.mysql.com/doc/refman/8.0/en/security.html" target="_blank">Documentación de MySQL sobre Seguridad y Privilegios</a></p>
+
+</body>
+</html>

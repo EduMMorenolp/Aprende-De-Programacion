@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lección 8: Enlaces y Navegación en HTML</title>
 </head>
+
 <body>
   <header>
-    <h1>Lección 8: Enlaces y Navegación en HTML</h1>
+    <h1>Lección 8: CSS Básico</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#introduccion">Introducción</a></li>
-      <li><a href="#tipos">Tipos de Enlaces</a></li>
-      <li><a href="#navegacion">Navegación</a></li>
-    </ul>
-  </nav>
   <main>
-    <section id="introduccion">
-      <h2>Introducción a los Enlaces y Navegación</h2>
-      <p>Los enlaces permiten conectar diferentes páginas web y recursos. Son fundamentales para la navegación entre páginas y sitios web. Se definen con la etiqueta &lt;a&gt;:</p>
-      <pre><code>
-        &lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo&lt;/a&gt;
-      </code></pre>
+    <section>
+      <h2>Introducción a CSS y su importancia:</h2>
+      <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para definir el estilo y la presentación de los elementos
+        en una página web. Aprenderás sobre la importancia de CSS en la separación de la estructura HTML y la apariencia
+        visual, lo que permite un diseño más flexible y mantenible.</p>
     </section>
 
-    <section id="tipos">
-      <h2>Tipos de Enlaces</h2>
+    <section>
+      <h2>Selectores y propiedades CSS:</h2>
+      <p>Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que se aplicarán los
+        estilos. Las propiedades definen cómo se verán los elementos seleccionados.</p>
+      <pre><code>/* Ejemplo de selección de elementos y propiedades CSS */
+h1 {
+color: blue; /* Cambiar el color del texto a azul */
+font-size: 24px; /* Cambiar el tamaño de fuente */
+}
+
+p {
+font-family: Arial, sans-serif; /* Cambiar la fuente del párrafo */
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Estilos en línea (style) y hojas de estilo externas (
+        <link>):
+      </h2>
+      <p>Aprenderás las dos formas principales de aplicar estilos CSS a tus documentos HTML: mediante estilos en línea y
+        mediante hojas de estilo externas.</p>
+      <pre><code>&lt;!-- Estilo en línea -->
+&lt;h2 style="color: green;">Este es un encabezado con estilo en línea&lt;/h2>
+
+&lt;!-- Hoja de estilo externa -->
+&lt;head>
+&lt;link rel="stylesheet" type="text/css" href="estilos.css">
+&lt;/head></code></pre>
+    </section>
+
+    <section>
+      <h2>Sugerencias adicionales:</h2>
       <ul>
-        <li>Enlace a una página web externa: &lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo&lt;/a&gt;</li>
-        <li>Enlace a una página interna: &lt;a href="pagina.html"&gt;Enlace a Página&lt;/a&gt;</li>
-        <li>Enlace a un correo electrónico: &lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</li>
-        <li>Enlace a un archivo: &lt;a href="archivo.pdf"&gt;Descargar PDF&lt;/a&gt;</li>
+        <li>Organización: Mantén tus estilos organizados y utiliza comentarios para explicar las partes clave de tu hoja
+          de estilo.</li>
+        <li>Consistencia: Mantén una consistencia en la aplicación de estilos en toda tu página web para lograr un
+          aspecto coherente.</li>
+        <li>Prioridad: Familiarízate con la cascada y la especificidad en CSS para comprender cómo se aplican los
+          estilos en diferentes situaciones.</li>
       </ul>
     </section>
 
-    <section id="navegacion">
-      <h2>Navegación en Menús</h2>
-      <p>Los menús de navegación son comunes en sitios web. Pueden crearse utilizando listas no ordenadas y estilizándolos con CSS:</p>
-      <pre><code>
-        &lt;nav&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href="inicio.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="acerca.html"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="servicios.html"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-      </code></pre>
+    <section>
+      <h2>Recursos adicionales:</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS">Documentación de CSS en MDN</a></li>
+        <li><a href="https://www.w3schools.com/css/css_intro.asp">Guía de introducción a CSS en W3Schools</a></li>
+      </ul>
     </section>
   </main>
   <footer>
@@ -56,4 +75,5 @@
     </h6>
   </footer>
 </body>
+
 </html>
