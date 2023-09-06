@@ -13,11 +13,11 @@ body {
 }
 
 /*Estilos para el menu de Lecciones*/
-
+/*
 .lateral, .central {
   position: absolute;
 }
-
+*/
 .sidebar {
   border-radius: .8rem;
   background-color: #343a40;
@@ -60,13 +60,22 @@ body {
 }
 
 /*Estilos para el contenido de las lecciones*/
-
+/*
 .content {
   float: left;
   display: block;
   margin-left: 280px;
 }
+*/
 
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-left: 20px;
+}
 /*Estilos para el pie de página*/
 
 footer {
@@ -156,7 +165,6 @@ body {
 
 main {
   max-width: 800px;
-  margin: 0 auto;
   padding: 2rem;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

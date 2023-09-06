@@ -984,7 +984,6 @@
       "nivel": "Medio",
       "ejercicio": "Crea una aplicación de búsqueda y reproducción de videos utilizando una API pública de videos."
     },
-
     {
       "nivel": "Bajo",
       "ejercicio": "Crea un componente de contador que permita a los usuarios incrementar y decrementar un valor numérico."
@@ -1025,7 +1024,6 @@
       "nivel": "Medio",
       "ejercicio": "Crea una aplicación de búsqueda de música que permita a los usuarios buscar canciones y artistas utilizando una API pública."
     },
-
     {
       "nivel": "Muy Alto",
       "ejercicio": "Diseña un sistema de reserva y pago en línea para la compra de boletos de eventos, con selección de asientos en tiempo real."
