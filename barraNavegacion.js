@@ -1,6 +1,6 @@
 const barraNavengacionCod = `
 <div class="container-fluid">
-      <img src="../imag/code-square.svg" alt="LogoProgramacion"><a class="navbar-brand">Aprende Programacion</a>
+      <img src="../imag/code-square.svg" alt="LogoProgramacion"><a class="navbar-brand">Aprende Programación</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
